@@ -30,7 +30,8 @@ readings. The original PDFs are retained in `source/` so every figure can be che
 | `06-deliverables-and-report-structure.md` | Part 1 and Part 2 requirements, page limits, format, submission mechanics |
 | `07-marking-criteria.md` | Both CRAs, mark weightings, band descriptors |
 | `08-conflicts-gaps-and-checklist.md` | Documented inconsistencies between briefing and guides, plus a compliance checklist |
-| `09-program-review-findings.md` | Defect register for the draft preliminary construction program (Gantt), checked against files 01–05 |
+| `09-program-review-findings.md` | Defect register for the construction program, revision A |
+| `10-program-review-rev-b.md` | Defect register for the construction program, revision B (supersedes 09 for resolved items) |
 
 ## Headline facts (quick reference)
 

@@ -15,6 +15,8 @@ Reference knowledge base for the EGB387 *Engineering Economy & Planning* project
 | [`06-deliverables-and-report-structure.md`](docs/egb387/06-deliverables-and-report-structure.md) | Part 1 and Part 2 requirements, page limits, submission mechanics |
 | [`07-marking-criteria.md`](docs/egb387/07-marking-criteria.md) | Both CRAs, mark weightings, band descriptors |
 | [`08-conflicts-gaps-and-checklist.md`](docs/egb387/08-conflicts-gaps-and-checklist.md) | Document conflicts, open gaps, compliance checklist |
+| [`09-program-review-findings.md`](docs/egb387/09-program-review-findings.md) | Construction program review, revision A |
+| [`10-program-review-rev-b.md`](docs/egb387/10-program-review-rev-b.md) | Construction program review, revision B |
 
 Original PDFs are retained in [`docs/egb387/source/`](docs/egb387/source/).
 
