@@ -55,7 +55,64 @@ columns their Start and Dur imply, and the wet-season shading is correctly on mo
 | # | Finding |
 |---|---|
 | C1 | **The critical path sentence names 16 activities but 23 rows carry a triangle.** The legend says the triangle means zero float and on the critical path. The seven not named — A8, A10, E9, E12, H1, H4, H5 — sit on parallel zero-float chains that converge at E1 and again at H7. The sentence should say "critical paths" and name the parallel branches. |
-| C2 | **The sheet is still A3 (420 × 297 mm), measured from the page box.** The group guide says "Submitted in A4 sized documents." One sheet instead of two is a large improvement, but the format instruction is still not met. |
+| C2 | **A3 is authorised** — resolved. The group guide says "Submitted in A4 sized documents", but the unit coordinator stated in the Week 2 tutorial: "page 1 to page 11, page 12 is the gantt chart and A3 size." The sheet should carry a one-line note citing that so a marker does not read it as a format breach. |
+
+## E. Resolving E3 — the anchor, the B6 constraint and the RCC window
+
+Run `python3 scripts/scenario_anchor_b6_rcc.py`.
+
+### E.1 The calendar anchor is fixed by the brief
+
+> "The project is to be awarded at the end of March, 2027 and is due for completion by
+> 31st May, 2029."
+
+Month 1 = Apr 2027 is **required, not chosen**. The window is Apr 2027 – May 2029 = 26 months and
+the program uses 25 with 1 month terminal float. A Dec-2026 anchor would place months 1–4 before the
+contract exists and would finish at month 25 = Dec 2028, claiming terminal float that is not real.
+**The anchor cannot be used to move E3 out of the wet season.**
+
+### E.2 B6 must be split by source, not date-constrained as one activity
+
+The briefing register treats the two sources differently: the Gladstone UB is "Available July",
+while the Emerald sheet piling and corners are "Stacked", i.e. unconstrained. B6 currently bundles
+both and feeds both E2 (which needs the Emerald piling) and C4 (which needs the Gladstone UB).
+
+| Treatment | E3 | Completion |
+|---|---|---|
+| As drawn | M8–9, 2/2 wet | M25 |
+| Naive: B6 not earlier than M4 | **M9–10, 2/2 wet — one month deeper** | **M26, all terminal float gone** |
+| **Split: B6a Emerald → E2, B6b Gladstone NET M4 → C4** | M8–9 unchanged | M25 unchanged |
+
+Applying the constraint to the bundled activity makes both problems worse. The split removes the
+conflict at no schedule cost; B6b lands M4–5 with 8 months of float against C4 at M9.
+
+### E.3 E3 can be improved but not made dry
+
+The chain is A6 (M1) → A8 (M2–3) → E1 (M3–5) → E2 (M5–7) → E3 (M8–9). A8 finishing at M3 is the
+floor. The only slack is the E1/E2 relationship, currently `E1 FS−1`.
+
+Changing it to `E1 SS+1` — cofferdam installation starting one month after dredging starts — puts
+**E3 at M7–8 = Oct–Nov 2027, one wet month instead of two**, and improves completion to M24.
+`SS+0` buys nothing further because B5 and B6a already floor E2 at M4. This is a coordination
+decision, not a scheduling trick: it runs the nominated dredging subcontractor alongside
+self-performed sheet piling in adjacent water, which is squarely the Principal Contractor's brief.
+
+### E.4 RCC can be bought dry with its own float
+
+| Package | Completion | Terminal float | Zero-float activities | Min dam float | E3 wet | D7 wet |
+|---|---|---|---|---|---|---|
+| Revision B as drawn | M25 | 1 | 23 of 69 | 2 | 2/2 | 2/6 |
+| B6 split + E2 SS+1 | M24 | 2 | 27 of 70 | 1 | 1/2 | 2/6 |
+| … + D7 delayed 1 | M24 | 2 | **34 of 70** | 0 | 1/2 | 1/6 |
+| … + D7 delayed 2 | M25 | 1 | **14 of 70** | 0 | 1/2 (float 1) | **0/6** |
+
+The intermediate option is the worst: it makes nearly half the program critical for one month of
+weather gain. Delaying D7 by two months puts RCC entirely in Apr–Sep 2028, gives E3 a month of
+float, and leaves the leanest critical network, at the cost of returning to 1 month terminal float
+and making the dam chain critical.
+
+Either way the sheet's line "the dam is NOT critical" needs rewriting, because the dam chain loses
+its float in every package that improves the weather exposure.
 
 ## D. Strengths worth keeping
 

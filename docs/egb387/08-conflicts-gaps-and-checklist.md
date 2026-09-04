@@ -87,6 +87,10 @@ shared unless the coordinator directs otherwise. **Confirm.**
   gives **no names, scopes, durations or interface dates** for them.
 - **No page limit** is stated in the briefing for either part; the limits come from the guides
   (group **12 pages**, individual **2–3 pages**).
+- **A3 is authorised for the program sheet despite the guide's "A4 sized documents".** The unit
+  coordinator stated in the Week 2 tutorial: "page 1 to page 11, page 12 is the gantt chart and A3
+  size." So the 12-page limit is pages 1–11 plus an A3 sheet as page 12. Cite this in the
+  submission so it is not read as a format breach.
 
 ## 8.4 Compliance checklist
 
