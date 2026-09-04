@@ -39,13 +39,14 @@ to suburban development on the eastern side.
 | Top of dam | **RL 102** |
 | Top water level | **RL 100** |
 | Lowest operating water level | **RL 95** |
-| Level at the abutments / ground at each end of the elevation | **RL 105** |
+| Ground level at the left-hand (northern) abutment | **RL 105** |
 | Invert (outlet works shown mid-elevation) | **RL 92** |
 | Level annotated at the base of the outlet structure | **RL 88** |
 | Section marks | **A – A**, taken through the outlet, about mid-length |
 
-The elevation shows the valley cross-profile dipping from **RL 105** at both abutments down through
-the base of the dam, with the dam crest a straight line at **RL 102** across the 250 m.
+The elevation shows the valley cross-profile dipping from **RL 105** at the left-hand abutment down
+through the base of the dam and rising again to the right, with the dam crest a straight line at
+**RL 102** across the 250 m. Only the left-hand abutment level is dimensioned.
 
 ## 5.3 Section A–A — the penstock / pipeline long-section
 
