@@ -4,9 +4,9 @@
 
 The briefing states, verbatim:
 
-> "You are reminded to maintain academic integrity and professional standards in your submission in
-> a manner which is fair, honest, and accountable. **The use of artificial intelligence (GenAI)
-> tools are prohibited for the assessment.**"
+> "You are reminded to maintain academic integrity and professional standards in your submission
+> in a manner which is fair, honest, and accountable.
+> **The use of artificial intelligence (GenAI) tools are prohibited for the assessment.**"
 
 Consequences for how this knowledge base may be used:
 
