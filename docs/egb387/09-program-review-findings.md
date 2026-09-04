@@ -68,7 +68,62 @@ These are review notes on the group's own drawing. They are a defect list, not r
 | F1 | **The "Month no." row is printed one column to the left of the bars.** Verified from the PDF vector geometry: the Apr-2027 column is centred at x ≈ 701.4 and the A1 bar is drawn there correctly, but the digit "2" is centred at x ≈ 701.7 over it, while "1" and the "27" year marker fall at x ≈ 676–683, inside the Float column and off the timeline. Consequently every month number reads one column late, May 2029 has no number, and the year markers land on Dec 2027 and Dec 2028 instead of Jan 2028 and Jan 2029. |
 | F2 | **D7 states ~30,000–34,000 m³ of RCC, which the geometry does not support.** With a 250 m crest, 4 m crest width, 13 m base width and RL 102 to RL 86, the volume is about 14,000 m³ for a V-shaped valley and about 20,000 m³ for a parabolic one; taking the bar's own RL 88 to RL 102 body gives about 12,000–18,000 m³. The "~47 lifts" figure is right (14 m at 300 mm), but it cannot coexist with 30,000 m³. |
 
-## G. What is correct — keep it
+## G. Format compliance and what to cut for the final copy
+
+### G.1 Format breaches
+
+| # | Finding |
+|---|---|
+| G1a | **The sheet is A3 landscape (420 × 297 mm), two pages.** The group guide says "Submitted in A4 sized documents." Measured from the PDF page boxes: 1190.5 × 842 pt on both pages. |
+| G1b | **It costs roughly 4 A4-equivalent pages of a 12-page limit for a 15-mark criterion**, while construction methods (30 marks) and stakeholders (30 marks) compete for the same pages. |
+| G1c | **The group guide already provides the right home for the detail**: the Appendix holds "Sub-programs (support for consolidated submission above)". The body should carry one consolidated A4 program; the 63-activity detail belongs in the Appendix. |
+
+### G.2 Columns that can go (4 of 9)
+
+| Column | Why it can go |
+|---|---|
+| **Month no. row** | This is the row that is misaligned by one column. The month-letter row plus the year bands already carry the same information. |
+| **Fin** | Always equals Start + Dur − 1, and the bar already shows where the activity ends. |
+| **CP** | Identical to Float = 0 on all 21 rows — it carries no information the Float column does not. Keep one of the two, not both. |
+| **Delivery** | 52 of 63 rows read "Self-perform". Mark only the 11 exceptions (2 subcontract, 8 nominated, 1 design office). |
+
+Recovering that width is what removes the need for A3.
+
+### G.3 Content on the sheet that duplicates other report sections
+
+| Item | Where it belongs instead |
+|---|---|
+| Bar-label quantities (~15,000 m³ excavation, ~30–34,000 m³ RCC, ~47 lifts) | Construction methods section (30 marks). One of the three is wrong, so on the program it carries risk for no mark. |
+| The long critical-path narrative paragraph | Methodology section (25 marks). Two lines on the sheet is enough, and the current version names three links that do not exist. |
+| The 8-colour legend | Duplicates the coloured section banner rows already on the sheet. |
+| Wet-season explanation | Stated twice — shading plus footnote sentence. Once is enough. |
+| "1 month terminal float" | Stated in the header and again in the milestone list. |
+| RL callouts repeated in activity names | Section 3's drawings already carry them; keep only the ones that disambiguate (RL 88 → RL 102, RL 67.0). |
+
+### G.4 Rows that can merge or become milestones
+
+- **A1 contract award** — a milestone, not a one-month bar.
+- **A2 + A3** — merge to "Site establishment, survey and set-out" (both are open-ended anyway).
+- **A4 + A5** — procurement and mobilisation are one front-end sequence.
+- **A9 cultural heritage monitoring** — keep as a hammock, but a level-of-effort bar should not carry float.
+- **B5 temporary marine access** — fold into B2, or make it the predecessor of C2/E2 it should be.
+- **C6 bridge services** — fold into C5.
+- **E10 maintenance crane** — fold into E7, or link it to E11 where it belongs.
+- **F3 pipe delivery** — fold into F4.
+- **F5 + F6** — both run months 15–18 in parallel; merge.
+- **F7 + F8 tie-ins** — merge into one tie-ins activity.
+- **G1 + G2** — merge into "Switch yard and transmission connection".
+- **H5 performance testing** — fold into H4 or H7.
+
+**Do not delete D10 (valves and gates)** — it is currently open-ended, but the fix is to link it to
+first fill, not to remove it.
+
+**Do not thin out the cultural heritage activities A6–A8.** Keeping them on the program as numbered
+critical-path activities is the clearest cross-link between the program (15 marks) and the
+stakeholder criterion (30 marks), and cross-linking is the only thing that separates a grade 6 from
+a grade 7 in every criterion of the rubric.
+
+## H. What is correct — keep it
 
 - Every row satisfies `Fin = Start + Dur − 1`; the bar arithmetic is clean on all 63 rows.
 - Month 1 = Apr 2027, practical completion month 25 = Apr 2029, contract completion month 26 =
