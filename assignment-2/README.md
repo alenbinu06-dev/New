@@ -6,6 +6,7 @@ The datasets and working drafts for Assignment 2, which analyses Brisbane bikewa
 - [`drafts/`](drafts/) – the current answer drafts, saved verbatim. Earlier versions are in [`drafts/old/`](drafts/old/).
 - [`checks/verify_drafts.py`](checks/verify_drafts.py) – recomputes 47 figures quoted in the drafts from the CSV files and reports any mismatch.
 - [`assessment-2-template.pdf`](assessment-2-template.pdf) – the official answer template. Answers go directly into it; keep the template wording.
+- [`final/egh404-assessment2-final.pdf`](final/egh404-assessment2-final.pdf) – the near-final submission covering all five sections and the appendix (81 pages). The review is in [Review of the final version](#review-of-the-final-version).
 
 ## The task (from the template)
 
@@ -128,3 +129,40 @@ I ran [`checks/verify_drafts.py`](checks/verify_drafts.py) and reviewed the draf
    - Outliers not removed automatically.
    - Plot code sets titles, axis labels and a legend.
    - The S2 interpretation is under 400 words and covers clusters, explanations and what r implies.
+
+## Review of the final version
+
+This is a review of [`final/egh404-assessment2-final.pdf`](final/egh404-assessment2-final.pdf).
+
+The following were recomputed and match:
+- every S1 value;
+- the four S2.T1 r values;
+- all S3 coefficients, p-values, R², adjusted R², F, the train/test RMSE and the 2018 mean predictions;
+- the S5 correlations;
+- all 12 S4 min/max ranges, checked against the Mendeley file (SHA-256 matches the published file);
+- the 1,736 / 1,649 / 87 record counts;
+- the 116 source publications.
+
+The earlier S1.T2 issues (missing appendix code, "0.0–0.2 mm" wording) are fixed.
+
+Word counts:
+
+| Part | Words | Limit |
+|------|-------|-------|
+| S2.T3 | 392, including the one-line preface | 400 |
+| S3.T2 | 357 | 400 |
+| S4 justification | 236 | 150–250 |
+
+**Needed changes:**
+1. **Add plot titles to Figures 13 and 14** (S5 Boxes 7 and 8). They have no `set_title` or `plt.title`. Every other figure has a title, and the practical said missing labels score zero.
+2. **Label the problem type on every S1.T1 row**, in the same way as S1.T2 ("Bicentennial pedestrians: outlier, 12,288"). Rows such as "spike", "counter fault" and "77 consecutive zeros" don't say whether they are an outlier, missing data or an error.
+3. **S4 justification: "1,736 RAC mixture records" is inaccurate.** 248 of the 1,736 rows (227 of the 1,649 unflagged) have RAR = 0, so they are natural-aggregate control mixes. Use "1,736 concrete mixture records (1,488 containing RCA)" instead. This still fits within 250 words.
+4. **S1.T1 "220 flagged days" paragraph:** 18 of the days fall in the 2 Dec 2014 – 6 Feb 2015 fault and one is 21 Mar 2015. State that these are handled separately rather than grouping them under "older operating level".
+5. **Check the UQ Open Day reference.** It now cites the 2017 Business and Economics undergraduate guide. Confirm that the guide states Open Day was on Sunday 7 August 2016, or cite the Open Day programme instead.
+
+**Optional:**
+- S3.T2 (43 words spare): add that Durbin–Watson is 0.32 and 0.24, so the residuals are autocorrelated and the p-values optimistic.
+- S3.T1 (b): add the removed variable's scatter plot (rainfall for pedestrians, temperature for cyclists) to support its removal.
+- Table numbering: Table 6 is the only labelled table. Either number all the tables or rename it Table 1.
+- S2.T3 cites "Week 8". A module name or reference reads better than the teaching week.
+- S4 variable table: consider adding a mean or median column.
