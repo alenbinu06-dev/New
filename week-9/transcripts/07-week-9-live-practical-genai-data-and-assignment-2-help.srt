@@ -1,0 +1,4453 @@
+1
+00:00:05,040 --> 00:00:08,679
+Hello, y. Welcome
+to week nine.
+
+2
+00:00:08,679 --> 00:00:11,680
+I this week, we're
+going to go through
+
+3
+00:00:11,680 --> 00:00:14,260
+the AGH 44 generative AI
+
+4
+00:00:14,260 --> 00:00:15,619
+for data generation and
+
+5
+00:00:15,619 --> 00:00:17,620
+assignment to
+help session.
+
+6
+00:00:17,620 --> 00:00:20,500
+I think it's not visible
+in your screens.
+
+7
+00:00:20,500 --> 00:00:25,119
+Let me enable that.
+
+8
+00:00:46,610 --> 00:00:51,249
+Perfect. We're
+going to talk about
+
+9
+00:00:51,249 --> 00:00:53,229
+the first is how you are
+
+10
+00:00:53,229 --> 00:00:55,669
+going to generate data,
+
+11
+00:00:55,669 --> 00:00:57,010
+or how you're
+going to locate
+
+12
+00:00:57,010 --> 00:00:59,409
+data and how you're going
+to use generate way
+
+13
+00:00:59,409 --> 00:01:02,030
+that and then go through
+
+14
+00:01:02,030 --> 00:01:04,130
+some comment mistakes and
+
+15
+00:01:04,130 --> 00:01:06,470
+some comment takes for
+your assignment two.
+
+16
+00:01:06,470 --> 00:01:09,589
+And then we would
+have our he session h
+
+17
+00:01:09,589 --> 00:01:11,470
+to come along
+and then answer
+
+18
+00:01:11,470 --> 00:01:13,790
+any questions go through
+your answers and
+
+19
+00:01:13,790 --> 00:01:17,409
+ask any questions if
+you have any ques.
+
+20
+00:01:17,770 --> 00:01:21,130
+Before I go through the
+
+21
+00:01:21,450 --> 00:01:23,970
+the second part
+of the sien.
+
+22
+00:01:23,970 --> 00:01:26,109
+First, we'll look at
+the data generation
+
+23
+00:01:26,109 --> 00:01:28,330
+and locating
+public data ss.
+
+24
+00:01:28,330 --> 00:01:31,185
+The first thing is a
+
+25
+00:01:31,185 --> 00:01:32,740
+When you look at
+
+26
+00:01:32,740 --> 00:01:35,180
+your assignment one,
+two, and three,
+
+27
+00:01:35,180 --> 00:01:37,900
+how they are related is
+with assignment one,
+
+28
+00:01:37,900 --> 00:01:38,980
+you pick your topic
+
+29
+00:01:38,980 --> 00:01:40,140
+and you do your
+literature,
+
+30
+00:01:40,140 --> 00:01:41,860
+you found your
+research questions.
+
+31
+00:01:41,860 --> 00:01:44,760
+Assignment two is
+completely data analysis,
+
+32
+00:01:44,760 --> 00:01:46,000
+and the w how you
+
+33
+00:01:46,000 --> 00:01:48,000
+link it to your
+assignment one,
+
+34
+00:01:48,000 --> 00:01:49,700
+and how you're
+going to link it to
+
+35
+00:01:49,700 --> 00:01:52,160
+your assignment three
+is by doing this part,
+
+36
+00:01:52,160 --> 00:01:53,739
+which is the last
+two sections
+
+37
+00:01:53,739 --> 00:01:55,560
+of your assignment two.
+
+38
+00:01:55,560 --> 00:01:59,319
+There we ask you to
+find a public data set
+
+39
+00:01:59,319 --> 00:02:00,700
+that closely or remotely
+
+40
+00:02:00,700 --> 00:02:03,200
+relates to your
+research topic.
+
+41
+00:02:03,200 --> 00:02:08,039
+And then we use it
+to do the analysis.
+
+42
+00:02:08,039 --> 00:02:09,979
+In most of the cases,
+
+43
+00:02:09,979 --> 00:02:11,759
+we would highly
+encourage you to find
+
+44
+00:02:11,759 --> 00:02:13,759
+an actual data
+set because you
+
+45
+00:02:13,759 --> 00:02:15,799
+would see the real
+world correlations
+
+46
+00:02:15,799 --> 00:02:18,220
+and the analysis would
+make more sense.
+
+47
+00:02:18,220 --> 00:02:20,480
+In a worst case
+as a last resort,
+
+48
+00:02:20,480 --> 00:02:21,199
+if you don't find
+
+49
+00:02:21,199 --> 00:02:22,779
+a publicly
+available data set,
+
+50
+00:02:22,779 --> 00:02:24,119
+then you can use
+
+51
+00:02:24,119 --> 00:02:25,579
+the generative AI models
+
+52
+00:02:25,579 --> 00:02:26,959
+to generate a data set.
+
+53
+00:02:26,959 --> 00:02:28,539
+One of the reasons
+why we ask
+
+54
+00:02:28,539 --> 00:02:29,719
+you to try to find the
+
+55
+00:02:29,719 --> 00:02:32,759
+real data set is because
+when you generate,
+
+56
+00:02:32,759 --> 00:02:35,579
+as we show in our
+next demonstration,
+
+57
+00:02:35,579 --> 00:02:37,300
+you would be giving
+
+58
+00:02:37,300 --> 00:02:39,480
+constraint for each
+column or each variable,
+
+59
+00:02:39,480 --> 00:02:43,239
+saying, if it is H,
+take variable from,
+
+60
+00:02:43,239 --> 00:02:46,479
+ten to hundred
+and then say give
+
+61
+00:02:46,479 --> 00:02:48,719
+a nice normal distribution
+for the data and
+
+62
+00:02:48,719 --> 00:02:49,819
+all of these
+constraints you
+
+63
+00:02:49,819 --> 00:02:51,320
+apply for each column.
+
+64
+00:02:51,320 --> 00:02:53,400
+But the relationship
+between columns,
+
+65
+00:02:53,400 --> 00:02:54,920
+which is what
+you get along
+
+66
+00:02:54,920 --> 00:02:57,199
+when you do correlation
+analysis and all,
+
+67
+00:02:57,199 --> 00:02:59,579
+they would make
+much less sense in
+
+68
+00:02:59,579 --> 00:03:00,880
+generated data because you
+
+69
+00:03:00,880 --> 00:03:02,860
+cannot define certain
+correlations.
+
+70
+00:03:02,860 --> 00:03:04,340
+In most of the cases,
+
+71
+00:03:04,340 --> 00:03:06,279
+whatever you see
+in the field or in
+
+72
+00:03:06,279 --> 00:03:08,519
+the domain, would
+reflect here.
+
+73
+00:03:08,519 --> 00:03:11,760
+For example, if there
+is a scientifically
+
+74
+00:03:11,760 --> 00:03:13,279
+if those two
+variables should be
+
+75
+00:03:13,279 --> 00:03:15,400
+directly proportional
+to one another,
+
+76
+00:03:15,400 --> 00:03:17,899
+you might not see
+that relationship in
+
+77
+00:03:17,899 --> 00:03:22,839
+the data gener
+generation. Then in some
+
+78
+00:03:22,950 --> 00:03:25,369
+trends or analysis that
+
+79
+00:03:25,369 --> 00:03:26,610
+has been done in
+the literature.
+
+80
+00:03:26,610 --> 00:03:28,710
+Also, you might not
+see, for an example,
+
+81
+00:03:28,710 --> 00:03:32,770
+certain attitude for
+concrete mixture should
+
+82
+00:03:32,770 --> 00:03:34,990
+increase its durability
+and that has been
+
+83
+00:03:34,990 --> 00:03:37,389
+consistent over
+the literature,
+
+84
+00:03:37,389 --> 00:03:38,790
+then whatever the data
+
+85
+00:03:38,790 --> 00:03:40,769
+two roles that you
+have for those two
+
+86
+00:03:40,769 --> 00:03:42,749
+should have a nice
+correlation based on
+
+87
+00:03:42,749 --> 00:03:45,090
+the literature and
+the domain knowledge.
+
+88
+00:03:45,090 --> 00:03:46,029
+But those things you
+
+89
+00:03:46,029 --> 00:03:47,070
+wouldn't see in that case,
+
+90
+00:03:47,070 --> 00:03:49,229
+you can include
+those discussion in
+
+91
+00:03:49,229 --> 00:03:50,909
+the interpretation part
+of the assignment,
+
+92
+00:03:50,909 --> 00:03:52,580
+but more or less
+
+93
+00:03:52,580 --> 00:03:55,410
+try to find a dataset
+
+94
+00:03:55,410 --> 00:03:57,830
+that is closely or
+remotely related.
+
+95
+00:03:57,830 --> 00:04:00,389
+In some cases, you
+might have datasets
+
+96
+00:04:00,389 --> 00:04:03,249
+like majes or some have
+
+97
+00:04:03,249 --> 00:04:05,869
+trajectory data
+sets where you have
+
+98
+00:04:05,869 --> 00:04:09,949
+certain variables not
+in the tabular format.
+
+99
+00:04:09,949 --> 00:04:12,389
+In that case, you can
+find a dataset that's
+
+100
+00:04:12,389 --> 00:04:14,990
+closely related to tab
+a classic example.
+
+101
+00:04:14,990 --> 00:04:16,935
+I could think is if
+you are using any
+
+102
+00:04:16,935 --> 00:04:18,560
+image segmentation or
+
+103
+00:04:18,560 --> 00:04:20,220
+detection of anomalies in
+
+104
+00:04:20,220 --> 00:04:22,599
+heart tray Iota tray
+
+105
+00:04:22,599 --> 00:04:24,080
+images or something
+like that.
+
+106
+00:04:24,080 --> 00:04:26,660
+In that case, you cannot
+use the images here,
+
+107
+00:04:26,660 --> 00:04:27,800
+but if you can find
+
+108
+00:04:27,800 --> 00:04:30,600
+some public data publicly
+available dialysis
+
+109
+00:04:30,600 --> 00:04:32,120
+that has some sensor
+
+110
+00:04:32,120 --> 00:04:34,099
+measurements
+related to heart.
+
+111
+00:04:34,099 --> 00:04:36,739
+Your heart rate, ECG,
+
+112
+00:04:36,739 --> 00:04:39,399
+all of those valids
+as tabular data.
+
+113
+00:04:39,399 --> 00:04:42,899
+You do the analysis
+on that in that case.
+
+114
+00:04:42,899 --> 00:04:44,800
+How is going to get
+
+115
+00:04:44,800 --> 00:04:46,480
+related to your
+assignment three?
+
+116
+00:04:46,480 --> 00:04:50,580
+I'll quickly go through
+the assignment three
+
+117
+00:04:50,580 --> 00:04:52,940
+details page and show you
+
+118
+00:04:52,940 --> 00:04:54,760
+where those two
+things would
+
+119
+00:04:54,760 --> 00:04:57,279
+coincide in the future.
+
+120
+00:04:57,279 --> 00:04:59,940
+If I quickly go to
+assignments and
+
+121
+00:04:59,940 --> 00:05:06,079
+then assignment three
+presentation slide.
+
+122
+00:05:06,079 --> 00:05:09,299
+If I go to the details,
+
+123
+00:05:09,450 --> 00:05:10,890
+You can see
+
+124
+00:05:10,890 --> 00:05:12,169
+the structure of
+the presentation,
+
+125
+00:05:12,169 --> 00:05:13,790
+you would have
+introduction, ate
+
+126
+00:05:13,790 --> 00:05:15,150
+re motivation.
+
+127
+00:05:15,150 --> 00:05:17,330
+The is all similar to
+what you did one day,
+
+128
+00:05:17,330 --> 00:05:19,209
+but in a bit of a
+more briefer manner.
+
+129
+00:05:19,209 --> 00:05:21,329
+And then you have
+the other sections.
+
+130
+00:05:21,329 --> 00:05:22,330
+You would go through them
+
+131
+00:05:22,330 --> 00:05:23,449
+in the following weeks.
+
+132
+00:05:23,449 --> 00:05:27,570
+But where the data set
+mato is number six.
+
+133
+00:05:27,570 --> 00:05:29,050
+Evaluation methods and
+
+134
+00:05:29,050 --> 00:05:31,069
+reflection using
+preliminary data,
+
+135
+00:05:31,069 --> 00:05:32,769
+outline your
+plan real world
+
+136
+00:05:32,769 --> 00:05:34,669
+experiment approach
+and evaluation methods
+
+137
+00:05:34,669 --> 00:05:37,530
+including how you would
+actually evaluate it.
+
+138
+00:05:37,530 --> 00:05:41,249
+Focus on demonstrating
+the experiment flow
+
+139
+00:05:41,249 --> 00:05:42,330
+in real world application
+
+140
+00:05:42,330 --> 00:05:43,430
+of your research plan.
+
+141
+00:05:43,430 --> 00:05:45,690
+Present initial
+evaluations based
+
+142
+00:05:45,690 --> 00:05:48,010
+on the preliminary data
+from assessment two.
+
+143
+00:05:48,010 --> 00:05:50,689
+In the public or
+internet directly,
+
+144
+00:05:50,689 --> 00:05:53,270
+discuss limitations,
+challenges, and
+
+145
+00:05:53,270 --> 00:05:54,610
+existing in
+
+146
+00:05:54,610 --> 00:05:56,930
+the current primary
+data analysis.
+
+147
+00:05:56,930 --> 00:06:00,110
+What we expect here
+is because you
+
+148
+00:06:00,110 --> 00:06:01,809
+might you are not
+
+149
+00:06:01,809 --> 00:06:03,669
+doing your actual
+research in this course.
+
+150
+00:06:03,669 --> 00:06:04,790
+So that's why you have
+
+151
+00:06:04,790 --> 00:06:06,310
+a research project pitch.
+
+152
+00:06:06,310 --> 00:06:08,175
+Imagine that you have a
+
+153
+00:06:08,175 --> 00:06:10,819
+audience of
+academic experts,
+
+154
+00:06:10,819 --> 00:06:12,540
+industry experts,
+other resource people?
+
+155
+00:06:12,540 --> 00:06:14,280
+You are short of
+showing showcasing
+
+156
+00:06:14,280 --> 00:06:15,860
+that this particular
+research gap
+
+157
+00:06:15,860 --> 00:06:17,899
+as and these
+particular questions
+
+158
+00:06:17,899 --> 00:06:19,619
+are the ones you're
+going to answer.
+
+159
+00:06:19,619 --> 00:06:21,760
+As some supporting
+evidence as
+
+160
+00:06:21,760 --> 00:06:23,660
+some supporting
+initial analysis,
+
+161
+00:06:23,660 --> 00:06:24,880
+you show that analysis
+
+162
+00:06:24,880 --> 00:06:26,020
+there in that
+presentation.
+
+163
+00:06:26,020 --> 00:06:29,139
+That's how the
+data generation
+
+164
+00:06:29,139 --> 00:06:30,880
+links with the
+next assignment
+
+165
+00:06:30,880 --> 00:06:32,379
+that's going
+to come ahead.
+
+166
+00:06:32,379 --> 00:06:33,680
+It's important that you
+
+167
+00:06:33,680 --> 00:06:35,339
+have this in your head.
+
+168
+00:06:35,339 --> 00:06:37,039
+If you're generating data,
+
+169
+00:06:37,039 --> 00:06:38,380
+you know what is
+
+170
+00:06:38,380 --> 00:06:40,900
+expected and how they
+link to each other.
+
+171
+00:06:40,900 --> 00:06:45,379
+Any questions on these
+parts, A play parts?
+
+172
+00:06:45,950 --> 00:06:49,929
+All good so far. All good.
+
+173
+00:06:49,929 --> 00:06:53,469
+Perfect. Now
+we'll go through
+
+174
+00:06:53,469 --> 00:06:58,710
+the locating publicly
+available data thing.
+
+175
+00:07:05,230 --> 00:07:08,270
+So in the slides,
+
+176
+00:07:10,340 --> 00:07:13,939
+The first thing we're
+going to do is try
+
+177
+00:07:13,939 --> 00:07:15,219
+to use General AI
+
+178
+00:07:15,219 --> 00:07:17,039
+for locating
+public datasets.
+
+179
+00:07:17,039 --> 00:07:18,100
+One of the reasons why
+
+180
+00:07:18,100 --> 00:07:19,479
+we do this is in Google.
+
+181
+00:07:19,479 --> 00:07:20,880
+If you just google,
+
+182
+00:07:20,880 --> 00:07:22,820
+you can give a bit of
+
+183
+00:07:22,820 --> 00:07:25,180
+a more detailed prompt
+in your Google.
+
+184
+00:07:25,180 --> 00:07:27,799
+You can use the
+General AI model here.
+
+185
+00:07:27,799 --> 00:07:29,740
+Specify what is
+your topic and
+
+186
+00:07:29,740 --> 00:07:32,040
+then give it certain
+restrictions so that
+
+187
+00:07:32,040 --> 00:07:33,200
+it could link you
+
+188
+00:07:33,200 --> 00:07:35,480
+to give you the links
+
+189
+00:07:35,480 --> 00:07:37,540
+to some of the datasets
+that would be useful.
+
+190
+00:07:37,540 --> 00:07:41,199
+We'll try out this prompt.
+
+191
+00:07:41,199 --> 00:07:48,020
+Let me open my co pilot
+and then type it out.
+
+192
+00:08:17,580 --> 00:08:20,480
+I'll sit a new
+tack here and then
+
+193
+00:08:20,480 --> 00:08:23,200
+I'll face the
+prompt that I had.
+
+194
+00:08:23,200 --> 00:08:25,700
+I'll explain the
+basically we say I
+
+195
+00:08:25,700 --> 00:08:27,940
+need help locate it
+publicly available data
+
+196
+00:08:27,940 --> 00:08:30,480
+on the topic of and I put
+
+197
+00:08:30,480 --> 00:08:31,799
+the topic evaluating
+
+198
+00:08:31,799 --> 00:08:33,000
+the structural performance
+
+199
+00:08:33,000 --> 00:08:34,260
+of recycle concrete.
+
+200
+00:08:34,260 --> 00:08:35,259
+You can replace this
+
+201
+00:08:35,259 --> 00:08:36,280
+with whatever
+the topic that
+
+202
+00:08:36,280 --> 00:08:37,499
+you're planning
+to investigate
+
+203
+00:08:37,499 --> 00:08:39,159
+and then you can say,
+
+204
+00:08:39,159 --> 00:08:41,420
+provide me with some data
+
+205
+00:08:41,420 --> 00:08:43,420
+re description
+and the URS.
+
+206
+00:08:43,420 --> 00:08:47,519
+The data so be strictly
+tabular not so
+
+207
+00:08:47,519 --> 00:08:50,440
+These parts in the prompt
+
+208
+00:08:50,440 --> 00:08:52,399
+is helpful because
+it's going to do
+
+209
+00:08:52,399 --> 00:08:53,399
+the validation when it
+
+210
+00:08:53,399 --> 00:08:54,560
+runs and then
+it's going to
+
+211
+00:08:54,560 --> 00:08:57,940
+give you eliminate those
+cination, and stuff.
+
+212
+00:08:57,940 --> 00:08:59,620
+This is some prompting
+
+213
+00:08:59,620 --> 00:09:01,600
+techniques that we use.
+
+214
+00:09:01,600 --> 00:09:03,860
+From this, and then
+
+215
+00:09:03,860 --> 00:09:06,860
+hopefully you'll get
+some good results.
+
+216
+00:09:07,020 --> 00:09:09,099
+It's pointing towards few
+
+217
+00:09:09,099 --> 00:09:11,059
+doss natural
+fibre recycle,
+
+218
+00:09:11,059 --> 00:09:15,140
+aggregate concrete
+dias from man data.
+
+219
+00:09:15,140 --> 00:09:18,339
+Is another source
+from many data.
+
+220
+00:09:18,810 --> 00:09:22,090
+Another one from
+another domain,
+
+221
+00:09:22,090 --> 00:09:24,809
+so you find a
+set of gases.
+
+222
+00:09:24,809 --> 00:09:28,729
+If I use the first
+one, for an example,
+
+223
+00:09:34,600 --> 00:09:39,759
+You can see here the
+data set is here.
+
+224
+00:09:39,759 --> 00:09:41,379
+And then now if you click
+
+225
+00:09:41,379 --> 00:09:44,079
+on the data set file,
+
+226
+00:09:46,720 --> 00:09:51,519
+you can see that, you
+
+227
+00:09:51,519 --> 00:09:56,460
+can se da sets like this
+for your own topic,
+
+228
+00:09:56,460 --> 00:09:58,820
+pick one and then
+
+229
+00:09:58,820 --> 00:10:01,539
+start your investigation
+based on that.
+
+230
+00:10:01,539 --> 00:10:06,920
+So that's about
+how you located RS
+
+231
+00:10:07,940 --> 00:10:10,839
+The second part is
+
+232
+00:10:10,839 --> 00:10:13,259
+in case of where
+you don't have
+
+233
+00:10:13,259 --> 00:10:15,860
+a publicly available
+data set that's
+
+234
+00:10:15,860 --> 00:10:17,340
+close or remotely related
+
+235
+00:10:17,340 --> 00:10:18,840
+to your research topic,
+
+236
+00:10:18,840 --> 00:10:21,360
+you will have to
+generate a data sets.
+
+237
+00:10:21,360 --> 00:10:23,699
+We call it generating
+a synthetic data
+
+238
+00:10:23,699 --> 00:10:26,399
+and we use microsoft
+Cole this.
+
+239
+00:10:26,399 --> 00:10:27,739
+Then we have a sample from
+
+240
+00:10:27,739 --> 00:10:29,680
+tire in the canvas,
+
+241
+00:10:29,680 --> 00:10:33,199
+you should be able to see
+
+242
+00:10:33,199 --> 00:10:38,539
+this one in modules. We
+
+243
+00:10:40,630 --> 00:10:46,190
+nine practical and you'll
+
+244
+00:10:46,190 --> 00:10:49,550
+find the slides here
+and this pro here.
+
+245
+00:10:50,230 --> 00:10:53,269
+I'll just quickly go
+through the front.
+
+246
+00:10:53,269 --> 00:10:55,629
+You just give a
+role to the model,
+
+247
+00:10:55,629 --> 00:10:57,610
+you say you are a
+data generator.
+
+248
+00:10:57,610 --> 00:11:00,650
+This is one technique
+that's used in prop.
+
+249
+00:11:00,650 --> 00:11:02,709
+If you give a
+role, sometimes
+
+250
+00:11:02,709 --> 00:11:04,250
+you good results.
+
+251
+00:11:04,250 --> 00:11:06,549
+And then create a
+synthetic do set
+
+252
+00:11:06,549 --> 00:11:08,989
+in CSP on no p,
+
+253
+00:11:08,989 --> 00:11:11,509
+no marked down
+tables, no fences.
+
+254
+00:11:11,509 --> 00:11:13,129
+The reason why we
+say this is because
+
+255
+00:11:13,129 --> 00:11:15,455
+sometimes when you
+say generate data,
+
+256
+00:11:15,455 --> 00:11:17,120
+the model might
+not generate
+
+257
+00:11:17,120 --> 00:11:18,899
+as a code for you to
+
+258
+00:11:18,899 --> 00:11:20,439
+ran in by the nom mat
+
+259
+00:11:20,439 --> 00:11:22,599
+generate the dax We
+don't want that.
+
+260
+00:11:22,599 --> 00:11:24,019
+That's why we just give us
+
+261
+00:11:24,019 --> 00:11:26,260
+the straight of s here.
+
+262
+00:11:26,260 --> 00:11:28,199
+Then we specify the
+
+263
+00:11:28,199 --> 00:11:30,539
+different
+characteristics we want
+
+264
+00:11:30,539 --> 00:11:31,400
+in the dark set.
+
+265
+00:11:31,400 --> 00:11:34,359
+We set row count.
+
+266
+00:11:34,359 --> 00:11:38,660
+We usually have
+around 200 rows.
+
+267
+00:11:38,660 --> 00:11:40,359
+We set it up here around
+
+268
+00:11:40,359 --> 00:11:41,580
+200 because in order to
+
+269
+00:11:41,580 --> 00:11:42,959
+see some meaningful and in
+
+270
+00:11:42,959 --> 00:11:44,880
+order to do some
+meaningful analysic at,
+
+271
+00:11:44,880 --> 00:11:46,820
+you need about
+100 to 200 rows.
+
+272
+00:11:46,820 --> 00:11:49,179
+You can set it
+to 200 here.
+
+273
+00:11:49,179 --> 00:11:51,140
+And then you specify
+
+274
+00:11:51,140 --> 00:11:53,200
+the schema and the
+relationships.
+
+275
+00:11:53,200 --> 00:11:56,000
+If you've done
+any computer
+
+276
+00:11:56,000 --> 00:11:57,900
+database management
+or anything,
+
+277
+00:11:57,900 --> 00:12:00,059
+these steps might be
+very familiar to you.
+
+278
+00:12:00,059 --> 00:12:01,719
+Basically what we do by
+
+279
+00:12:01,719 --> 00:12:03,880
+schema and relationship
+is you define
+
+280
+00:12:03,880 --> 00:12:05,739
+each of the variables
+or the column that you
+
+281
+00:12:05,739 --> 00:12:07,860
+wont set and you set
+
+282
+00:12:07,860 --> 00:12:09,639
+up the relationship
+in between them
+
+283
+00:12:09,639 --> 00:12:12,170
+and you say the constraint
+in them as well.
+
+284
+00:12:12,170 --> 00:12:14,619
+So this particular
+data set is for
+
+285
+00:12:14,619 --> 00:12:18,339
+some redable energy
+generation data
+
+286
+00:12:18,339 --> 00:12:21,240
+for different plants in
+different countries.
+
+287
+00:12:21,240 --> 00:12:23,000
+You have a plant ID plant
+
+288
+00:12:23,000 --> 00:12:25,499
+named country, region,
+energy source,
+
+289
+00:12:25,499 --> 00:12:27,960
+capacity Ma
+commission date,
+
+290
+00:12:27,960 --> 00:12:31,939
+operate ID, and all
+these other parameters.
+
+291
+00:12:31,939 --> 00:12:34,060
+Then you set up
+your relationships,
+
+292
+00:12:34,060 --> 00:12:35,860
+you say plant
+ID should be ix
+
+293
+00:12:35,860 --> 00:12:36,759
+because this is
+
+294
+00:12:36,759 --> 00:12:38,725
+randomly generating
+the values.
+
+295
+00:12:38,725 --> 00:12:42,210
+You have to clearly
+define them.
+
+296
+00:12:42,210 --> 00:12:43,989
+And then operator ID and
+
+297
+00:12:43,989 --> 00:12:45,710
+unique operator name
+
+298
+00:12:45,710 --> 00:12:47,069
+should have a
+one to mapping,
+
+299
+00:12:47,069 --> 00:12:48,969
+meaning that
+the person with
+
+300
+00:12:48,969 --> 00:12:51,170
+one ID should be
+assigned one name.
+
+301
+00:12:51,170 --> 00:12:52,510
+So it's a one
+to one mapping.
+
+302
+00:12:52,510 --> 00:12:54,009
+So we specify that.
+
+303
+00:12:54,009 --> 00:12:58,604
+And then we say
+plant ID should be,
+
+304
+00:12:58,604 --> 00:13:02,654
+should have these
+plant idea should be
+
+305
+00:13:02,654 --> 00:13:04,975
+linked to these
+and energy sources
+
+306
+00:13:04,975 --> 00:13:06,660
+is a defined set.
+
+307
+00:13:06,660 --> 00:13:08,160
+I should only contain
+
+308
+00:13:08,160 --> 00:13:10,580
+values in this given set.
+
+309
+00:13:10,580 --> 00:13:13,379
+For capacity on
+energy sources,
+
+310
+00:13:13,379 --> 00:13:15,855
+we give for solar
+what is the range,
+
+311
+00:13:15,855 --> 00:13:17,260
+for wind, what
+is the range,
+
+312
+00:13:17,260 --> 00:13:18,720
+for hydro what
+is the range.
+
+313
+00:13:18,720 --> 00:13:20,615
+Here, these values should
+
+314
+00:13:20,615 --> 00:13:22,759
+be based on the literature
+for your topic,
+
+315
+00:13:22,759 --> 00:13:24,494
+Because you would
+know what are
+
+316
+00:13:24,494 --> 00:13:26,975
+the more sensible ranges
+
+317
+00:13:26,975 --> 00:13:28,200
+for each of
+those variables
+
+318
+00:13:28,200 --> 00:13:29,100
+based on the literature,
+
+319
+00:13:29,100 --> 00:13:31,459
+so you can set it up
+here based on that.
+
+320
+00:13:31,459 --> 00:13:34,079
+Then we do the same
+
+321
+00:13:34,079 --> 00:13:36,820
+for other
+variables as well,
+
+322
+00:13:36,820 --> 00:13:40,880
+generation, C two
+savings commission date,
+
+323
+00:13:40,880 --> 00:13:45,020
+we say it's in
+date I Fat Ctr
+
+324
+00:13:45,020 --> 00:13:47,240
+say we define
+the state again
+
+325
+00:13:47,240 --> 00:13:50,540
+and region consistent
+with the country.
+
+326
+00:13:50,540 --> 00:13:53,839
+We make sure
+that one region,
+
+327
+00:13:53,839 --> 00:13:56,300
+you apply one column
+does not get allocated
+
+328
+00:13:56,300 --> 00:13:58,099
+to another
+different country.
+
+329
+00:13:58,099 --> 00:13:59,500
+They should
+have a mapping.
+
+330
+00:13:59,500 --> 00:14:02,239
+That's what we try to do.
+
+331
+00:14:02,239 --> 00:14:03,999
+But in certain cases,
+
+332
+00:14:03,999 --> 00:14:05,299
+when you're
+generating data,
+
+333
+00:14:05,299 --> 00:14:07,759
+you have to again sometimes
+manually check or
+
+334
+00:14:07,759 --> 00:14:09,119
+give constraint based on
+
+335
+00:14:09,119 --> 00:14:11,319
+the data we
+generate because
+
+336
+00:14:11,319 --> 00:14:14,519
+The classical example
+is if you generated
+
+337
+00:14:14,519 --> 00:14:18,939
+dataset with someone
+age, let's say,
+
+338
+00:14:18,939 --> 00:14:21,019
+you give the
+constraint and say
+
+339
+00:14:21,019 --> 00:14:24,239
+10-20 to 100 or 120,
+
+340
+00:14:24,239 --> 00:14:25,760
+and then there is
+another column
+
+341
+00:14:25,760 --> 00:14:26,800
+that says years
+
+342
+00:14:26,800 --> 00:14:31,609
+of experience that
+again says 101-30
+
+343
+00:14:31,609 --> 00:14:33,149
+or 40 and then you
+
+344
+00:14:33,149 --> 00:14:35,370
+generate the two
+rows and then there
+
+345
+00:14:35,370 --> 00:14:37,269
+might be someone who
+is 20-years-old with
+
+346
+00:14:37,269 --> 00:14:38,469
+a 30 year
+experience because
+
+347
+00:14:38,469 --> 00:14:39,809
+if you don't have
+that problem.
+
+348
+00:14:39,809 --> 00:14:42,110
+That's why we
+say it's been
+
+349
+00:14:42,110 --> 00:14:43,489
+generating since
+you are not
+
+350
+00:14:43,489 --> 00:14:43,969
+defining
+
+351
+00:14:43,969 --> 00:14:46,249
+the relationship
+between the columns.
+
+352
+00:14:46,249 --> 00:14:48,529
+Explicitly for each cases,
+
+353
+00:14:48,529 --> 00:14:51,809
+you have to make
+sure you define
+
+354
+00:14:51,809 --> 00:14:53,869
+certain relationships
+like this in order to
+
+355
+00:14:53,869 --> 00:14:56,614
+get rid of those
+inconsistencies in the dt.
+
+356
+00:14:56,614 --> 00:14:58,659
+So you define
+those and then you
+
+357
+00:14:58,659 --> 00:15:01,399
+have the realist
+inconsistency part.
+
+358
+00:15:01,399 --> 00:15:05,060
+Here, you say no
+duplicate rows.
+
+359
+00:15:05,060 --> 00:15:07,580
+Name make them realistic.
+
+360
+00:15:07,580 --> 00:15:09,179
+Operator IDs,
+you give them
+
+361
+00:15:09,179 --> 00:15:11,459
+a sort of a
+format, plant ID,
+
+362
+00:15:11,459 --> 00:15:13,620
+you give a format,
+and operator name,
+
+363
+00:15:13,620 --> 00:15:15,340
+you give some
+examples and ask
+
+364
+00:15:15,340 --> 00:15:17,749
+you to make it a bit
+more realistic, right?
+
+365
+00:15:17,749 --> 00:15:19,880
+And you define
+how good format
+
+366
+00:15:19,880 --> 00:15:21,759
+say you need a CSV only
+
+367
+00:15:21,759 --> 00:15:26,360
+with single row and
+200 around 200 rows.
+
+368
+00:15:26,360 --> 00:15:28,960
+CSV means command
+separated values,
+
+369
+00:15:28,960 --> 00:15:31,439
+you ask for command
+separation,
+
+370
+00:15:31,439 --> 00:15:34,039
+no explanation,
+no extra text,
+
+371
+00:15:34,039 --> 00:15:35,960
+and you give
+some validation.
+
+372
+00:15:35,960 --> 00:15:37,439
+These validation rules are
+
+373
+00:15:37,439 --> 00:15:39,059
+given an end
+because it will
+
+374
+00:15:39,059 --> 00:15:40,299
+generate the answers and
+
+375
+00:15:40,299 --> 00:15:41,180
+sometimes it runs
+
+376
+00:15:41,180 --> 00:15:42,479
+the validation
+rule by itself.
+
+377
+00:15:42,479 --> 00:15:44,859
+If you have this sometimes
+
+378
+00:15:44,859 --> 00:15:46,359
+it depends on the models,
+
+379
+00:15:46,359 --> 00:15:49,179
+but mostly most of the
+models do tack it.
+
+380
+00:15:49,179 --> 00:15:52,639
+Then finally say
+return the CS row.
+
+381
+00:15:52,639 --> 00:15:56,180
+Simply copy prompt
+
+382
+00:15:59,610 --> 00:16:08,010
+and then start a new
+chat and pass it here.
+
+383
+00:16:16,410 --> 00:16:19,370
+It's starting to run.
+
+384
+00:16:25,650 --> 00:16:27,510
+Sometimes based
+
+385
+00:16:27,510 --> 00:16:29,249
+on the model and
+the chat you use.
+
+386
+00:16:29,249 --> 00:16:32,210
+It will make some
+short mistakes.
+
+387
+00:16:32,210 --> 00:16:34,349
+You have to correct
+them in the chat again.
+
+388
+00:16:34,349 --> 00:16:37,310
+Here it is
+generating the data
+
+389
+00:16:37,310 --> 00:16:40,490
+set as we wanted,
+has these rows.
+
+390
+00:16:40,490 --> 00:16:43,429
+These column headings,
+plant ID, plant name,
+
+391
+00:16:43,429 --> 00:16:44,789
+country region,
+and then from
+
+392
+00:16:44,789 --> 00:16:47,029
+here on the data stuff.
+
+393
+00:16:47,029 --> 00:16:50,369
+It says f001, Victoria,
+
+394
+00:16:50,369 --> 00:16:54,330
+solar plant, and all
+these vs. It ends
+
+395
+00:16:56,970 --> 00:16:59,950
+and then when
+another PL starts,
+
+396
+00:16:59,950 --> 00:17:03,510
+for example, here,
+the new line starts.
+
+397
+00:17:03,510 --> 00:17:05,370
+I'll stop this
+because it's
+
+398
+00:17:05,370 --> 00:17:06,989
+creating, generating.
+
+399
+00:17:06,989 --> 00:17:10,049
+More. Now, one
+other issues
+
+400
+00:17:10,049 --> 00:17:11,529
+that I can plainly see
+
+401
+00:17:11,529 --> 00:17:12,949
+when I was
+trying to locate
+
+402
+00:17:12,949 --> 00:17:16,670
+the other sets is in
+this generated CSV.
+
+403
+00:17:16,670 --> 00:17:19,970
+You can see after
+one plant row ends,
+
+404
+00:17:19,970 --> 00:17:22,489
+the other plant
+starts like this.
+
+405
+00:17:22,610 --> 00:17:25,350
+If you read it as using
+
+406
+00:17:25,350 --> 00:17:27,250
+an Excel or text file,
+
+407
+00:17:27,250 --> 00:17:28,769
+if you copy down, it
+
+408
+00:17:28,769 --> 00:17:30,729
+might not have the
+row separated,
+
+409
+00:17:30,729 --> 00:17:32,530
+so it will go in one row.
+
+410
+00:17:32,530 --> 00:17:35,050
+You may have to do a bit
+
+411
+00:17:35,050 --> 00:17:36,549
+of prompting if you see
+
+412
+00:17:36,549 --> 00:17:38,970
+something litres
+and say correctly.
+
+413
+00:17:38,970 --> 00:17:41,615
+Lines separate
+
+414
+00:17:41,615 --> 00:17:44,700
+ration is missing.
+
+415
+00:17:44,700 --> 00:17:51,499
+Please add it
+and regenerate.
+
+416
+00:18:00,490 --> 00:18:03,750
+So models may even output
+
+417
+00:18:03,750 --> 00:18:07,130
+an Excel file
+for your case.
+
+418
+00:18:11,810 --> 00:18:15,050
+I generated the CSV.
+
+419
+00:18:15,050 --> 00:18:17,169
+I think it's opening.
+
+420
+00:18:24,650 --> 00:18:26,569
+The generated one
+
+421
+00:18:26,569 --> 00:18:28,150
+is directly doloed here.
+
+422
+00:18:28,150 --> 00:18:31,369
+You can see synthetic
+plant energy.
+
+423
+00:18:31,820 --> 00:18:34,099
+That's opening from Mu,
+
+424
+00:18:34,099 --> 00:18:39,419
+you can change to open it.
+
+425
+00:18:41,820 --> 00:18:46,100
+You get the data set here.
+
+426
+00:18:46,100 --> 00:18:47,539
+Inspect the data that make
+
+427
+00:18:47,539 --> 00:18:49,640
+sure everything
+makes sense.
+
+428
+00:18:49,640 --> 00:18:51,780
+The date is not
+visible here.
+
+429
+00:18:51,780 --> 00:18:53,459
+You might have to
+change it and then
+
+430
+00:18:53,459 --> 00:18:57,620
+here I haven't pated
+the access able here,
+
+431
+00:18:57,620 --> 00:19:00,440
+but you can
+change the date.
+
+432
+00:19:00,440 --> 00:19:02,379
+When you put the
+right format for it,
+
+433
+00:19:02,379 --> 00:19:05,459
+you will see the date
+in the correct format.
+
+434
+00:19:05,459 --> 00:19:09,299
+That is an example of
+how you generate data.
+
+435
+00:19:09,299 --> 00:19:12,079
+Any questions
+in this part?
+
+436
+00:19:12,079 --> 00:19:15,539
+A clear. Okay. Thank you.
+
+437
+00:19:15,539 --> 00:19:17,919
+Now we'll move to
+the next part,
+
+438
+00:19:17,919 --> 00:19:21,319
+which is the assignment
+to Health session.
+
+439
+00:19:21,319 --> 00:19:24,159
+We have a few slides
+that we talk about,
+
+440
+00:19:24,159 --> 00:19:25,939
+some of the common
+questions we had from
+
+441
+00:19:25,939 --> 00:19:26,799
+the last years and some
+
+442
+00:19:26,799 --> 00:19:27,740
+of the common mistakes
+
+443
+00:19:27,740 --> 00:19:29,039
+that students
+tend to make.
+
+444
+00:19:29,039 --> 00:19:30,499
+There just plag payment,
+
+445
+00:19:30,499 --> 00:19:34,019
+some things to be
+
+446
+00:19:34,019 --> 00:19:35,840
+looked into before
+
+447
+00:19:35,840 --> 00:19:37,220
+you submit your
+assignment.
+
+448
+00:19:37,220 --> 00:19:39,079
+Once I finish
+that, I'm happy
+
+449
+00:19:39,079 --> 00:19:40,919
+to come to you
+and in such an
+
+450
+00:19:40,919 --> 00:19:41,819
+easier as well so we
+
+451
+00:19:41,819 --> 00:19:42,999
+both can come to
+you and answer
+
+452
+00:19:42,999 --> 00:19:45,980
+any questions
+related as well.
+
+453
+00:19:45,980 --> 00:19:48,419
+All right. The
+first one is
+
+454
+00:19:48,419 --> 00:19:51,159
+regarding plots. If
+you look at the bro
+
+455
+00:19:51,159 --> 00:19:54,099
+For the first part,
+
+456
+00:19:54,099 --> 00:19:56,139
+you will have to create a
+
+457
+00:19:56,139 --> 00:19:58,239
+single boxplot
+visalization to
+
+458
+00:19:58,239 --> 00:20:02,639
+identify outliers across
+de way usage data.
+
+459
+00:20:02,639 --> 00:20:04,919
+One hark is given
+if you have
+
+460
+00:20:04,919 --> 00:20:08,139
+a well formatted plot
+and zero if not.
+
+461
+00:20:08,139 --> 00:20:10,219
+What we mean by
+well formatted
+
+462
+00:20:10,219 --> 00:20:12,679
+is you need to name
+the axis properly.
+
+463
+00:20:12,679 --> 00:20:15,319
+You have to have the title
+
+464
+00:20:15,319 --> 00:20:16,680
+and if it makes sense.
+
+465
+00:20:16,680 --> 00:20:17,660
+If you have a legend,
+
+466
+00:20:17,660 --> 00:20:18,999
+you have to in the legend.
+
+467
+00:20:18,999 --> 00:20:20,379
+All of these information
+
+468
+00:20:20,379 --> 00:20:22,199
+has to be there
+in the plot.
+
+469
+00:20:22,199 --> 00:20:23,779
+If you miss any of those,
+
+470
+00:20:23,779 --> 00:20:25,500
+that means you will
+get zero because it's
+
+471
+00:20:25,500 --> 00:20:27,559
+a partially erlot We
+
+472
+00:20:27,559 --> 00:20:29,820
+have a few examples here.
+
+473
+00:20:30,720 --> 00:20:36,039
+Now, you can see here
+the exxs is title,
+
+474
+00:20:36,039 --> 00:20:38,319
+y axis is titled,
+
+475
+00:20:38,319 --> 00:20:41,279
+and then the title of the
+
+476
+00:20:43,490 --> 00:20:45,969
+title of the
+plot is missing,
+
+477
+00:20:45,969 --> 00:20:47,749
+but you need to add all of
+
+478
+00:20:47,749 --> 00:20:50,030
+those information
+in the plot,
+
+479
+00:20:50,030 --> 00:20:52,009
+we have another
+band in some of.
+
+480
+00:20:52,009 --> 00:20:58,229
+This basically does not
+
+481
+00:20:58,229 --> 00:21:00,329
+name the axis
+meaningfully.
+
+482
+00:21:00,329 --> 00:21:02,909
+So please avoid
+these things and
+
+483
+00:21:02,909 --> 00:21:04,630
+then make sure
+that the plot
+
+484
+00:21:04,630 --> 00:21:06,070
+title access titles,
+
+485
+00:21:06,070 --> 00:21:07,349
+consistent axis
+
+486
+00:21:07,349 --> 00:21:09,350
+labels, legend
+and everything,
+
+487
+00:21:09,350 --> 00:21:12,169
+whatever applicable
+to your plot is.
+
+488
+00:21:12,490 --> 00:21:16,769
+Now, the second part,
+data ranking. So,
+
+489
+00:21:17,830 --> 00:21:21,350
+For this one,
+clearly identifies
+
+490
+00:21:21,350 --> 00:21:22,969
+all problematic
+data points
+
+491
+00:21:22,969 --> 00:21:25,650
+across all three factors,
+
+492
+00:21:25,650 --> 00:21:27,349
+including specific dates,
+
+493
+00:21:27,349 --> 00:21:29,510
+provides a
+structure table,
+
+494
+00:21:29,510 --> 00:21:31,409
+detailing issue
+time date and
+
+495
+00:21:31,409 --> 00:21:34,129
+justification for
+those trading methods.
+
+496
+00:21:34,129 --> 00:21:36,109
+Data ranging, if
+you remember,
+
+497
+00:21:36,109 --> 00:21:38,849
+we talked about
+how you handle
+
+498
+00:21:38,849 --> 00:21:42,849
+cata as well as
+the outliers and
+
+499
+00:21:42,849 --> 00:21:45,029
+you use different
+methods to handle
+
+500
+00:21:45,029 --> 00:21:47,049
+the and whatever
+the method you
+
+501
+00:21:47,049 --> 00:21:50,389
+choose for that particular
+problematic data,
+
+502
+00:21:50,389 --> 00:21:53,725
+you say one is the
+method you use and then
+
+503
+00:21:53,725 --> 00:21:56,980
+you have to justify.
+The justification
+
+504
+00:21:56,980 --> 00:21:58,580
+would be different
+from one person
+
+505
+00:21:58,580 --> 00:22:00,160
+to another based on
+the method tissue,
+
+506
+00:22:00,160 --> 00:22:01,800
+but then it has
+to be reasonable.
+
+507
+00:22:01,800 --> 00:22:07,059
+For an example, if you
+say if you have data,
+
+508
+00:22:07,059 --> 00:22:08,579
+let's say for example,
+
+509
+00:22:08,579 --> 00:22:09,879
+if you're doing
+some social
+
+510
+00:22:09,879 --> 00:22:11,239
+behavioural analysis
+
+511
+00:22:11,239 --> 00:22:12,459
+and then if
+you're looking at
+
+512
+00:22:12,459 --> 00:22:14,260
+the amount of passengers
+
+513
+00:22:14,260 --> 00:22:15,659
+that case cross to Roma
+
+514
+00:22:15,659 --> 00:22:17,199
+straight railway
+station on
+
+515
+00:22:17,199 --> 00:22:18,339
+certain days
+where there are
+
+516
+00:22:18,339 --> 00:22:19,919
+maintenance during
+weekdays or
+
+517
+00:22:19,919 --> 00:22:21,559
+school holidays
+with senior,
+
+518
+00:22:21,559 --> 00:22:22,999
+zero or the amount of
+
+519
+00:22:22,999 --> 00:22:25,020
+people would go very low.
+
+520
+00:22:25,020 --> 00:22:26,139
+When you look at
+
+521
+00:22:26,139 --> 00:22:28,029
+the plots and when
+you look at the
+
+522
+00:22:28,029 --> 00:22:29,819
+line plots or boxplots,
+
+523
+00:22:29,819 --> 00:22:31,459
+you will see them
+as outliers.
+
+524
+00:22:31,459 --> 00:22:33,899
+Then maybe because
+you are considering
+
+525
+00:22:33,899 --> 00:22:36,759
+social human interaction
+in that case,
+
+526
+00:22:36,759 --> 00:22:39,040
+when it is closed, it
+does not make sens.
+
+527
+00:22:39,040 --> 00:22:41,300
+If you Google them, you
+Google those dates,
+
+528
+00:22:41,300 --> 00:22:42,380
+you will find those close
+
+529
+00:22:42,380 --> 00:22:43,499
+for maintenance dates,
+
+530
+00:22:43,499 --> 00:22:45,140
+and you can decide
+to remove them.
+
+531
+00:22:45,140 --> 00:22:47,279
+Those justifications
+you need to
+
+532
+00:22:47,279 --> 00:22:49,559
+give in order
+to say how you
+
+533
+00:22:49,559 --> 00:22:52,839
+and the data missing
+
+534
+00:22:52,839 --> 00:22:56,879
+ali based on whatever
+the method you.
+
+535
+00:22:58,720 --> 00:23:02,599
+This is the stable that
+you will be filling.
+
+536
+00:23:02,599 --> 00:23:04,079
+And this is
+
+537
+00:23:04,079 --> 00:23:05,579
+basically what I
+discussed how you
+
+538
+00:23:05,579 --> 00:23:07,359
+intend to handle the
+problematic data
+
+539
+00:23:07,359 --> 00:23:09,140
+identify you put here.
+
+540
+00:23:09,140 --> 00:23:10,659
+Basically, you say what is
+
+541
+00:23:10,659 --> 00:23:12,439
+the best handling
+mechanism.
+
+542
+00:23:12,439 --> 00:23:14,759
+Don't just say
+removing outliers,
+
+543
+00:23:14,759 --> 00:23:16,260
+so you will not
+get full mark
+
+544
+00:23:16,260 --> 00:23:18,740
+in those vague answers.
+
+545
+00:23:18,740 --> 00:23:22,259
+Say for missing data u
+and explain why it is.
+
+546
+00:23:22,259 --> 00:23:26,379
+If you use mean to
+sa and elaborate,
+
+547
+00:23:26,379 --> 00:23:28,960
+you explain For example,
+
+548
+00:23:28,960 --> 00:23:32,609
+if you take temperature
+all over the year.
+
+549
+00:23:32,609 --> 00:23:36,660
+Some during not
+not maybe sm,
+
+550
+00:23:36,660 --> 00:23:39,460
+but if you take maybe
+like Melbourne.
+
+551
+00:23:39,460 --> 00:23:41,439
+So during winter
+the average and
+
+552
+00:23:41,439 --> 00:23:41,859
+during
+
+553
+00:23:41,859 --> 00:23:43,699
+summer average would
+be entirely different,
+
+554
+00:23:43,699 --> 00:23:45,379
+so it's seasonally,
+they change.
+
+555
+00:23:45,379 --> 00:23:46,659
+And then if you want to
+
+556
+00:23:46,659 --> 00:23:48,679
+replace the
+date in winter,
+
+557
+00:23:48,679 --> 00:23:50,520
+it makes more
+sense to compute
+
+558
+00:23:50,520 --> 00:23:52,779
+the average in
+those season,
+
+559
+00:23:52,779 --> 00:23:54,399
+you define the
+season and then
+
+560
+00:23:54,399 --> 00:23:56,559
+you average fine the
+average and replace
+
+561
+00:23:56,559 --> 00:23:59,319
+imputed that rather
+than saying you want
+
+562
+00:23:59,319 --> 00:24:02,919
+to use the whole
+me, right?
+
+563
+00:24:02,919 --> 00:24:06,140
+And also, in terms
+of removing,
+
+564
+00:24:06,140 --> 00:24:08,909
+for example, if
+you're removing the
+
+565
+00:24:08,909 --> 00:24:12,070
+data. If you are
+analysing how
+
+566
+00:24:12,070 --> 00:24:14,824
+QUT number of people
+
+567
+00:24:14,824 --> 00:24:16,669
+coming and going
+out of QUT,
+
+568
+00:24:16,669 --> 00:24:19,705
+you will find nice spikes
+
+569
+00:24:19,705 --> 00:24:22,065
+on weekdays and weekends
+it would go down,
+
+570
+00:24:22,065 --> 00:24:23,929
+and then on a particular
+
+571
+00:24:23,929 --> 00:24:25,599
+Sunday it would go up.
+
+572
+00:24:25,599 --> 00:24:27,679
+To a certain sky
+rocket day because
+
+573
+00:24:27,679 --> 00:24:28,699
+it's open day and
+
+574
+00:24:28,699 --> 00:24:30,204
+a lot of people
+who come in.
+
+575
+00:24:30,204 --> 00:24:33,559
+In that case, the way
+how you deal with it
+
+576
+00:24:33,559 --> 00:24:35,200
+is depends on how
+
+577
+00:24:35,200 --> 00:24:38,279
+you plan to do
+whatever you.
+
+578
+00:24:38,279 --> 00:24:39,964
+If you think you
+want to remove it,
+
+579
+00:24:39,964 --> 00:24:41,660
+it's a once in
+a year event
+
+580
+00:24:41,660 --> 00:24:43,024
+that does not
+reflect anything.
+
+581
+00:24:43,024 --> 00:24:43,779
+You remove it.
+
+582
+00:24:43,779 --> 00:24:45,969
+If you're using for
+any resource planning
+
+583
+00:24:45,969 --> 00:24:47,460
+or water management
+
+584
+00:24:47,460 --> 00:24:48,824
+or electricity management,
+
+585
+00:24:48,824 --> 00:24:50,104
+something like that,
+then you might
+
+586
+00:24:50,104 --> 00:24:51,044
+probably keep it because
+
+587
+00:24:51,044 --> 00:24:51,970
+it's an actual event.
+
+588
+00:24:51,970 --> 00:24:53,924
+It's not a job missing
+
+589
+00:24:53,924 --> 00:24:56,344
+sensor information or
+something like that.
+
+590
+00:24:56,344 --> 00:24:59,909
+Based on I think that's
+straightforward.
+
+591
+00:25:00,100 --> 00:25:04,740
+Now the next part
+is in the template,
+
+592
+00:25:04,740 --> 00:25:07,759
+it says use up to
+three examples
+
+593
+00:25:07,759 --> 00:25:10,720
+for each proble type
+within each bikeway.
+
+594
+00:25:10,720 --> 00:25:12,979
+What we mean by
+problem type is,
+
+595
+00:25:12,979 --> 00:25:14,899
+it can be outliers
+missing data or
+
+596
+00:25:14,899 --> 00:25:18,645
+errors for each bikeway
+that is defined here.
+
+597
+00:25:18,645 --> 00:25:22,569
+If you find more than
+the instances exist,
+
+598
+00:25:22,569 --> 00:25:26,289
+report only three,
+if f exist,
+
+599
+00:25:26,289 --> 00:25:28,210
+report all that
+you can find.
+
+600
+00:25:28,210 --> 00:25:30,269
+If you have
+more than three
+
+601
+00:25:30,269 --> 00:25:31,670
+for each problem type,
+
+602
+00:25:31,670 --> 00:25:33,329
+you can have three.
+
+603
+00:25:33,329 --> 00:25:35,730
+And then if you
+have less than
+
+604
+00:25:35,730 --> 00:25:36,729
+the only number of
+
+605
+00:25:36,729 --> 00:25:38,410
+occurrences you
+find, you report.
+
+606
+00:25:38,410 --> 00:25:40,750
+I think that's
+straightforward as well.
+
+607
+00:25:40,750 --> 00:25:43,789
+In some cases,
+missing data is
+
+608
+00:25:43,789 --> 00:25:45,449
+consecutive 45 days and
+
+609
+00:25:45,449 --> 00:25:46,409
+if you are planning to
+
+610
+00:25:46,409 --> 00:25:47,670
+handle it the same way,
+
+611
+00:25:47,670 --> 00:25:48,989
+you can define it as a
+
+612
+00:25:48,989 --> 00:25:50,210
+range rather than having
+
+613
+00:25:50,210 --> 00:25:51,409
+those as different columns
+
+614
+00:25:51,409 --> 00:25:53,200
+and repeating
+the same again.
+
+615
+00:25:53,200 --> 00:25:56,829
+So but you cannot put
+for a long range.
+
+616
+00:25:56,829 --> 00:25:58,269
+You can say I'm
+deleting all,
+
+617
+00:25:58,269 --> 00:26:00,030
+so that's not sensible,
+
+618
+00:26:00,030 --> 00:26:02,889
+so I hope that part is.
+
+619
+00:26:03,370 --> 00:26:05,629
+I think I explained
+this one.
+
+620
+00:26:05,629 --> 00:26:06,649
+Interesting cases.
+
+621
+00:26:06,649 --> 00:26:08,169
+Outliers doesn't
+always mean
+
+622
+00:26:08,169 --> 00:26:09,490
+that you need
+to remove them.
+
+623
+00:26:09,490 --> 00:26:11,309
+First, consider whether
+the behaviour in
+
+624
+00:26:11,309 --> 00:26:12,470
+the data is explainable
+
+625
+00:26:12,470 --> 00:26:13,989
+in addition to
+the boxplots,
+
+626
+00:26:13,989 --> 00:26:15,649
+take a look at the
+line plot to see if
+
+627
+00:26:15,649 --> 00:26:17,890
+there are any other
+consistent patters.
+
+628
+00:26:17,890 --> 00:26:19,769
+Check if there
+are signs of
+
+629
+00:26:19,769 --> 00:26:21,930
+ors in measurements
+or sensors.
+
+630
+00:26:21,930 --> 00:26:24,610
+If you remember the
+example that we discussed
+
+631
+00:26:24,610 --> 00:26:28,010
+a week ago we have
+multiple sensor readings.
+
+632
+00:26:28,010 --> 00:26:30,529
+If one sensor value
+suddenly goes down and
+
+633
+00:26:30,529 --> 00:26:31,890
+the other sensor
+value goes
+
+634
+00:26:31,890 --> 00:26:33,629
+up and if they
+are correlated,
+
+635
+00:26:33,629 --> 00:26:36,009
+that means it's not
+a sensor failure.
+
+636
+00:26:36,009 --> 00:26:38,410
+There is some
+event that has oc.
+
+637
+00:26:38,410 --> 00:26:40,530
+So similarly, so you could
+
+638
+00:26:40,530 --> 00:26:42,310
+look at the other
+sets of values
+
+639
+00:26:42,310 --> 00:26:43,729
+in those cases and come to
+
+640
+00:26:43,729 --> 00:26:44,489
+a conclusion if
+
+641
+00:26:44,489 --> 00:26:46,269
+all the sense
+information is missing,
+
+642
+00:26:46,269 --> 00:26:47,669
+then it could probably be
+
+643
+00:26:47,669 --> 00:26:49,689
+a maintenance or site
+
+644
+00:26:49,689 --> 00:26:50,909
+being closed,
+something like that.
+
+645
+00:26:50,909 --> 00:26:52,410
+If you remember, the water
+
+646
+00:26:52,410 --> 00:26:54,410
+management plant
+example we discussed.
+
+647
+00:26:54,410 --> 00:26:56,009
+We had a few variables.
+
+648
+00:26:56,009 --> 00:26:58,730
+So it talks
+about that here.
+
+649
+00:26:58,730 --> 00:27:01,370
+Then you can also search
+online for any ev.
+
+650
+00:27:01,370 --> 00:27:03,289
+This is what I
+meant like a
+
+651
+00:27:03,289 --> 00:27:05,129
+bridge closure
+or something.
+
+652
+00:27:05,129 --> 00:27:08,110
+You see the data
+being extremely low,
+
+653
+00:27:08,110 --> 00:27:09,510
+you Google and you find
+
+654
+00:27:09,510 --> 00:27:10,889
+the bridge is
+being closed on
+
+655
+00:27:10,889 --> 00:27:12,390
+a particular data sort
+
+656
+00:27:12,390 --> 00:27:15,364
+explains why the
+pattern has happened.
+
+657
+00:27:15,364 --> 00:27:16,839
+Based on this, you can
+
+658
+00:27:16,839 --> 00:27:18,320
+make an information
+whether
+
+659
+00:27:18,320 --> 00:27:19,499
+or not to keep the data
+
+660
+00:27:19,499 --> 00:27:20,920
+points in your analysis.
+
+661
+00:27:20,920 --> 00:27:23,019
+I totally depends on you,
+
+662
+00:27:23,019 --> 00:27:25,960
+based on your
+justification.
+
+663
+00:27:26,400 --> 00:27:29,640
+Next part is
+supporting evidence.
+
+664
+00:27:29,640 --> 00:27:32,039
+As we explained
+earlier itself,
+
+665
+00:27:32,039 --> 00:27:35,120
+you can use Excel Python
+
+666
+00:27:35,120 --> 00:27:37,199
+or Macle to do
+this analysis.
+
+667
+00:27:37,199 --> 00:27:38,900
+If you look at the Canvas,
+
+668
+00:27:38,900 --> 00:27:41,240
+there are videos
+individually
+
+669
+00:27:41,240 --> 00:27:43,519
+created for all those
+free path platforms,
+
+670
+00:27:43,519 --> 00:27:45,700
+so you can go
+through them.
+
+671
+00:27:45,700 --> 00:27:47,920
+We have the
+resources there.
+
+672
+00:27:47,920 --> 00:27:50,299
+Then when you do
+use one of those,
+
+673
+00:27:50,299 --> 00:27:51,700
+you have to upload
+
+674
+00:27:51,700 --> 00:27:54,119
+the supporting
+evidence the do.
+
+675
+00:27:54,119 --> 00:27:56,500
+The main thing is
+if you're doing
+
+676
+00:27:56,500 --> 00:27:59,180
+Mt la Python, it's a
+bit straightforward.
+
+677
+00:27:59,180 --> 00:28:00,899
+You can export the
+live script as
+
+678
+00:28:00,899 --> 00:28:02,820
+a VF and attach it
+as an appendix.
+
+679
+00:28:02,820 --> 00:28:04,680
+If it is Python
+notebook, again,
+
+680
+00:28:04,680 --> 00:28:06,060
+you can export
+the notebook
+
+681
+00:28:06,060 --> 00:28:07,559
+as a PDF and attach it.
+
+682
+00:28:07,559 --> 00:28:09,639
+But the things become
+interesting if
+
+683
+00:28:09,639 --> 00:28:10,379
+you're doing it with
+
+684
+00:28:10,379 --> 00:28:12,959
+Excel because
+you do clicks.
+
+685
+00:28:13,200 --> 00:28:15,219
+We include
+
+686
+00:28:15,219 --> 00:28:16,919
+your supporting evidence
+in the appendix.
+
+687
+00:28:16,919 --> 00:28:18,240
+Copy and paste
+the code into
+
+688
+00:28:18,240 --> 00:28:20,019
+the document if you're
+using live script,
+
+689
+00:28:20,019 --> 00:28:21,755
+M the document PDF.
+
+690
+00:28:21,755 --> 00:28:24,050
+Fix pot and Live ScaF.
+
+691
+00:28:24,050 --> 00:28:27,659
+But these are some
+examples and with Excel,
+
+692
+00:28:27,659 --> 00:28:29,310
+what happens is you're
+
+693
+00:28:29,310 --> 00:28:31,254
+doing the clicks
+and they disappear.
+
+694
+00:28:31,254 --> 00:28:34,474
+Just show where you get
+
+695
+00:28:34,474 --> 00:28:36,014
+the information
+or where you
+
+696
+00:28:36,014 --> 00:28:38,529
+get the particular
+plot from.
+
+697
+00:28:38,529 --> 00:28:41,570
+Like as Shi sing
+this example.
+
+698
+00:28:41,570 --> 00:28:44,749
+And you don't have
+to for example,
+
+699
+00:28:44,749 --> 00:28:47,150
+if you are growing
+three block spots,
+
+700
+00:28:47,150 --> 00:28:48,770
+the s are the same,
+
+701
+00:28:48,770 --> 00:28:50,189
+so you don't have to
+take three different
+
+702
+00:28:50,189 --> 00:28:51,269
+screen shots to show that
+
+703
+00:28:51,269 --> 00:28:52,729
+so you can show one
+
+704
+00:28:52,729 --> 00:28:54,649
+and say the same
+process followed,
+
+705
+00:28:54,649 --> 00:28:55,929
+and then you can show the
+
+706
+00:28:55,929 --> 00:28:57,910
+plot generator
+at last, maybe.
+
+707
+00:28:57,910 --> 00:29:00,069
+So any sensible method
+
+708
+00:29:00,069 --> 00:29:02,149
+to show the
+evidence is fine.
+
+709
+00:29:02,149 --> 00:29:04,269
+So for Excel this
+
+710
+00:29:04,269 --> 00:29:06,650
+way is to get
+some screenshots.
+
+711
+00:29:06,650 --> 00:29:13,949
+These are some examples
+here. All right. So
+
+712
+00:29:14,550 --> 00:29:16,709
+The next part is
+
+713
+00:29:16,709 --> 00:29:18,650
+using the correct
+version of the data set.
+
+714
+00:29:18,650 --> 00:29:19,869
+I think I
+explained this on
+
+715
+00:29:19,869 --> 00:29:22,710
+the starting part of
+data analysis as well.
+
+716
+00:29:22,710 --> 00:29:23,730
+If you go through
+
+717
+00:29:23,730 --> 00:29:25,090
+the assignment
+details page,
+
+718
+00:29:25,090 --> 00:29:27,189
+there are four
+different data sets,
+
+719
+00:29:27,189 --> 00:29:30,949
+basically, two clean and
+
+720
+00:29:30,949 --> 00:29:32,849
+then two row versions.
+
+721
+00:29:32,849 --> 00:29:34,489
+For each section, you will
+
+722
+00:29:34,489 --> 00:29:36,329
+be using those
+different data sets.
+
+723
+00:29:36,329 --> 00:29:38,209
+For Section one, you use
+
+724
+00:29:38,209 --> 00:29:40,529
+the row set that
+we have given.
+
+725
+00:29:40,529 --> 00:29:43,370
+For Section 23 onwards,
+
+726
+00:29:43,370 --> 00:29:45,549
+for Section two and three,
+
+727
+00:29:45,549 --> 00:29:48,570
+you use the clean
+versions we give.
+
+728
+00:29:48,570 --> 00:29:51,190
+Don't use the versions
+that you clean,
+
+729
+00:29:51,190 --> 00:29:53,469
+use the clean versions.
+
+730
+00:29:53,470 --> 00:29:55,829
+Another thing,
+the reason why we
+
+731
+00:29:55,829 --> 00:29:57,410
+do it is because
+there could
+
+732
+00:29:57,410 --> 00:29:59,689
+be multiple ways you
+would be handling or
+
+733
+00:29:59,689 --> 00:30:01,130
+angling your data based
+
+734
+00:30:01,130 --> 00:30:02,649
+on the justification
+you have.
+
+735
+00:30:02,649 --> 00:30:03,729
+And then it would be
+
+736
+00:30:03,729 --> 00:30:05,429
+inconsistent among
+everyone and
+
+737
+00:30:05,429 --> 00:30:06,669
+it becomes very hard to
+
+738
+00:30:06,669 --> 00:30:08,810
+mark if you do
+it on your own.
+
+739
+00:30:08,810 --> 00:30:11,350
+That's why we gave
+a clean version.
+
+740
+00:30:11,350 --> 00:30:14,530
+Be careful the
+version we have clean
+
+741
+00:30:14,530 --> 00:30:16,169
+is not the expected answer
+
+742
+00:30:16,169 --> 00:30:17,590
+that you would
+get if you clean.
+
+743
+00:30:17,590 --> 00:30:20,150
+I mean, you could not
+just reverse engineer.
+
+744
+00:30:20,150 --> 00:30:22,110
+It doesn't make
+sense in that case.
+
+745
+00:30:22,110 --> 00:30:25,869
+Don't worry if it is
+different, right?
+
+746
+00:30:27,650 --> 00:30:30,649
+In section, you do
+the correlation,
+
+747
+00:30:30,649 --> 00:30:32,989
+so you find correlation
+between variables
+
+748
+00:30:32,989 --> 00:30:35,949
+and you report them
+that straightforward.
+
+749
+00:30:35,949 --> 00:30:40,090
+Here in correlation
+analysis interpretation.
+
+750
+00:30:40,090 --> 00:30:43,210
+In some cases, you might
+see these clusters.
+
+751
+00:30:43,210 --> 00:30:45,190
+As we discussed last week,
+
+752
+00:30:45,190 --> 00:30:46,650
+when you see
+these clusters,
+
+753
+00:30:46,650 --> 00:30:48,569
+per and correlation
+coefficient
+
+754
+00:30:48,569 --> 00:30:49,970
+if you look at
+the equation,
+
+755
+00:30:49,970 --> 00:30:51,409
+it uses mean with
+
+756
+00:30:51,409 --> 00:30:53,150
+every observant
+to calculate
+
+757
+00:30:53,150 --> 00:30:54,230
+the correlation
+coefficient,
+
+758
+00:30:54,230 --> 00:30:55,389
+when you have
+clusters like this,
+
+759
+00:30:55,389 --> 00:30:56,550
+it impacts the mean,
+
+760
+00:30:56,550 --> 00:30:58,169
+which means it
+impacts the p
+
+761
+00:30:58,169 --> 00:30:58,850
+and correlation
+
+762
+00:30:58,850 --> 00:31:00,204
+coefficient you're
+going to get.
+
+763
+00:31:00,204 --> 00:31:01,780
+One of the meaningful way
+
+764
+00:31:01,780 --> 00:31:03,640
+is to remove the clusters,
+
+765
+00:31:03,640 --> 00:31:05,559
+separate them using
+one variable.
+
+766
+00:31:05,559 --> 00:31:06,880
+For the example I took
+
+767
+00:31:06,880 --> 00:31:08,179
+earlier like weekdays and
+
+768
+00:31:08,179 --> 00:31:11,340
+weekends of how many
+people come in to QUT,
+
+769
+00:31:11,340 --> 00:31:13,820
+you would see clearly
+two different clusters.
+
+770
+00:31:13,820 --> 00:31:17,060
+You can separate it
+using days and then take
+
+771
+00:31:17,060 --> 00:31:18,299
+the weekdays
+separately and
+
+772
+00:31:18,299 --> 00:31:20,279
+weekend separately
+to the correlation.
+
+773
+00:31:20,279 --> 00:31:22,140
+Otherwise, the
+correlation coefficient
+
+774
+00:31:22,140 --> 00:31:24,669
+would not make sense
+in some cases.
+
+775
+00:31:24,669 --> 00:31:26,860
+So general observations,
+
+776
+00:31:26,860 --> 00:31:27,999
+what you see in the loss,
+
+777
+00:31:27,999 --> 00:31:29,320
+and then reason
+explanation,
+
+778
+00:31:29,320 --> 00:31:31,779
+hypothesis observation,
+what do they aipply?
+
+779
+00:31:31,779 --> 00:31:33,200
+Seasonal variations,
+
+780
+00:31:33,200 --> 00:31:35,180
+demographics, and
+references, again.
+
+781
+00:31:35,180 --> 00:31:38,119
+If you take the
+temperature example,
+
+782
+00:31:38,119 --> 00:31:41,460
+you will see different
+clusters based on Cs.
+
+783
+00:31:42,350 --> 00:31:46,309
+And then what does the
+correlation co plus.
+
+784
+00:31:46,309 --> 00:31:48,049
+An interesting case is
+
+785
+00:31:48,049 --> 00:31:49,969
+if you look at this plot.
+
+786
+00:31:49,969 --> 00:31:52,110
+So you have visual
+
+787
+00:31:52,110 --> 00:31:54,569
+a positive correlation
+in this cluster.
+
+788
+00:31:54,569 --> 00:31:56,670
+You have almost a positive
+
+789
+00:31:56,670 --> 00:31:58,169
+correlation in
+this cluster,
+
+790
+00:31:58,169 --> 00:32:00,629
+but the coefficients
+a negative value.
+
+791
+00:32:00,629 --> 00:32:01,729
+This does not reflect
+
+792
+00:32:01,729 --> 00:32:03,410
+what we see in the plot.
+
+793
+00:32:03,410 --> 00:32:05,610
+The discussion
+along this line
+
+794
+00:32:05,610 --> 00:32:07,009
+and then how you would
+
+795
+00:32:07,009 --> 00:32:08,389
+do it is what is
+
+796
+00:32:08,389 --> 00:32:10,910
+expected in most
+of those cases.
+
+797
+00:32:10,910 --> 00:32:12,669
+Look at the questions and
+
+798
+00:32:12,669 --> 00:32:14,869
+the lubric the
+interpretation part,
+
+799
+00:32:14,869 --> 00:32:17,510
+interpret those
+things correctly.
+
+800
+00:32:17,920 --> 00:32:21,039
+All right. Finally,
+for Section three,
+
+801
+00:32:21,039 --> 00:32:24,259
+you do multiple linear
+regulation analysis.
+
+802
+00:32:24,259 --> 00:32:27,580
+We discussed this in
+detail last week,
+
+803
+00:32:27,580 --> 00:32:29,519
+but if I give
+a quick brief,
+
+804
+00:32:29,519 --> 00:32:30,719
+you are doing multiple
+
+805
+00:32:30,719 --> 00:32:32,160
+linear regulation
+analysis means
+
+806
+00:32:32,160 --> 00:32:34,059
+linear regulation
+analysis can
+
+807
+00:32:34,059 --> 00:32:35,400
+be done with
+multiple varies.
+
+808
+00:32:35,400 --> 00:32:37,120
+You're going to use
+multiple variables.
+
+809
+00:32:37,120 --> 00:32:39,260
+If you take a generic
+linear equation,
+
+810
+00:32:39,260 --> 00:32:40,049
+it's like
+
+811
+00:32:40,049 --> 00:32:41,480
+For two variables,
+
+812
+00:32:41,480 --> 00:32:43,540
+one independent
+one independent,
+
+813
+00:32:43,540 --> 00:32:44,720
+is y equal in x plus
+
+814
+00:32:44,720 --> 00:32:46,760
+C. But when you have
+more variables,
+
+815
+00:32:46,760 --> 00:32:51,760
+it becomes y equal m1x1
+plus two x two plus
+
+816
+00:32:51,760 --> 00:32:54,459
+three x plus whatever n
+
+817
+00:32:54,459 --> 00:32:57,499
+c. If it is two variables,
+
+818
+00:32:57,499 --> 00:32:59,440
+it's easy, it's
+a straight line,
+
+819
+00:32:59,440 --> 00:33:01,979
+but more the
+variables become,
+
+820
+00:33:01,979 --> 00:33:04,129
+the distant
+boundaries become
+
+821
+00:33:04,129 --> 00:33:06,480
+for example, if it
+is three dimension
+
+822
+00:33:06,480 --> 00:33:08,400
+three variable,
+then it's a claim.
+
+823
+00:33:08,400 --> 00:33:09,979
+If it is n dimensions,
+
+824
+00:33:09,979 --> 00:33:12,399
+then it's a hyperplane,
+that's the.
+
+825
+00:33:12,399 --> 00:33:15,479
+You don't have to worry
+about it too much.
+
+826
+00:33:15,479 --> 00:33:16,759
+The understanding is you
+
+827
+00:33:16,759 --> 00:33:20,999
+find for multiple
+gation analysis.
+
+828
+00:33:20,999 --> 00:33:22,940
+You use all the variables
+
+829
+00:33:22,940 --> 00:33:23,920
+and do the regation,
+
+830
+00:33:23,920 --> 00:33:25,360
+and see what are
+statistically
+
+831
+00:33:25,360 --> 00:33:26,900
+significant and
+insignificant.
+
+832
+00:33:26,900 --> 00:33:29,539
+You use the p values and
+
+833
+00:33:29,539 --> 00:33:30,959
+squares and all these to
+
+834
+00:33:30,959 --> 00:33:33,379
+compare it and then
+fit the base model.
+
+835
+00:33:33,379 --> 00:33:34,880
+In all machine learning
+
+836
+00:33:34,880 --> 00:33:36,999
+mostly regation is one
+
+837
+00:33:36,999 --> 00:33:38,119
+of the pratical example
+
+838
+00:33:38,119 --> 00:33:39,399
+of a machine
+learning model.
+
+839
+00:33:39,399 --> 00:33:40,680
+In all machine learning,
+
+840
+00:33:40,680 --> 00:33:43,045
+we use the data
+to train a model.
+
+841
+00:33:43,045 --> 00:33:45,490
+So when we use the
+DR data model,
+
+842
+00:33:45,490 --> 00:33:47,509
+you split them into
+two different sets.
+
+843
+00:33:47,509 --> 00:33:49,450
+One is the train
+set test set.
+
+844
+00:33:49,450 --> 00:33:52,029
+You fit the model using
+the train dataset,
+
+845
+00:33:52,029 --> 00:33:53,430
+and then you see how well
+
+846
+00:33:53,430 --> 00:33:55,570
+your model is doing
+using the test set,
+
+847
+00:33:55,570 --> 00:33:57,269
+which is not used
+during training.
+
+848
+00:33:57,269 --> 00:33:59,270
+You follow the
+same procedure.
+
+849
+00:33:59,270 --> 00:34:01,049
+You use the train data
+
+850
+00:34:01,049 --> 00:34:03,009
+set and use these values,
+
+851
+00:34:03,009 --> 00:34:04,209
+r square values to
+
+852
+00:34:04,209 --> 00:34:06,509
+see and find
+the base model.
+
+853
+00:34:06,509 --> 00:34:08,429
+Then once you have
+your base model,
+
+854
+00:34:08,429 --> 00:34:10,849
+you test it on
+the test data set
+
+855
+00:34:10,849 --> 00:34:13,909
+that the compute
+the test matrices
+
+856
+00:34:13,909 --> 00:34:16,230
+like root speed
+square t or RMC.
+
+857
+00:34:16,230 --> 00:34:17,369
+Here in this case,
+
+858
+00:34:17,369 --> 00:34:18,689
+you have to
+keep the RMC on
+
+859
+00:34:18,689 --> 00:34:20,309
+both train and
+test data sets and
+
+860
+00:34:20,309 --> 00:34:23,189
+comb the and discuss
+that, right?
+
+861
+00:34:23,189 --> 00:34:26,649
+Important points is yes,
+
+862
+00:34:26,649 --> 00:34:29,449
+we've given the instructions
+to separate it.
+
+863
+00:34:29,449 --> 00:34:30,969
+So from January 1,
+
+864
+00:34:30,969 --> 00:34:33,269
+2024 to December 31,
+
+865
+00:34:33,269 --> 00:34:36,269
+2017, inclusive
+is the train set,
+
+866
+00:34:36,269 --> 00:34:38,329
+and the remaining
+data is the test set.
+
+867
+00:34:38,329 --> 00:34:39,849
+Make sure you
+spread it this
+
+868
+00:34:39,849 --> 00:34:42,590
+given on this
+correct given dates.
+
+869
+00:34:42,590 --> 00:34:45,849
+Otherwise, the answers
+would differ, right?
+
+870
+00:34:46,949 --> 00:34:49,049
+I think those are
+
+871
+00:34:49,049 --> 00:34:51,229
+the parts to highlight
+in this slide.
+
+872
+00:34:51,229 --> 00:34:52,329
+Do not create
+
+873
+00:34:52,329 --> 00:34:54,269
+separate recreation
+models for each.
+
+874
+00:34:54,269 --> 00:34:55,990
+Just don't take
+two variables,
+
+875
+00:34:55,990 --> 00:34:57,309
+all of those two
+variables and
+
+876
+00:34:57,309 --> 00:34:59,549
+create separate reation
+models for those.
+
+877
+00:34:59,549 --> 00:35:02,409
+What we expect
+is instead build
+
+878
+00:35:02,409 --> 00:35:04,210
+a single reation
+model that includes
+
+879
+00:35:04,210 --> 00:35:06,410
+all identified
+independent variables.
+
+880
+00:35:06,410 --> 00:35:07,490
+You may need to repeat
+
+881
+00:35:07,490 --> 00:35:09,609
+the ration modelling
+process until
+
+882
+00:35:09,609 --> 00:35:11,649
+all variables have
+statistically
+
+883
+00:35:11,649 --> 00:35:14,250
+significant v. This
+is straightforward,
+
+884
+00:35:14,250 --> 00:35:16,709
+This is what I
+discussed earlier.
+
+885
+00:35:18,889 --> 00:35:21,529
+And provide summary
+module table,
+
+886
+00:35:21,529 --> 00:35:22,970
+recreation summary
+table should
+
+887
+00:35:22,970 --> 00:35:24,490
+be generated on
+the training data.
+
+888
+00:35:24,490 --> 00:35:26,010
+RMS should be reported
+
+889
+00:35:26,010 --> 00:35:27,989
+based on train
+and test plays,
+
+890
+00:35:27,989 --> 00:35:29,909
+and you have to generate
+
+891
+00:35:29,909 --> 00:35:33,009
+the scatter blocks using
+the training data.
+
+892
+00:35:35,170 --> 00:35:37,550
+For the
+interpretation parts,
+
+893
+00:35:37,550 --> 00:35:39,229
+provides a clear well
+
+894
+00:35:39,229 --> 00:35:41,914
+structured interpretation
+of both the
+
+895
+00:35:41,914 --> 00:35:43,799
+region models, use
+
+896
+00:35:43,799 --> 00:35:45,340
+appropriate
+reation outputs
+
+897
+00:35:45,340 --> 00:35:46,999
+to justify the conclusion.
+
+898
+00:35:46,999 --> 00:35:48,499
+Here, you need to use
+
+899
+00:35:48,499 --> 00:35:50,199
+the statistical matrices
+
+900
+00:35:50,199 --> 00:35:53,299
+like the statistic
+square basics,
+
+901
+00:35:53,299 --> 00:35:55,199
+how much of variable
+
+902
+00:35:55,199 --> 00:35:57,079
+in the data is
+captured by the model.
+
+903
+00:35:57,079 --> 00:35:59,019
+You use the p value to see
+
+904
+00:35:59,019 --> 00:36:00,579
+the statistical
+
+905
+00:36:00,579 --> 00:36:02,240
+significance of
+that variable.
+
+906
+00:36:02,240 --> 00:36:05,800
+You use all those
+information and describe
+
+907
+00:36:05,800 --> 00:36:07,879
+the trends you see and
+
+908
+00:36:07,879 --> 00:36:09,679
+everything you see on
+
+909
+00:36:09,679 --> 00:36:11,319
+the data and your
+interpretation.
+
+910
+00:36:11,319 --> 00:36:15,079
+It has to be a good
+rigorous interpretation
+
+911
+00:36:15,079 --> 00:36:17,359
+rather than just
+explaining the numbers.
+
+912
+00:36:17,359 --> 00:36:20,509
+That's what expected
+in this file.
+
+913
+00:36:20,509 --> 00:36:23,639
+When it comes to
+Section four,
+
+914
+00:36:23,679 --> 00:36:26,239
+you do either A or
+
+915
+00:36:26,239 --> 00:36:28,399
+P. This is what
+
+916
+00:36:28,399 --> 00:36:30,319
+we discussed at
+the beginning.
+
+917
+00:36:30,319 --> 00:36:32,319
+Part A is you
+try your best to
+
+918
+00:36:32,319 --> 00:36:34,359
+locate a publicly
+available data.
+
+919
+00:36:34,359 --> 00:36:36,399
+That's the highly
+encouraged one.
+
+920
+00:36:36,399 --> 00:36:39,119
+In a worst case, if
+you don't find one,
+
+921
+00:36:39,119 --> 00:36:40,740
+you can use the synthetic
+
+922
+00:36:40,740 --> 00:36:41,919
+data generation based
+
+923
+00:36:41,919 --> 00:36:43,840
+on how we generated
+
+924
+00:36:43,840 --> 00:36:45,460
+one in the beginning
+of the class.
+
+925
+00:36:45,460 --> 00:36:47,079
+You should use
+the same research
+
+926
+00:36:47,079 --> 00:36:48,239
+topic from Assignment one,
+
+927
+00:36:48,239 --> 00:36:49,459
+so that's a high part
+
+928
+00:36:49,459 --> 00:36:50,739
+to find the variables for
+
+929
+00:36:50,739 --> 00:36:52,219
+synthetic data
+generation and for
+
+930
+00:36:52,219 --> 00:36:55,490
+your assignment project
+page presentation.
+
+931
+00:36:55,490 --> 00:36:57,419
+In this case,
+why we say use
+
+932
+00:36:57,419 --> 00:36:58,539
+the same topics
+because when
+
+933
+00:36:58,539 --> 00:36:59,699
+you're generating data for
+
+934
+00:36:59,699 --> 00:37:01,599
+the topic, certain
+variables,
+
+935
+00:37:01,599 --> 00:37:03,099
+as I explained earlier,
+
+936
+00:37:03,099 --> 00:37:04,719
+the ranges and everything
+you can pick from
+
+937
+00:37:04,719 --> 00:37:10,459
+the leg. Does that
+
+938
+00:37:10,650 --> 00:37:14,069
+Finally, you do a
+correlation analysis using
+
+939
+00:37:14,069 --> 00:37:16,230
+the preliminary data
+and then you explain
+
+940
+00:37:16,230 --> 00:37:19,689
+it basically
+interpret it as well.
+
+941
+00:37:19,689 --> 00:37:22,049
+In these cases, you might
+
+942
+00:37:22,049 --> 00:37:25,469
+find some interesting
+analysis.
+
+943
+00:37:25,469 --> 00:37:26,909
+If you use a
+real world data,
+
+944
+00:37:26,909 --> 00:37:29,089
+you might see the
+actual applications.
+
+945
+00:37:29,089 --> 00:37:30,750
+As I mentioned
+earlier synthetic
+
+946
+00:37:30,750 --> 00:37:32,149
+data might not give
+
+947
+00:37:32,149 --> 00:37:34,729
+certain obvious
+correlations
+
+948
+00:37:34,729 --> 00:37:36,050
+because it's random.
+
+949
+00:37:36,050 --> 00:37:37,569
+In that case, it's
+
+950
+00:37:37,569 --> 00:37:40,130
+okay you discuss
+it in detail.
+
+951
+00:37:41,969 --> 00:37:45,109
+Those are the
+main things that
+
+952
+00:37:45,109 --> 00:37:46,429
+I had to cover in
+
+953
+00:37:46,429 --> 00:37:48,274
+terms of the
+assignment tool.
+
+954
+00:37:48,274 --> 00:37:52,180
+Now Any questions
+on these slides?
+
+955
+00:37:52,180 --> 00:37:54,459
+But may have?
+No. All right.
+
+956
+00:37:54,459 --> 00:37:55,919
+So now we can maybe
+
+957
+00:37:55,919 --> 00:37:57,240
+I can come to
+you and answer
+
+958
+00:37:57,240 --> 00:37:58,820
+your questions
+and Stay also
+
+959
+00:37:58,820 --> 00:38:01,280
+can come and answer
+the questions.
+
+960
+00:38:01,280 --> 00:38:04,739
+All right. Thank you.
