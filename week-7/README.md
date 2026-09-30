@@ -4,6 +4,17 @@ Lecture and tutorial video transcripts for the Week 7 content, plus consolidated
 
 - [`notes.md`](notes.md) – study notes summarising every transcript, grouped by topic and platform.
 - [`transcripts/`](transcripts/) – the raw auto-generated transcripts (unedited, so expect speech-to-text errors such as "philtre" for "filter" or "Nan" for "NaN").
+- [`slides/`](slides/) – lecture slides and the practical sheet.
+- [`data/`](data/) – the dataset used in the visualisation practicals.
+
+## Slides, practical sheet and data
+
+| File | What it is |
+|------|------------|
+| [`slides/summary-stats-data-wrangling-statistics-visualisation.pdf`](slides/summary-stats-data-wrangling-statistics-visualisation.pdf) | "Data Analysis: Data Wrangling, Statistics & Visualisation" lecture slides, which go with transcript 02 |
+| [`slides/introduction-to-jupyter-notebook.pdf`](slides/introduction-to-jupyter-notebook.pdf) | "Introduction to Jupyter Notebook" slides (Dr Tharindu Fernando), which go with transcript 14 |
+| [`slides/practical-3-matlab-refresher.pdf`](slides/practical-3-matlab-refresher.pdf) | Practical 3 MATLAB refresher: how to install MATLAB or use MATLAB Online, and run the lecture examples |
+| [`data/day.csv`](data/day.csv) | Washington bike share daily data for 2011–2012 (731 rows × 16 columns), used in transcripts 09 and 15 |
 
 The unit lets you follow the practical work in **MATLAB, Excel or Python**; you only need one of the three tool tracks below, but the two general lectures apply to everyone.
 
@@ -47,7 +58,7 @@ The unit lets you follow the practical work in **MATLAB, Excel or Python**; you 
 
 ## Source file mapping
 
-The uploaded files were renamed by topic. Two uploads were byte-identical duplicates and are stored once.
+The uploaded transcripts were renamed by topic. Two uploads were byte-identical duplicates and are stored once.
 
 | Stored as | Original upload(s) |
 |-----------|--------------------|

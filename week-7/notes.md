@@ -1,6 +1,6 @@
 # Week 7 Study Notes – Data Analysis: Wrangling, Statistics and Visualisation
 
-These notes summarise the Week 7 transcripts in [`transcripts/`](transcripts/). Transcript numbers in brackets, such as (05), point to the matching file. Code snippets are cleaned-up versions of what the presenters typed; check them against the provided live scripts or notebooks.
+These notes summarise the Week 7 transcripts in [`transcripts/`](transcripts/), the lecture slides in [`slides/`](slides/) and the practical dataset in [`data/`](data/). Transcript numbers in brackets, such as (05), point to the matching file. Code snippets are cleaned-up versions of what the presenters typed; check them against the provided live scripts or notebooks.
 
 ---
 
@@ -58,7 +58,8 @@ These notes summarise the Week 7 transcripts in [`transcripts/`](transcripts/). 
 - It takes a large share of analysis time because real-world data is messy. Plan data collection carefully to reduce errors.
 - **There is no one-size-fits-all strategy.** Decide case by case, test different cleaning approaches and check their effect on data quality and on the goal of the analysis.
   - Duplicates can usually be removed.
-  - Missing data can sometimes be removed, or imputed with the mean or median, or predicted with statistical models.
+  - Missing data can sometimes be removed (the slides suggest removing is usually acceptable if under 5% of the data is affected), imputed with the mean, median or mode, set to a default value, or predicted with a model such as regression.
+  - Sanity checks from the slides: does the data make sense? Does it follow the rules of its field? What have published papers in your field done, and why?
   - Outliers may distort results, but sometimes they are exactly what you are studying (for example irregular heart rhythms for a medical device), so don't filter them blindly.
 
 ### Detecting outliers
@@ -93,7 +94,7 @@ These notes summarise the Week 7 transcripts in [`transcripts/`](transcripts/). 
 - **Positive (right) skew:** the right tail is longer, so the mean is pulled above the median.
 - **Negative (left) skew:** the left tail is longer, so the mean is pulled below the median.
 - In skewed data, the **median is the more robust measure of central tendency**. The mode sits near the peak but can still be influenced by the skew.
-- **Example (material strength testing):** 30 strength tests, mostly between 23 and 29, with one extreme value of 800. The mean is heavily inflated, while the median (26) still represents typical strength.
+- **Example (material strength testing):** 30 strength tests, mostly between 23 and 29, with one extreme value of 800. The values sum to 1551, so the **mean is 1551 / 30 ≈ 51.17**, while the **median is 26**. The skewed mean makes the material look about twice as strong as it really is, which matters for the safety and reliability of a building design. (The transcript's figure of "701.36" is a transcription error; the slide gives 51.17.)
 - Mitigation:
   - Find and fix sources of skew during data collection.
   - Apply transformations.
@@ -101,6 +102,9 @@ These notes summarise the Week 7 transcripts in [`transcripts/`](transcripts/). 
   - Run sensitivity analysis.
   - Always tell stakeholders that skew is present and how it may affect the results.
 - Other visualisations include the **Q–Q (quantile–quantile) plot** against a normal distribution.
+- The slides list the goals of data wrangling as handling missing values, removing duplicates, integrating or merging data, filtering, grouping, reshaping and transforming. They also cite a Forbes survey: data preparation is about 80% of a data scientist's work, and about 60% of that time goes on cleaning and organising data.
+- Descriptive statistics also include **kurtosis** (how heavy the tails are) alongside skewness.
+- Beyond histograms and box plots, try density plots and violin plots (see data-to-viz.com).
 - **Rule of thumb:** visualise first, then decide what to do with outliers and missing values. Summary statistics alone can hide important features.
 
 ---
@@ -181,7 +185,7 @@ merged = [weather1(:, 'Rainfall...') weather2(:, 'MaximumTemperature...') bikePa
 ### Visualising distributions (09)
 - **Dataset:** Washington bike share, daily data for 2011 and 2012. Columns include:
   - instant, date, season, year, month, holiday, weekday (**0 to 6**, unlike MATLAB's 1 to 7), working day and weather situation (1 clear through 4 heavy rain or snow).
-  - temperature and apparent temperature, humidity and wind speed. These are all **normalised to 0–1**.
+  - temperature and apparent temperature, humidity and wind speed. These are all scaled into the 0–1 range. The presenter says they are min–max normalised, but in `data/day.csv` `temp` only spans 0.06 to 0.86, so they are scaled down rather than normalised to exactly 0 and 1.
   - casual, registered and total user counts.
 - **`histogram`:** easy to overlay datasets of different lengths, but gets crowded with many series and automatic bin widths can differ. Set consistent bin edges.
 - **`hist`:** draws side-by-side bars, but requires series of equal length because they are concatenated.
@@ -263,14 +267,14 @@ merged = [weather1(:, 'Rainfall...') weather2(:, 'MaximumTemperature...') bikePa
 ## 5. Python track
 
 ### Jupyter notebooks (14)
-- **Setup:** use QUT's eResearch JupyterHub (link on the slide) and select the **EGH404** environment, then Start. Log out and back in if the environment isn't listed. Files you create there persist.
+- **Setup:** go to <https://jupyter.eres.qut.edu.au/> and choose **EGH404 Notebook** under Server Options (not EGB103 or General Notebook), then Start. JupyterLab opens with a file browser on the left and a Launcher for new Python 3 notebooks, consoles, terminals and text or Markdown files. Log out and back in if the environment isn't listed. Files you create there persist.
 - **Why notebooks:** they combine code, results, charts and Markdown explanations, and results can be reproduced and edited in place.
 - **Cells:**
   - Shift + Enter runs a cell and moves to the next one.
   - The numbers on the left show **execution order**, not position. If something behaves unexpectedly, check the order. **Run → Run All Cells** executes top to bottom.
 - **Markdown cells:** `#` for a title, `##` for a heading, plus text and numbered lists.
 - **Export:** File → Save and Export Notebook As (PDF, HTML and others), or Download.
-- **New to Python?** Work through the first two chapters of the recommended GitHub Jupyter Python introduction (link on the slide). This is enough for the modules from Week 8. Download the `.ipynb` and upload it to JupyterHub.
+- **New to Python?** Work through the first two chapters of the GitHub course [jvdkwast/Python3_Jupyter_Notebook](https://github.com/jvdkwast/Python3_Jupyter_Notebook). This is enough for the modules from Week 8. Download the `.ipynb` and upload it to JupyterHub.
 
 ### Preprocessing with pandas (15, 16)
 Transcript 16 is a shorter recording covering the loading, missing-data, date and merging sections of the same practical.
@@ -326,10 +330,10 @@ stacked = pd.concat([w1, w2, bike], axis=0)     # stacked: 1098 rows, filled wit
 - **Dataset:** Washington bike share daily data, loaded with `pd.read_csv('day.csv', header=0, index_col='dteday')`, then `df.index = pd.to_datetime(df.index)`.
   - After setting `index_col`, access the dates through `df.index`, not the column name.
   - In this dataset, `weekday` uses 0 = Sunday and 6 = Saturday, which differs from pandas `dt.weekday`.
-- **Four subsets:** 2011 weekday, 2011 weekend, 2012 weekday and 2012 weekend. They are built from `~((weekday == 0) | (weekday == 6)) & (yr == 0)` and similar. 2011 has 365 days and 2012 has 366 (leap year).
+- **Four subsets:** 2011 weekday, 2011 weekend, 2012 weekday and 2012 weekend. They are built from `~((weekday == 0) | (weekday == 6)) & (yr == 0)` and similar. 2011 has 365 days and 2012 has 366 (leap year). The subsets have 260, 105, 261 and 105 rows.
 - **Pearson correlation** (ranges from −1 to +1; 0 means uncorrelated). Correlation is covered properly in Weeks 9 and 10.
   - 2011 weekday registered vs casual: about **0.65**, a moderate positive correlation. The scatter plot shows an upward trend with spread.
-  - 2011 weekend registered vs casual: about **0.8**, a stronger correlation with a tighter trend.
+  - 2011 weekend registered vs casual: about **0.81**, a stronger correlation with a tighter trend.
   - 2011 vs 2012 weekend registered: about **0.62**.
   - Both variables need the same number of samples.
 - **Date lookups:** `df[(df.index.month == 3) & (df.index.day == 5)]` returns one row per year. 29 February returns only a 2012 row.
@@ -338,9 +342,9 @@ stacked = pd.concat([w1, w2, bike], axis=0)     # stacked: 1098 rows, filled wit
 | Group | Registered mean | Casual mean |
 |---|---|---|
 | 2011 weekday | about 2900 | 492 |
-| 2011 weekend | lower | 1134 |
+| 2011 weekend | about 2263 | 1134 |
 | 2012 weekday | about 4900 | 756 |
-| 2012 weekend | lower | 1668 |
+| 2012 weekend | about 3712 | 1668 |
 
 - **Histograms** (`plt.hist(..., bins=range(0, 5000, 50), label=...)` plus `plt.legend()`):
   - Weekday casual users are mostly under 1000 per day; registered users are mostly 3000 to 4000 or more.
@@ -353,6 +357,38 @@ stacked = pd.concat([w1, w2, bike], axis=0)     # stacked: 1098 rows, filled wit
   - The upper whisker bound is **Q3 + 1.5 × IQR** and the lower bound is **Q1 − 1.5 × IQR**. Points beyond the bounds are potential outliers.
   - Using `plt.boxplot` in four subplots shows that 2012 usage is higher than 2011 and registered users are always higher than casual users.
 - The variables have very different ranges and scales, which is a signal to **standardise** data before regression or machine learning (Week 10).
+
+---
+
+## 6. Other Week 7 materials
+
+### Practical 3: MATLAB refresher ([`slides/practical-3-matlab-refresher.pdf`](slides/practical-3-matlab-refresher.pdf))
+A one-page setup sheet with three steps:
+1. Install MATLAB through the QUT IT Helpdesk (Software and Downloads). The sheet names MATLAB 2017b, which is an old version, so use whatever the helpdesk currently offers.
+2. Or sign up for [MATLAB Online](https://au.mathworks.com/products/matlab-online.html).
+3. Download, review and run the examples from the online lectures. The sheet's Blackboard link is out of date; the examples are now on Canvas.
+
+### Lecture slides
+- [`slides/summary-stats-data-wrangling-statistics-visualisation.pdf`](slides/summary-stats-data-wrangling-statistics-visualisation.pdf): the 16 slides for transcript 02. Their extra details are merged into section 2 of these notes. They include the histogram of student heights (114 to 129 cm, peaking at 121 to 122 cm, from the ABS) and the steps for IQR outlier limits:
+  1. Find Q1 and Q3.
+  2. Compute IQR = Q3 − Q1.
+  3. Treat anything outside Q1 − 1.5 × IQR to Q3 + 1.5 × IQR as an outlier.
+- [`slides/introduction-to-jupyter-notebook.pdf`](slides/introduction-to-jupyter-notebook.pdf): the 9 slides for transcript 14. They are screenshots of the same walkthrough, with the details merged into section 5.
+
+### Practical dataset: [`data/day.csv`](data/day.csv)
+This is the Washington bike share daily dataset used in transcripts 09 and 15. Load it with `readtable('day.csv')` in MATLAB or `pd.read_csv('day.csv', index_col='dteday')` in pandas.
+- 731 rows (1 January 2011 to 31 December 2012) and 16 columns: `instant, dteday, season, yr, mnth, holiday, weekday, workingday, weathersit, temp, atemp, hum, windspeed, casual, registered, cnt`.
+- `yr` is 0 for 2011 and 1 for 2012. `weekday` uses 0 = Sunday to 6 = Saturday. `cnt` = `casual` + `registered`.
+- No missing values, so it needs no NaN cleaning (unlike the Brisbane data).
+- Total daily rentals (`cnt`) range from 22 to 8714, with a mean of about 4504 and a median of 4548.
+- Recomputing the practical's figures from this file confirms the transcript numbers:
+
+| Subset | Days | Registered mean | Casual mean | Pearson r (registered vs casual) |
+|---|---|---|---|---|
+| 2011 weekday | 260 | 2916 | 493 | 0.65 |
+| 2011 weekend | 105 | 2263 | 1135 | 0.81 |
+| 2012 weekday | 261 | 4931 | 757 | 0.60 |
+| 2012 weekend | 105 | 3712 | 1669 | 0.81 |
 
 ---
 
