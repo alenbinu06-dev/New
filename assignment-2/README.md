@@ -42,6 +42,27 @@ The datasets and working drafts for Assignment 2, which analyses Brisbane bikewa
 - **S2.T3** refers to "the correlation coefficient calculated in 2.1(a)", but the pair it asks about (North Brisbane cyclists vs Bicentennial pedestrians) is row **(d)**. The S2 draft already handles this by stating which row it uses and also discussing row (a).
 - **S1.T2 (d)** copies the bikeway wording ("for each bikeway"). Reading it as "for each weather factor", as the draft does, is sensible.
 
+## Sections 4–5: options for the Assignment 1 topic
+
+The topic is CO2 curing of recycled concrete aggregate, and whether a co-treatment agent adds anything beyond controlled carbonation. See [`../assignment-1/README.md`](../assignment-1/README.md).
+
+A web search (30 Sep 2026) found no public dataset that varies CO2 curing and agent dose together, which is the gap Assignment 1 identifies. The candidates below come from the search results and **haven't been downloaded or checked yet**. Before choosing one, confirm its columns, row count and licence.
+
+| Candidate | What it is | Fit to the template |
+|---|---|---|
+| [IIT Bhubaneswar RCA dataset (Mendeley, DOI 10.17632/5wkxzmzwnz.2)](https://data.mendeley.com/datasets/5wkxzmzwnz/2) | 188 lab mixes of recycled-aggregate concrete; water/binder 0.25–0.75; fly ash, GGBS and metakaolin additions; cube compressive strength | ≥100 rows; CC BY 4.0. It is RAC, not CO2-treated, so it serves as a broad proxy (mix and aggregate quality vs strength) |
+| [RAC data-driven database (Mendeley, DOI 10.17632/wc898ff5pj.1)](https://data.mendeley.com/datasets/wc898ff5pj/1) | Includes 956 RAC mix-proportion entries with compressive strength, compiled from the literature | ≥100 rows; licence not shown in the search result |
+| [Carbonated recycled fines (RefoDat)](https://refodat.de/receive/refodat_mods_00000077) | Wet carbonation of recycled fines, with CSV concrete test data | Directly on topic, but likely far fewer than 100 rows |
+| Gebremariam et al. (2026), *Scientific Reports* | 108 samples of carbonated RCA concrete: w/c, water absorption, CO2 stored, replacement % | Very close to the topic, but the data is only "available from the corresponding author", so it fails the public-access requirement |
+
+- **Pathway A (a real dataset):** the practical's preferred route. Use a RAC dataset as a proxy and argue that water absorption and mix quality are exactly what CO2 curing targets.
+- **Pathway B (synthetic data):** the variables could match the research question exactly. For example:
+  - independent variables: CO2 concentration, curing pressure or time, agent dose, RCA replacement %;
+  - dependent variable: 28-day compressive strength;
+  - ranges taken from the Assignment 1 literature table.
+
+  The practical warns that synthetic data won't show real between-variable relationships unless you specify them.
+
 ## Data
 
 | File | Rows | Dates | Columns | Use in |
