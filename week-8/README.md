@@ -5,6 +5,7 @@ Lecture and tutorial transcripts, slides and study notes for the Week 8 content.
 - [`notes.md`](notes.md) – study notes summarising every transcript and slide deck, grouped by topic and platform.
 - [`transcripts/`](transcripts/) – the raw auto-generated transcripts (unedited, so expect speech-to-text errors such as "fiddle M" for `fitlm` or "PSN" for "Pearson").
 - [`slides/`](slides/) – lecture and practical slides.
+- `slides/*-ocr.txt` – OCR text of the slide images (code screenshots, rubric tables and figures), because most slides are images with no extractable text.
 
 The practicals use the Washington bike share data (`day.csv`), stored in [`../week-7/data/day.csv`](../week-7/data/day.csv), and the concrete compressive strength data from Canvas.
 

@@ -153,16 +153,47 @@ Word counts:
 | S3.T2 | 357 | 400 |
 | S4 justification | 236 | 150–250 |
 
+The second and third uploads of the final PDF are byte-identical to each other, and their text and images are identical to the first. None of the changes below have been made yet.
+
+The figures were checked by OCR of the embedded images, not just the code. Every `iloc` range in the appendix was mapped to its calendar dates and matches its printed label.
+
 **Needed changes:**
-1. **Add plot titles to Figures 13 and 14** (S5 Boxes 7 and 8). They have no `set_title` or `plt.title`. Every other figure has a title, and the practical said missing labels score zero.
-2. **Label the problem type on every S1.T1 row**, in the same way as S1.T2 ("Bicentennial pedestrians: outlier, 12,288"). Rows such as "spike", "counter fault" and "77 consecutive zeros" don't say whether they are an outlier, missing data or an error.
-3. **S4 justification: "1,736 RAC mixture records" is inaccurate.** 248 of the 1,736 rows (227 of the 1,649 unflagged) have RAR = 0, so they are natural-aggregate control mixes. Use "1,736 concrete mixture records (1,488 containing RCA)" instead. This still fits within 250 words.
-4. **S1.T1 "220 flagged days" paragraph:** 18 of the days fall in the 2 Dec 2014 – 6 Feb 2015 fault and one is 21 Mar 2015. State that these are handled separately rather than grouping them under "older operating level".
-5. **Check the UQ Open Day reference.** It now cites the 2017 Business and Economics undergraduate guide. Confirm that the guide states Open Day was on Sunday 7 August 2016, or cite the Open Day programme instead.
+1. **Figure 7 (S2.T2) has no title in the image.** S2 Box 6 contains `plt.title(...)`, but the embedded image in both the report and the appendix starts at the plot area. It was produced by an older run. Re-run Box 6 and replace both copies. S2.T2 is worth 2 points, and the Week 9 practical said a plot missing its title scores zero.
+2. **Add plot titles to Figures 13 and 14** (S5 Boxes 7 and 8). They have no `set_title` or `plt.title`.
+3. **Label the problem type on every S1.T1 row**, in the same way as S1.T2 ("Bicentennial pedestrians: outlier, 12,288"). Rows such as "spike", "counter fault" and "77 consecutive zeros" don't say whether they are an outlier, missing data or an error. The rubric asks for a "structured table detailing issue type, date, and justification".
+4. **Fix the S4 justification's "1,736 RAC mixture records".** 248 of the 1,736 rows (227 of the 1,649 unflagged) have RAR = 0. The dataset README defines this as "no recycled coarse aggregate was used", and Section 5 already excludes those mixes. Use "1,736 concrete mixture records (1,488 containing RCA)".
+5. **Fix the S1.T1 "220 flagged days" paragraph.** 18 of the days fall in the 2 Dec 2014 – 6 Feb 2015 fault and one is 21 Mar 2015. State that these are handled separately.
+6. **Check the UQ Open Day reference.** Confirm that the cited 2017 Business and Economics undergraduate guide states Open Day was on Sunday 7 August 2016, or cite the Open Day programme instead.
+
+**Recommended (taught in Weeks 8–9 but missing from S3):**
+- **Add a residual plot for each final model** (residuals = actual − predicted against predicted, on the training data). The Week 8 practical covered residual plots, the "fan shape" of non-constant error variance, and the linearity, independence and constant-variance assumptions. Use it in S3.T2 (b) to discuss suitability.
+- **Name the problem as underfitting.** The Week 8 activity asks you to "distinguish between a well-specified model and one that is underfitting". R² of 0.023 and 0.043 is underfitting. The standard errors, and the Durbin–Watson values of 0.32 and 0.24 (the independence assumption), also support this. S3.T2 has 43 words spare.
+- **Tie the S3.T2 (c) train/test argument to the Week 8 Python tutorial.** In that tutorial, training on data whose pattern differs from the test period (2011 vs 2012) reduced test performance.
 
 **Optional:**
-- S3.T2 (43 words spare): add that Durbin–Watson is 0.32 and 0.24, so the residuals are autocorrelated and the p-values optimistic.
-- S3.T1 (b): add the removed variable's scatter plot (rainfall for pedestrians, temperature for cyclists) to support its removal.
-- Table numbering: Table 6 is the only labelled table. Either number all the tables or rename it Table 1.
-- S2.T3 cites "Week 8". A module name or reference reads better than the teaching week.
-- S4 variable table: consider adding a mean or median column.
+- **Box plot ticks:** Figures 1 and 3 show a meaningless "1" tick under each box. Use `labels=[...]` in `boxplot` (`tick_labels=` in matplotlib 3.9+) or clear the ticks.
+- **S1.T1 3 Aug 2014 row:** label it a visual outlier inside the 1.5 × IQR bound. S1.T2's two solar "lowest value" rows need the same treatment.
+- **S3.T1 (b):** add the removed variable's scatter plot.
+- **S4:** mention that the records come from Chinese literature and that CS is a 150 mm cube strength, which limits direct comparison with cylinder-based studies.
+- **S5:** the Week 8 correlation lecture used a concrete compressive-strength example (cement positive, water negative), which matches your cement r = 0.358 and water r = −0.331.
+- **Table numbering:** Table 6 is the only numbered table.
+- **S2.T3:** replace "Week 8" with the concept name.
+- **S4 table:** consider a mean or median column.
+
+## Code checked against the course content
+
+Every construct in the appendix was searched for in the Week 7–9 transcripts, the slide text and the slide OCR ([`../week-7/slides/`](../week-7/slides/), [`../week-8/slides/`](../week-8/slides/), [`../week-9/slides/`](../week-9/slides/)).
+
+**Taught:**
+- Week 7 Python tutorial: `read_csv(header=0, index_col=...)`, `to_datetime(format=...)`, `info`/`head`/`tail`/`shape`/`describe`/`mean`, `iloc[rows, cols]`, boolean masks, `np.isfinite`/`np.isnan`, `~`, `.loc[mask, :]`, `df.index = pd.to_datetime(df.index)`, index date attributes, `pd.concat(axis=1)`, `plt.subplots` with `boxplot`, column `.plot()`, `plt.plot`/`scatter`/`legend`.
+- Week 8 Python correlation tutorial: `np.corrcoef(x, y)`.
+- Week 8 Python regression tutorial: a date test flag with `~`, `sm.add_constant`, `sm.OLS(...).fit()`, `.summary()`, `.predict()`, `sklearn.metrics.mean_squared_error`, and actual-vs-predicted plots.
+- Week 8 live practical: RMSE as the square root of MSE, and backward elimination.
+
+**Not shown in the Python content** (standard Python/pandas, low risk):
+- f-strings in legend labels (S3 Boxes 8 and 13; S5 Boxes 7 and 8);
+- `DataFrame.corr()` (correlation matrices were taught with MATLAB `corrcoef` and Excel);
+- `.sort_values()` (only in the Week 9 machine-learning demo);
+- holding one predictor at its mean to draw a fitted line (the rubric slide shows the MATLAB added-variable plot instead);
+- the `figsize`, `color`, `marker` and `loc` arguments;
+- the water-to-binder column arithmetic.

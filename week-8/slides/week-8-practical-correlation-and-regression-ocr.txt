@@ -1,0 +1,350 @@
+
+=== p1 (OCR)
+QUT
+EGH404 Correlation and Regression
+Faculty of Engineering
+EGH404
+=== p2 (OCR)
+Agenda
+Correlation Analysis
+Regression Analysis
+=== p3 (OCR)
+Overview of the Research Process
+KeyStages of theResearchProcess
+Identifying the Problem
+Recognize a gap in knowledge or a specific issue that needs investigation.
+Conducting a Literature Review
+1
+Explore existing research to understand what has already been studied and where gaps exist.
+Exploration
+Formulating Research Questions
+Report
+Literaturereview
+Develop clear, focused questions that guide the direction of the study.
+Designing the Methodology
+Choose appropriate methods and tools to collect and analyze data.
+Theresearch
+process
+Collecting Data
+3
+2
+Gather information through experiments, surveys, observations, or other techniques.
+Research
+Research
+execution
+Design
+Analyzing Data
+Examine the data to identify patterns, relationships, and insights.
+Drawing Conclusions
+Interpret findings to answer the research questions and understand implications.
+Reporting Findings
+Share results through papers, presentations, or other formats to contribute to the field.
+Proposal
+Theresearchprocess(2021)courtesyofQUTScienceand EngineeringFaculty
+=== p4 (OCR)
+Why Correlation & Regression Matter
+Engineering research runs on data — sensor logs, lab
+measurements, field trials. Behind almost every study sits one
+CORRELATION
+recurring question:
+Is there a relationship?
+How does one quantity depend on
+Measures whether two variables move together, and how strong
+another?
+and in which direction.
+Detect relationships hidden in noisy measurements
+REGRESSION
+Quantify effects and predict outcomes you haven't
+Quantify &predict it
+tested
+Fits a model to estimate each factor's effect and forecast values you
+Back design decisions with evidence, not intuition
+haven't observed.
+=== p5 (OCR)
+What Correlation and Regression can
+Reveal?
+用
+Electrical
+Chemical
+Civil / Structural
+How does ambient temperature affect a
+Which reactor conditions drive the highest
+How does the water-cement ratio
+battery's usable capacity?
+product yield?
+influence concrete strength?
+Mechanical
+Environmental
+Materials
+How well does stress amplitude predict a
+How does river flow rate relate to
+Which processing variables best predict a
+part's fatigue life?
+downstream pollutant levels?
+material's hardness?
+=== p6 (OCR)
+Trend Line (in scatter plot)
+ Purpose: Visualize the general direction (or
+PearsonCorrelation:0.48(moderate,positive)
+pattern) in the data between two variables.
+95
+What you can infer:
+06
+Positive slope: As one variable
+85
+HealthScore
+increases, the other tends to increase
+(positive correlation).
+80
+Negative slope: As one variable
+75
+increases,the other tends to decrease
+70
+(negative correlation).
+65
+Flat or noisy line: Suggests weak or no
+linear relationship.
+3
+4
+ExerciseHours/Week
+=== p7 (OCR)
+Pearson Correlation (r):
+Overview
+Pearson correlation=1:
+Pearson correlation=-1:
+Purpose: Measures the strength and direction of a linear
+relationship between two continuous variables
+Range: -1 to +1
+Pearson correlation=0.9:
+Pearson correlation=-0.7:
+r = + 1: Perfect positive linear relationship
+r = -1: Perfect negative linear relationship
+r  O: No linear relationship
+Interpretation:
+[rl close to 1 → strong linear association
+Pearson correlation=0.5:
+Pearson correlation=-0.3:
+Ir| close to 0 → weak linear association
+Key assumptions:
+Linear relationship
+Continuous variables
+Pearson correlation=0.1:
+Pearson correlation=0:
+No major outliers
+Important note:
+Correlation does not imply causation
+=== p8 (OCR)
+By the end of this activity, students will be able to:
+In Class Activity 1 -
+Interpret
+Interpret the sign and magnitude of Pearson's rto describe the direction and
+strength of a linear relationship between two variables
+Pearson Correlation
+Explain
+Explain why a low r does not mean no relationship, and identify non-linear
+patterns that r cannot capture
+Analysis
+LAB TOOL
+Correlation Explorer
+Pearon's  Wbens Ir Works, and Whes It Misleads 
+Demonstrate how a single extreme data point can substantially change r,
+Demonstrate
+and explain why this occurs mathematically
+SCENARI1OF 6 TheBaseline
+Age (years)x 
+ suyf300rking adsredsteiae andl nme Befre alatingabing, loo attbeatrpltt
+patters do yow see?
+Scatter Plot with Trend Line
+Recognise when a statistically meaningfulr may be misleading due to
+Recognise
+distinct subgroups within the data
+4)The Subgn
+X89
+Distinguish
+Distinguish between a spurious correlation and a causal relationship, and
+identify plausible confounding variables that could explain an observed r 
+what does it sugest
+Evaluate whether Pearson's r is an appropriate summary statistic for a given
+Evaluate
+Please use the correlation_explorer.html provided in practical's Canvas page forthis activity
+=== p9 (OCR)
+Single and Multiple
+In [8]: mod = smf.ols(formula='Lottery ~ Literacy + Wealth + Region'，data=df)
+Regression
+In [9]: res = mod.fit()
+In [10]: print(res.summary())
+Each component in the Regression summary table tells you different aspects
+OLS Regression Results
+about the model. So it's important to know' what they tell you.
+Dep. Variable:
+Lottery
+R-squared:
+0.338
+Coefficient:
+Model:
+OLS
+Adj. R-squared:
+0.287
+Method:
+Least Squares
+F-statistic:
+6.636
+Representsthe expected change in the response variable for a one-unit
+Date:
+Sat，28 Nov 2020
+Prob (F-statistic):
+1.07e-05
+change in the predictor.
+Time:
+14:39:43
+Log-Likelihood:
+-375.30
+Tells us the direction (positive/negative) and magnitude of the
+No. Observations:
+85
+AIC:
+764.6
+relationship.
+Df Residuals:
+78
+BIC:
+781.7
+Df Model:
+6
+Standard Error:
+Covariance Type:
+nonrobust
+Measures the uncertainty in the estimated coefficient.
+coef
+std err
+t
+P>|t|
+[0.025
+0.975]
+Smaller values indicate more precise and stable estimates.
+Intercept
+38.6517
+9.456
+4.087
+0.000
+19.826
+57.478
+p-value:
+Region[T.E]
+-15.4278
+9.727
+-1.586
+0.117
+-34.793
+3.938
+Assesses whether the observed relationship is statistically meaningful.
+Region[T.N]
+-10.0170
+9.260
+-1.082
+0.283
+-28.453
+8.419
+·A small p-value suggests the predictor is unlikely to have no effect.
+Region[T.S]
+-4.5483
+7.279
+-0.625
+0.534
+-19.039
+9.943
+Region[T.W]
+-10.0913
+7.196
+-1.402
+0.165
+-24.418
+4.235
+F-statistic:
+Literacy
+-0.1858
+0.210
+-0.886
+0.378
+-0.603
+0.232
+Wealth
+0.4515
+0.103
+4.390
+0.000
+0.247
+0.656
+Evaluates whether the model as a whole explains variability better than no
+model.
+Omnibus:
+3.049
+Durbin-Watson:
+1.785
+Useful for judging overall model usefulness, especially with multiple
+Prob(Omnibus) :
+0.218
+Jarque-Bera (JB):
+2.694
+Skew:
+-0.340
+Prob(JB) :
+0.260
+predictors.
+Kurtosis:
+2.454
+Cond. No.
+371.
+Model Fit (R?, residuals):
+R² indicates how much of the variability in the data is explained by the
+model.
+Residuals help diagnose whether model assumptions are reasonable or if
+patterns remain unexplained
+=== p10 (OCR)
+By the end of this activity, students will be able to:
+Interpret a regression coefficient in plain English, including its
+Interpret
+direction, magnitude, and units
+In Class Activity 2 -
+Explain
+Explain what standard error indicates about the reliability of a
+coefficient estimate
+Regression Analysis
+Use
+LAB T0OL
+Regression Explorer
+meaningfully to a model
+UNDERSTANDING THE STATISTICS
+2BUILDING A MULTIPLE REGRESSION MODEL
+③ BUILD YOUR BEST MODEL
+STATISTICS
+es a single1
+Interpret R? as the proportion of variance explained, and identify
+Interpret
+what a low R? implies
++1,314
+Identify
+Identify a spurious or redundant predictor using p-values and
+changes in Adjusted R2
+Distinguish
+Distinguish between a well-specified model and one that is
+underfitting or overspecified
+Please use the regression_explorer.html provided in practical's Canvas page for this activity
+=== p11 (OCR)
+Test Your Knowledge
+Use the
+Interactive Quiz
+Ready to Test Your Knowledge?TryThis Quiz Agent!
+Agentto Test Your
+Hi!I'm your adaptive data analysis quiztutor.Would you like to try a fewquestions to test your understanding?Hidemessage
+Knowledge
+yes
+me know how I can assist you!
+Ineed questions in correlation
+Which topicwould you like to practise?(Processing Data,Visualisation,Correlation,Regression)
+Correlation
+Thank you for selecting the topic"Correlation."I will now retrieve a random question from the correlation file.
+Question'
+Enter your message
+You can access this agent through this week's practical page in Canvas:
+https://canvas.qut.edu.au/courses/24207/pages/8-dot-3-practical-correlation-and-regression?module_item_id=2111748

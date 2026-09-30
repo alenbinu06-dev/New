@@ -1,0 +1,397 @@
+
+=== p1 (OCR)
+QUT
+EGH404
+Data Analysis: Data Wrangling.
+Statistics & Visualisation
+Faculty of Engineering
+=== p2 (OCR)
+Data provides the
+building blocks of
+empirical
+(i.e. evidence-based )
+research
+=== p3 (OCR)
+Data Wrangling
+Whatdatascientistsspend themosttime doing
+3%5%
+4%
+%6
+Building training sets:3%
+Cleaningand organizing data:60%
+Collecting data sets;19%
+·In a report
+19%
+Miningdataforpatterns:9%
+published by Forbes
+60%
+Refiningalgorithms:4%
+data preparation
+Other:5%
+accounts for about
+80% of a data
+scientists role, with
+What'stheleastenjoyablepartofdatascience?
+60% of that time
+3%4%
+5%
+spent with the
+Buildingtraining sets:10%
+10%
+Cleaning and organizing data:57%
+cleaning and
+Collecting data sets:21%
+organizing of that
+57%
+Miningdataforpatterns:3%
+21%
+data for analysis
+Refiningalgorithms:4%
+Other:5%
+source:https://www.forbes.com/sites/gilpress/2016/03/23/data-preparation-most-time-consuming-least-enjoyable-data-science-task-survey-says/?sh=6fc924ed6f63
+=== p4 (OCR)
+The goal of data wrangling is to
+convert messy and complex
+data into high-quality, usable
+formats.
+ Handling Missing Values
+Removing Duplicates
+Integrating / Merging Data
+Filtering Data
+Grouping Data
+Reshaping Data
+Transforming Data
+=== p5 (OCR)
+Problematic Data
+(e.g. Outliers, Missing Data)
+9
+Assess on case-by-case basis
+Handling problematic data:
+Consider how to best handle problematic data
+Identify most suitable option(s):
+given the context of your problem
+Correct errors (e.g. "NaN")
+Does the data make sense?
+Remove Duplicates and/or irrelevant
+Look at research articles in your field - what
+observations
+have they done? What is the rationale?
+Removing data (e.g. if < 5%, acceptable to
+Does the data follow the appropriate rules for
+ignore/remove problematic data)
+its field? If not, is that because of a data quality
+Impute? (mean, median, mode)
+issue?
+Set default values?
+Use predictive modeling (e.g. regression models)
+to replace problematic data
+=== p6 (OCR)
+Histograms also emphasize the existence of outliers. Look for isolated bars, as shown below. Our
+outlier is the bar far to the right. The graph crams the legitimate data points on the far left.
+Histogram of Height M
+14
+Identify
+12
+Outliers:
+10
+Frequency
+Plot
+Histograms
+1.6
+3.2
+4.8
+6.4
+8.0
+9.6
+11.2
+Height M
+=== p7 (OCR)
+Identify Outliers: Plot Boxplots
+Use boxplot visualisations to help identify outliers (unrealistic values/anomalies)
+One way to deal with outliers is to use the
+interquartile range:
+Interquartile Range
+(IQR)
+Find the first quartile, Q1.
+Outliers
+Outliers
+Find the third quartile, Q3.
+Calculate the IQR. IQR = Q3-Q1.
+Define the normal data range with
+lower limit as Q1-1.5*IQR and upper
+"Minimum"
+"Maximum"
+(Q1-1.5*IQR)
+Median
+(Q3 +1.5*IQR)
+limit as Q3+1.5*IQR.
+Q1
+Q3
+Any data point outside this range is
+(25thPercentile）(75thPercentile)
+considered as outlier and should be
+Image source:https://www.analyticsvidhya.com/blog/2022/10/outliers-detection-using-iqr-z-score-lof-and-dbscan/
+removed for further analysis.
+=== p8 (OCR)
+The
+Normal
+Identify
+Distribution
+Outliers:
+Probability
+standard
+1.96
+960
+95%ofvalues
+Values
+deviations,
+-2.58g
+2.580
+99%ofvalues
+ProbabilityofCases
+≈0.0013
+≈0.0214
+≈0.1359
+≈0.3413
+inportionsofthecurve
+≈0.3413
+≈0.1359
+≈0.0214
+≈0.0013
+1
+1
+z-scores
+StandardDeviations
+-40
+-30
+-20
+-10
+0
++1o
++20
++30
+FromTheMean
++40
+Cumulative %
+0.1%
+2.3%
+15.9%
+50%
+84.1%
+97.7%
+99.9%
+ZScores
+-4.0
+-3.0
+-2.0
+-1.0
+0
++1.0
++2.0
++3.0
++4.0
+TScores
+20
+30
+40
+50
+60
+70
+80
+Image source:https://en.wikipedia.org/wiki/Standard_Score
+=== p9 (OCR)
+Identify Missing Data
+Missing Data:Series
+rows = series.shape[0]
+null_total=series.isnull().sum()
+missing_percent =(null_total/rows)*100
+Patchy data
+missing_percent
+CityB
+With this codeyou canfind the percentage of missingvalues
+30°℃
+country
+0.000000
+iso_code
+6.669517
+CityA
+date
+0.000000
+total_
+_vaccinations
+34.715690
+people_vaccinated
+44.527576
+20
+people_fully_vaccinated
+62.676357
+daily_vaccinations_raw
+44.933732
+daily_vaccinations
+3.420265
+total_vaccinations_per_hundred
+34.715690
+people_vaccinated_per_hundred
+44.527576
+people_fully_vaccinated_per_hundred
+62.676357
+daily_vaccinations_per_million
+3.420265
+vaccines
+0.000000
+country
+iso_code
+date
+total_vaccinations
+people_vaccinated
+people_fully_vaccinated
+daily_vaccinations_raw
+daily_vaccinations
+people_vaccinated_per_hundred
+vaccines
+source_name
+source_website
+source_name
+0.000000
+source_website
+0.000000
+dtype:float64
+(source:https://jacobheyman702.medium.com/visualizing-missing-data-afd1b9ec724f)
+=== p10 (OCR)
+Summary
+Statistics
+(aka Descriptive Statistics)
+Please watch module materials on Summary Statistics
+=== p11 (OCR)
+Visualise Data
+Measures of Central
+Distribution (e.g.
+Tendency
+histograms)
+Descriptive
+Statistics
+Measures of Spread /
+Measures of Skewness
+Dispersion
+and Kurtosis
+=== p12 (OCR)
+Visualise Data Distribution: Histograms
+Histogram graph showing the
+frequency of student heights.
+Heightofstudents
+·114cm - 1
+·115cm -1
+·116cm-2
+·117cm-2
+Frequency
+·118cm -3
+·119cm-5
+·120cm -7
+2
+·121cm-8
+·122cm -8
+0
+·123cm- 7
+2
+·124cm - 5
+Height (cm)
+·125cm-3
+·126cm-2
+A histogram helps describe the distribution (or pattern)
+·127cm -2
+of the data within a dataset.
+·128cm - 1
+·129cm - 1
+Source:Australian Bureau of Statistics-https://www.abs.gov.au/statistics
+=== p13 (OCR)
+Central Tendency, Spread & Dispersion
+Histograms help describe the distribution (or pattern) of the data within a dataset.
+DescriptiveStatistics:NormalDistribution
+Mean
+0.10
+Median
+Mode
+IQR1
+0.08
+IQR3
+mean-3*Sigma
+Frequency
+mean+3*Sigma
+Length
+0.06
+0.04
+0.02
+0.00
+30
+45
+50
+55
+60
+Length
+Image:https://towardsdatascience.com/understanding-descriptive-statistics-with-the-help-of-gaussian-left-skewed-and-right-skewed-897b296382c6
+=== p14 (OCR)
+Skewness
+Mean
+Median
+Median
+Median
+Mode
+Mode
+I-Mean
+Mean-1
+Mode
+Positive
+Symmetrical
+Negative
+Skew
+Distribution
+Skew
+Image source: https://en.wikipedia.org/wiki/Skewness
+=== p15 (OCR)
+So what?
+Imagine you're creating a new kind of material to use in buildings. You're
+checking how strong it is by doing strength tests
+E.g. Strength data (in units) collected from 30 tests = 23 + 25 + 26 + 28 + 24
++ 25+26+27+ 29+25+ 26+ 28+24+ 26+25+ 800+ 25+28+ 26+27
++26+25+26+28+27+25+26+24+25+26=1551
+Average = the sum (1551) divided by the total count of numbers (30))= 1551
+/30~51.17
+Since the data set has 30 values, the median is the middle value when the
+data is arranged in order. In this case, the median is the 15th value, which is
+26.
+Skewed results make the material appear stronger
+than it truly is. As engineers be careful with
+extreme results - as they will directly impact on
+the safety & reliability of building design.
+=== p16 (OCR)
+Recap: Always plot your data to understand your
+data
+ Consider different ways to
+Histogram
+Boxplot
+NormalQ-Qplot
+inspect the distribution of
+Outlier
+Outlier
+your data
+Outlier.
+Outlier
+Plot your data using box
+plots, histograms, density
+plots, violin plots, etc.. For
+o00
+examples plots go
+00
+Outlier
+8
+0
+00
+to: https://www.data-to-
+00
+viz.com/story/OneNumOn
+20
+25
+Theoretical Quantiles
+eCatSeveralObs.html
+What does the distribution
+of your data tell you?

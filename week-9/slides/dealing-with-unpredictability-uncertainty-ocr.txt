@@ -1,0 +1,165 @@
+
+=== p1 (OCR)
+Dealing with Unpredictability
+=== p8 (OCR)
+What ingredients do we need to
+describe randomness?
+3. A probability density function P
+- Assigns a real number to every event so that
+· P(A) ≥ O for every event
+· P(Q) = 1
+ Can be discrete or continuous
+If events A1, A2,.. are disjoint then
+P(A Or A2 Or ...) = P(A1) + P(A2) + ...
+Probability Distribution:Coin Toss
+0.6
+0.5
+0.3
+Probability
+0.4
+0.2
+34.1%34.1%
+0.3
+0.1
+0.1%
+2.1%
+2.1%
+0.2
+13.6%
+13.6%
+0.1%
+0.1
+-3a
+-2a
+-1a
+2a
+3a
+Heads
+Tails
+=== p11 (OCR)
+Independence assumption and SiDS
+11-week old Christopher
+Clark, son of Sally and
+Bad
+Steve died in his sleep
+Science
+A year later, the Clark's
+second child Harry died
+Ben Goldacre
+B Gne Uesten in haw le sigatr
+aged 8 weeks
+B nttt  ttonod b
+peddhrl og caat d aG bd
+Sally and Steve were
+arrested
+Sally was sentenced to life
+LOAD OF
+RU66ASH
+in prison for the murder
+100-0
+of Christopher and Harry
+See Goldacre (2009) Bad Science, Chapter 14 Bad Statistics
+=== p12 (OCR)
+Independence assumption and SiDs
+Estimated chance of
+randomly chosen baby
+Bad
+dying of SIDS: 1/8500
+Science
+Assuming that SIDS in
+Ben Goldacre
+B Gne Uesten in haw le sigatr
+first and second born
+B nttt  tatonod b
+peddrt og caat ad neG bd
+babies is statistically
+independent, chances
+of two SIDS: (1/8500)2
+LOAD OF
+电
+RU66ASH
+ 1 in 73 million
+100-0
+See Goldacre (2009) Bad Science, Chapter 14 Bad Statistics
+=== p13 (OCR)
+Independence assumption and SiDs
+Later shown that second
+cases of SIDs are
+Bad
+not independent
+of first cases of SlDS
+Science
+Couples whose firstborn
+Ben Goldacre
+dies of SiDs have around
+B Fne Uesten in haw le sigatr
+b ntrtt  ttonod b
+a 1/100 chance of their
+peddrt og caat ad neG bd
+second born dying the
+same way
+incidence of double SlDS
+LOAD OF
+~ 1 in 130,000
+RU66ASH
+100-0
+See
+Beyond reasonable doubt
+See Goldacre (2009) Bad Science, Chapter 14 Bad Statistics
+=== p14 (OCR)
+Independence assumption
+and game shows
+Suppose you're on a
+game show, and you're
+given the choice of three
+doors.
+ Behind one door is a car,
+behind the others, goats.
+AskMarilym
+You pick a door, say #1, and
+the host, who knows
+BY MARILYN VOS SAVANT
+what's behind the doors,
+opens another door, say
+#3, which has a goat.
+He says to you, "Do you
+want to pick door #2?"
+=== p18 (OCR)
+How can we be fooled
+by conditional probabilities?
+ If P(B) > O
+then the conditional probability of A given B is
+Joint probability of A and B
+P(AB)
+Conditional probability
+P(A[B) =
+of A given B
+P(B)
+Unconditional probability of B
+=== p21 (OCR)
+Probability that
+there really is damage,
+and
+that the test is positive
+P(D+T+)
+Probability that
+there is damage,
+P(D+|T+)=
+(+1)d
+given that
+the test is positive
+Probability that
+the test is positive
+(whether there is damage or not)
+=== p23 (OCR)
+False negative
+T-D+
+T-D-
+True negative
+T+D+
+T+D-
+True positive
+False positive
+P(D+T+)
+P(D+|T+)=
+P(T+)

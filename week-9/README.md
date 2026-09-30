@@ -5,6 +5,7 @@ Lecture and practical transcripts, slides, data and study notes for the Week 9 c
 - [`notes.md`](notes.md) – study notes summarising every transcript and slide deck, grouped by topic.
 - [`transcripts/`](transcripts/) – the raw auto-generated transcripts. They are unedited, so expect speech-to-text errors such as "Gase mixture models" for Gaussian mixture models, "Pyros"/"pyro" for PyTorch, and "atom optimizer" for Adam.
 - [`slides/`](slides/) – lecture and practical slides.
+- `slides/*-ocr.txt` – OCR text of the slide images (code screenshots, rubric tables and figures), because most slides are images with no extractable text.
 - [`data/`](data/) – the NASA C-MAPSS turbofan engine data (FD001) used in the Python machine learning example.
 
 ## Slides
