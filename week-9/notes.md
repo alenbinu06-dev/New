@@ -458,7 +458,7 @@ This deck has no matching transcript.
   - Repeat the fit, removing variables, until every remaining variable is statistically significant.
 - **Train/test split:**
   - Split by the date ranges given in the assignment. The train period ends on **31 December 2017**, inclusive, and the rest is test data. Using other dates changes your answers.
-  - The recording garbles the start date as "January 1, 2024". The supplied data runs from 2014 to 2018 (see [`../assignment-2/README.md`](../assignment-2/README.md)), so the split is almost certainly **1 Jan 2014 – 31 Dec 2017 for training and 2018 for testing**. Confirm on the assignment page.
+  - The recording garbles the start date as "January 1, 2024". The Assessment 2 template confirms the split is **1 Jan 2014 – 31 Dec 2017 for training and the rest (2018) for testing**. See [`../assignment-2/README.md`](../assignment-2/README.md).
 - **Report:**
   - the regression summary table from the **training** data;
   - **RMSE on both the training and test sets**, compared and discussed;

@@ -5,6 +5,42 @@ The datasets and working drafts for Assignment 2, which analyses Brisbane bikewa
 - [`data/`](data/) – the four supplied CSV files (raw and cleaned).
 - [`drafts/`](drafts/) – the current answer drafts, saved verbatim. Earlier versions are in [`drafts/old/`](drafts/old/).
 - [`checks/verify_drafts.py`](checks/verify_drafts.py) – recomputes 47 figures quoted in the drafts from the CSV files and reports any mismatch.
+- [`assessment-2-template.pdf`](assessment-2-template.pdf) – the official answer template. Answers go directly into it; keep the template wording.
+
+## The task (from the template)
+
+**Scenario:** Brisbane City Council (BCC) is planning bikeway upgrades. You assess cyclist and pedestrian usage of the Bicentennial Bikeway (Brisbane) and the North Brisbane Bikeway (Windsor) from 2014 to 2018, and how usage relates to rainfall, solar exposure and maximum temperature.
+
+**General rules:**
+- Use MATLAB, Python or Excel.
+- Put evidence (code, or Excel formula and Data Analysis screenshots) in an appendix at the end. The code won't normally be run, but it may be used to judge your process.
+- Every figure needs a title, axis labels, a legend where applicable, and units.
+
+| Part | Data | What to produce | Points |
+|------|------|-----------------|--------|
+| S1.T1 (a) | Raw bikeway file | One visualisation containing box plots for the 4 series | 1 |
+| S1.T1 (b) | Raw bikeway file | One line graph with 4 lines | 1 |
+| S1.T1 (c) | Raw bikeway file | Table: column, problem type and value; date or range; handling; justification. Up to 3 examples per problem type per bikeway | 4 |
+| S1.T2 (a) | Raw weather file | Separate box plots for rainfall, maximum temperature and solar exposure | 1 |
+| S1.T2 (b) | Raw weather file | Separate line graphs for the 3 factors | 1 |
+| S1.T2 (d) | Raw weather file | The same table as S1.T1 (c). The template has no part (c), and its wording says "for each bikeway", which in practice means each weather factor | 4 |
+| S2.T1 | Cleaned files | r for (a) Bicentennial cyclists vs pedestrians, (b) North Brisbane cyclists vs pedestrians, (c) Bicentennial cyclists vs North Brisbane cyclists, (d) Bicentennial pedestrians vs North Brisbane cyclists | 2 |
+| S2.T2 | Cleaned files | Scatter plot: North Brisbane cyclists (x) against Bicentennial pedestrians (y) | 2 |
+| S2.T3 | Cleaned files | Interpretation of that pair in 400 words, using r, the plot and patterns over time | 4 |
+| S3.T1, pedestrians | Cleaned files, train/test split | Multiple regression of Bicentennial **pedestrians** on the weather factors. Remove variables until all are significant. (a) Summary table with p-values, R², adjusted R², and RMSE on train and test. (b) A scatter plot for each independent variable against the dependent variable, with the fitted line. (c) Discussion of simplification and its effect | 3 |
+| S3.T1, cyclists | Cleaned files, train/test split | The same for Bicentennial **cyclists** | 3 |
+| S3.T2 | Both models | Interpretation in 400 words. (a) Predicted vs actual plot on the test set, and predictive power. (b) Suitability, using coefficients, R², adjusted R², RMSE and p-values. (c) Reasons for any gap between training and test performance, supported by plots | 5 |
+| S4 (choose **one** of TA or TB) | Your Assignment 1 topic | **TA:** a public tabular dataset with at least 100 rows, at least 5 columns (3 or more quantitative), a source link and a licence or terms of use, broadly related to your topic. **TB:** a synthetic dataset with 3–5 variables (up to 4 independent, 1 dependent) and at least 200 rows, plus a table giving min, max, units, distribution and assumed relationships. Both need a justification of about 150–250 words and a description table. The same dataset is used in the Assessment 3 pitch | 4 |
+| S5.T1 | The Section 4 dataset | (a) Scatter plots and a correlation matrix for related variables. (b) The nature of each relationship (linear, inverse, nonlinear or none), with evidence. (c) A comparison with the literature | 5 |
+| **Total** | | | **40** |
+
+**Section 3 split (confirmed by the template):**
+- Training is 1 Jan 2014 – 31 Dec 2017, inclusive, and testing is everything after.
+- The cleaned file starts on 19 Jun 2014, which gives **1,145 training days** (19 Jun 2014 – 31 Dec 2017) and **316 test days** (2018).
+
+**Two template quirks to handle explicitly in your answers:**
+- **S2.T3** refers to "the correlation coefficient calculated in 2.1(a)", but the pair it asks about (North Brisbane cyclists vs Bicentennial pedestrians) is row **(d)**. The S2 draft already handles this by stating which row it uses and also discussing row (a).
+- **S1.T2 (d)** copies the bikeway wording ("for each bikeway"). Reading it as "for each weather factor", as the draft does, is sensible.
 
 ## Data
 
@@ -19,7 +55,7 @@ Notes on the data:
 - The Week 9 practical says to use the **raw** files for Section 1 and the **supplied cleaned** files for Sections 2 and 3. Don't use your own cleaned versions for Sections 2 and 3.
 - **The cleaned files drop whole days, so dates don't match row positions.** Row 0 is 19 Jun 2014, and later dates shift wherever days were removed. Row ranges written for the raw file (for example `iloc[0:365]` for 2014) are wrong on the cleaned file. The S2 draft already uses positions that suit the cleaned file.
 - **Some faults are still in the cleaned bikeway file.** It keeps 72 days of zero Bicentennial pedestrians (Dec 2014 – Jan 2015 and Mar – Apr 2017) and 40 days of zero North Brisbane cyclists (Jun 2014, Feb – Mar 2017, Jul 2018). Section 1 identifies all of these as counter faults, and the S2 interpretation discusses them.
-- **Section 3 train/test split:** the data runs from 2014 to 2018. The Week 9 recording's "January 1, 2024 to December 31, 2017" is therefore almost certainly **1 January 2014 – 31 December 2017 (train)** and **2018 (test)**. Because the cleaned file starts on 19 Jun 2014, training effectively covers 19 Jun 2014 – 31 Dec 2017. Confirm the dates on the assignment page.
+- **Section 3 train/test split:** training is 1 January 2014 – 31 December 2017 and testing is 2018, as confirmed by the template. Because the cleaned file starts on 19 Jun 2014, training effectively covers 19 Jun 2014 – 31 Dec 2017.
 - **File names:** the draft code loads `brisbane_bikeway_counters (1).csv`, the original download name. The copies here are renamed without " (1)", so change the file name in `pd.read_csv` if you run the code from this folder.
 
 ## Drafts
@@ -62,9 +98,9 @@ I ran [`checks/verify_drafts.py`](checks/verify_drafts.py) and reviewed the draf
 **Suggested fixes** (small; nothing changes a conclusion):
 
 1. **Add the S1.T2 appendix code.** The weather text cites Boxes 7, 9, 11–13 and 15–21, but the file contains no code. The practical requires supporting evidence in the appendix.
-2. **Check the S1.T2 part letters.** The draft goes from (b) to (d). Either part (c) is missing, or the labelling should be checked against the template.
-3. **S1.T2 Errors row for rainfall:** it says the readings after each gap are "only 0.0–0.2 mm". The 1–2 Mar 2018 gap, which the Missing-data row mentions, is followed by **0.8 mm on 3 Mar**. Either add that date or change the wording to "0.0–0.8 mm". The point still stands.
-4. **S1.T1 "220 flagged days" paragraph:** 18 of the 220 fall inside the 2 Dec 2014 – 6 Feb 2015 pedestrian fault (the multiples of 128 plus 5,452 on 6 Feb), and one more is 21 Mar 2015. Those days are handled individually, so it would be more precise to say they are excluded from the "older level" explanation. "Most" is still true: about 200 of the 220 are ordinary pre-June 2015 days.
+2. **S1.T2 Errors row for rainfall:** it says the readings after each gap are "only 0.0–0.2 mm". The 1–2 Mar 2018 gap, which the Missing-data row mentions, is followed by **0.8 mm on 3 Mar**. Either add that date or change the wording to "0.0–0.8 mm". The point still stands.
+3. **S1.T1 "220 flagged days" paragraph:** 18 of the 220 fall inside the 2 Dec 2014 – 6 Feb 2015 pedestrian fault (the multiples of 128 plus 5,452 on 6 Feb), and one more is 21 Mar 2015. Those days are handled individually, so it would be more precise to say they are excluded from the "older level" explanation. "Most" is still true: about 200 of the 220 are ordinary pre-June 2015 days.
+4. **S1.T1 (a) layout:** the template asks for "a SINGLE visualisation" containing the four box plots. The draft uses one figure with a 2×2 grid, each panel on its own scale. That is defensible, because Bicentennial counts are about ten times North Brisbane's. If you want to follow the wording literally, put all four boxes on one axis as well, but they would be hard to read.
 5. **Check against the Week 9 tips.** The drafts already meet all of these:
    - At most three examples per problem type per bikeway: Bicentennial has 3 missing-data rows, 3 outliers and 3 errors; North Brisbane has 2, 3 and 3.
    - Specific dates and a justification for every row.
