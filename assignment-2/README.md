@@ -180,6 +180,52 @@ The figures were checked by OCR of the embedded images, not just the code. Every
 - **Table numbering:** Table 6 is the only numbered table.
 - **S2.T3:** replace "Week 8" with the concept name.
 
+## Review of the revised version (upload `_d54c`)
+
+The revised PDF (91 pages) was reviewed without changes. The figures were viewed directly; the numbers, `iloc` ranges, BOM pages and UQ guide were re-checked.
+
+**Fixed since the previous review:**
+- Figures 7, 13 and 14 now have titles.
+- Every S1.T1 row names its problem type.
+- The "220 flagged days" paragraph and the S4 "1,488 containing RCA" wording are corrected.
+- The UQ reference is verified: PDF p. 40 says "UQ Open Day 2016 St Lucia campus Sunday, 7 August 2016".
+- Residual plots (S3 Box 18) and plots of the removed predictors (S3 Box 19) are added.
+- Box 16 (bikeways) and Box 22 (weather) apply the table decisions. Every `iloc` position maps to the dates in the tables, and the printed non-null counts reproduce.
+
+**Word counts:**
+
+| Part | Words | Limit |
+|------|-------|-------|
+| S2.T3 | 369, including the one-line preface | 400 |
+| S3.T2 | 337 | 400 |
+| S4 justification | 215 | 150–250 |
+
+**Still needed:**
+1. Fill in the student name and number on the cover page.
+2. **North Brisbane pedestrians, 5 Jan – 14 Mar 2016, is a missed fault.**
+   - In this period the median is 1 pedestrian a day (33 zero days out of 69), while cyclists have a median of 124. Before it, the pedestrian median is 91.
+   - The 10 Jan 2016 row calls this "a suspected intermittent pedestrian-channel fault" but removes only 10 Jan. 36 zero days remain after Box 16.
+   - Fix: extend that row's handling to the whole period, and add `bikeway_cleaned.iloc[734:804, 2] = np.nan` to Box 16.
+3. **The "flag" decisions aren't implemented.** "Keep but flag" (21 Mar 2015) and "flagged as uncertain" (29 Dec 2014 – 14 Mar 2015) have no matching code. Reword them to "keep (noted as uncertain)".
+4. **The "post-wrangling CSV exports are supplied separately" sentence in the Method note.** Delete it unless the CSVs are actually submitted.
+5. **S5 (c) still has no literature comparison for water-to-binder ratio or replacement ratio.** Options:
+   - Abrams' law, for the water-to-binder ratio.
+   - Shehadah et al. (2026), already cited, whose abstract reports untreated RCA concrete about 8% weaker than natural-aggregate concrete.
+   - The Week 8 lecture concrete example ("cement contributing positively… water negatively correlated").
+
+**Recommended:**
+- **S3.T2 (a):** describe Figure 12 explicitly. Predictions sit in a narrow flat band, about 650–1,000 pedestrians and 1,000–1,500 cyclists, whatever the actual value.
+- **Residual plots:** move S3 Box 18 into the main text.
+- **"Low R² alone does not prove underfitting":** replace with a conclusion that uses the Week 8 term. Given the structured residuals and omitted predictors, the models underfit.
+- **Durbin–Watson isn't in the course materials.** Don't add it, which reverses the earlier suggestion.
+- **Data-quality caveat for S5:** source [14] has 9 mixtures with water-to-binder ratio 1.0 (180 kg cement, 180 kg water) at 30–39 MPa. These are implausible, and removing them changes r from −0.582 to −0.624.
+- **Legends covering data:** `loc='lower right'` covers the zero-count points in the lower panels of Figures 8 and 9 and Box 19. Plain `legend()` (the taught default) avoids this.
+- **Box references:** prefix them by section. "Box 16" and "Box 18" each exist in two sections.
+- **S1T2 box numbers skip 1, 2, 8, 10, 14, 17 and 20.** Renumber them or explain the gaps.
+- **"(p 0.074)":** change to "(p = 0.074)".
+- **PDF properties:** the title says "Sections 1 to 4" and the author is "Marie de Guzman". Correct both before export.
+- **S1.T2 rows for 6 Jan 2016 and solar exposure:** the 6 Jan 2016 row should say that 5 Jan was the dark day (6 Jan had 30.1 MJ/m²). Also, call the two solar rows "lowest values checked (no IQR outliers)" rather than "outliers".
+
 ## Code checked against the course content
 
 Every construct in the appendix was searched for in the Week 7–9 transcripts, the slide text and the slide OCR ([`../week-7/slides/`](../week-7/slides/), [`../week-8/slides/`](../week-8/slides/), [`../week-9/slides/`](../week-9/slides/)).
