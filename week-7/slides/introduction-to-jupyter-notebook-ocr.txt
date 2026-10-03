@@ -1,0 +1,392 @@
+
+=== p1 (OCR)
+QUT
+EGH404-Research:in. Engineering Practice
+Introduction to Jupyter Notebook
+Dr. Tharindu Fernando
+Unit Coordinator
+Faculty of Engineering
+School of Electrical Engineering and Robotics
+=== p2 (OCR)
+Accessing Jupyter
+https://jupyter.eres.qut.edu.au/
+QUT
+the university
+for the real world
+Home
+Token
+Admin
+warnakut
+→Logout
+Server Options
+EGB103Notebook
+JupyterNotebookforEGB103
+EGH404Notebook
+JupyterNotebookforEGH404
+General Notebook
+General purpose Jupyter Notebook with short term persistence
+Start
+=== p3 (OCR)
+↑→Q
+°。 jupyter.eres.qut.edu.au/hub/spawn
+☆
+G
+一口
+QUT
+the university
+fortherealworld
+Home
+Token
+Admin
+warnakut
+Logout
+Server Options
+EGB103Notebook
+JupyterNotebookforEGB103
+EGH404Notebook
+JupyterNotebookforEGH404
+General Notebook
+GeneralpurposeJupyterNotebookwithshorttermpersistence
+Start
+=== p4 (OCR)
+C
+jupyter.eres.qut.edu.au/user/warnakut/lab?
+☆
+M
+File
+Edit
+ViewRun
+Kernel
+Tabs
+Settings
+Help
+C
+口
+Untitled.ipynb
+sample_file.ipynb
+B
++口
+口
+C
+Markdown
+NotebookPython3(ipykernel)O=
+Filterfilesbyname
+口
+JupyterLabisanext-generationweb-baseduserinterfaceforProjectJupyter.Itenablesyoutoworkwithdocumentsand
+activitiessuchasJupyternotebooks,texteditors,terminals,andcustomcomponentsinaflexible,integrated,andextensible
+Name
+Modified
+manner.Itistheinterfacethatyou'relookingatrightnow.
+sample_file.ipynb
+50sago
+Untitled.ipynb
+2d ago
+For anoverviewof theJupyterLab interface,see theJupyterLabWelcome Touron thispage,by going toHelp->
+Untitled1.ipynb
+op
+WelcomeTourandfollowingtheprompts.
+SeeAlso:Foramorein-depthtcrofJupyterLabwithafullenvironmentthatrunsinthecloud,seethe
+JupyterLabintroductiononBinder.
+JupyterNotebooks
+JupyterNotebooksareacommunitystandardforcommunicatingandperforminginteractivecomputing.Theyareadocument
+that blendscomputations,outputs,explanatorytext,mathematics,images,and richmediarepresentationsof objects.
+JupyterLabisoneinterfaceusedtocreateandinteractwithJupyterNotebooks.
+For anoverviewofJupyterNotebooks,see theJupyterLabWelcomeTour on thispage,by going toHelp->Notebook
+Tourandfollowingtheprompts.
+JupyterNotebookIPythontutorial onBinder.
+Simple
+0s2@Python3(ipykernel) | ldle
+Mode:Command
+Ln 1, Col 3 sample_file.ipynb 0 
+=== p5 (OCR)
+←
+→
+C
+jupyter.eres.qut.edu.au/user/warnakut/lab
+☆
+G
+M
+口
+File
+Edit
+View
+Run
+Kernel
+Tabs
+Settings
+Help
+Launcher
+C
+Filterfilesbyname
+■
+Notebook
+Name
+Modified
+sample_file.ipynb
+2m ago
+Untitled.ipynb
+2d ago
+Python3
+(ipykernel)
+Console
+Python3
+(ipykernel)
+S
+Other
+三
+M
+Tov+Cilo
+Dvthon_Eilo
+Simple
+S-
+2
+Launcher
+=== p6 (OCR)
+←
+→
+C
+jupyter.eres.qut.edu.au/user/warnakut/lab/tree/Untitled1.ipynb
+☆
+G
+M
+File
+Edit
+View
+Run
+Kernel
+Tabs
+Settings
+Help
+C
+Launcher
+Untitled1.ipynb
++
+日
++
+℃
+口
+口
+C
+Code
+NotebookPython3(ipykernel）O
+Filterfilesbyname
+[12]:
+口
+print("helloWorld!!")
+Name
+Modified
+helloWorld!!
+sample_file.ipynb
+8m ago
+[13] :
+name='John'
+Untitled.ipynb
+2d ago
+Untitled1.ipynb
+3mago
+[14] :
+name='Lora'
+[15]:
+print(name)
+Lora
+Simple
+0s3营
+Python3(ipykernel) | ldle
+Mode:Edit
+Ln 1, Col 7 Untitled1.ipynb 0 
+=== p7 (OCR)
+←
+→
+C
+jupyter.eres.qut.edu.au/user/warnakut/lab/tree/Untitled1.ipynb
+☆
+G
+M
+口
+File
+Edit
+View
+Run
+Kernel
+Tabs
+Settings
+Help
+C
+Launcher
+Untitled1.ipynb
+Untitled.ipynb
+sample_file.ipynb
++
+日
++
+℃
+C
+Code
+NotebookPython3(ipykernel)O
+Filterfilesbyname
+[16]:
+print("helloWorld!!")
+Name
+Modified
+helloWorld!!
+sample_file.ipynb
+19m ago
+[17] :
+name='John'
+Untitled.ipynb
+2d ago
+Untitled1.ipynb
+10mago
+[18]:
+name='Lora'
+[19]:
+print('my name is'，name)
+my name isLora
+Simple
+0
+3营
+Python3(ipykernel)| ldle
+Mode:Edit
+Ln 1, Col 27
+Untitled1.ipynb
+=== p8 (OCR)
+←
+→
+C
+jupyter.eres.qut.edu.au/user/warnakut/lab/tree/Untitled1.ipynb
+☆
+G
+File
+Edit
+View
+Run
+Kernel
+Tabs
+Settings
+Help
+C
+Launcher
+Untitled1.ipynb
+Untitled.ipynb
+sample_file.ipynb
++
+日
++
+口口
+C
+Code
+NotebookPython3(ipykernel）O
+Filterfilesbyname
+Title
+Name
+Modified
+sample_file.ipynb
+23m ago
+Heading 1
+Untitled.ipynb
+2d ago
+Untitled1.ipynb
+2mago
+Thisismyfirstnotebook.IamgoingtousejupyternotebooksinEGH404.
+1.They are useful for....
+2.My second dot point...
+3.....
+[16]:
+print("helloWorld!!")
+hello World!！
+[17]:
+name='John'
+[18]:
+name='Lora'
+[19]:
+print('mynameis'，name)
+myname isLora
+Google Chrome
+Simple
+0
+S3
+Python3(ipykernel)|ldle
+Mode:Command
+Ln 1, Col 23
+Untitled1.ipynb
+。
+=== p9 (OCR)
+→
+C
+github.com/jvdkwast/Python3_Jupyter_Notebook/tree/7fa1d238d56b8baa6f19a90a37c273f8699c2bad
+G
+M
+一
+ProductSolutions
+Resources
+Open Source
+Enterprise  Pricing
+Q
+Sign in 
+Sign up
+jvdkwast/Python3_Jupyter_Notebook
+Public
+Notifications
+Fork84
+Star 
+58
+<>Code
+Issues
+Pull requests
+Actions
+田Projects
+Security
+ Insights
+°7fa1d23
+3Branches0Tags
+QGo tofile
+<>Code
+About
+ThisJupyterNotebookhasbeen
+jvdkwastBackported updates
+7fa1d23·lastyear
+13Commits
+developedbased on"ABeginner's
+PythonTutorial"byStevenThurlow.The
+LICENSE
+Initial commit
+6 years ago
+originalmaterialhasbeenportedto
+Python 3.
+Pythonlntro.ipynb
+Backportedupdates
+last year
+B
+Readme
+PythonlntroCh1.ipynb
+Backportedupdates
+last year
+本
+MITlicense
+9
+PythonlntroCh10.ipynb
+Backported updates
+last year
+Activity
+☆
+58 stars
+9
+PythonlntroCh2.ipynb
+Backported updates
+last year
+3watching
+9
+PythonlntroCh3.ipynb
+Backported updates
+last year
+84 forks
+PythonlntroCh4.ipynb
+Backported updates
+last year
+Report repository
+9
+PythonlntroCh5.ipynb
+Backported updates
+last year
+Releases
+https://github.com/jvdkwast/Python3_Jupyter_Notebook

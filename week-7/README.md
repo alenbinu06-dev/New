@@ -5,6 +5,7 @@ Lecture and tutorial video transcripts for the Week 7 content, plus consolidated
 - [`notes.md`](notes.md) – study notes summarising every transcript, grouped by topic and platform.
 - [`transcripts/`](transcripts/) – the raw auto-generated transcripts (unedited, so expect speech-to-text errors such as "philtre" for "filter" or "Nan" for "NaN").
 - [`slides/`](slides/) – lecture slides and the practical sheet.
+- `slides/*-ocr.txt` – OCR text of the slide images (code screenshots, rubric tables and figures), because most slides are images with no extractable text.
 - [`data/`](data/) – the dataset used in the visualisation practicals.
 
 ## Slides, practical sheet and data

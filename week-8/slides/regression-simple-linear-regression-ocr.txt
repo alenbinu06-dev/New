@@ -1,0 +1,97 @@
+
+=== p1 (OCR)
+permllion
+hnal artmpe
+ne in danger or
+1on than
+equire is
+and lenthim themg
+mmonin
+ihcr
+fathe
+re·search'/ri's3:t,
+19
+serious st-/ni
+[plural]
+bje
+facts
+discover new
+new
+ncerl
+research into
+sare
+student
+ing inf
+lab
+estedinorr
+Online
+EGH404
+Tte doneson
+=== p2 (OCR)
+Regression
+Online
+EGH404
+=== p3 (OCR)
+Regression
+=== p6 (OCR)
+What is simple linear regression?
+Linear in terms of parameters
+dependent variable
+independentvariable
+Y=BX+E
+parameters
+error term
+=== p7 (OCR)
+What is simple linear regression?
+Linear in terms of parameters
+dependent variable
+independent variable
+Y=Bo+ PiX+e
+parameters
+error term
+=== p8 (OCR)
+What is simple linear regression?
+Linear in terms of parameters
+dependentvariable
+independent variable
+Y=Bu+BX+βX²+t
+parameters
+error term
+=== p9 (OCR)
+What is simple linear regression?
+"Fitting a line to a
+Bivariate line-litting methods lor alloinetry
+bivariate dataset
+Iwsd L Perou*, IsnJ. hrgur, Iismiel s Aslser aeo Mrs sesxby?
+- favrr, VH "*FA Jal=h.
+can be a deceptively
+nd 1? bso ar l; nun/N.a 5r 500l; mps 5Fanp ig1
+complex problem"
+Warton, D. I., Wright, I. J., Falster, D.
+S., & Westoby, M. (2006). Bivariate
+line-fitting methods for allometry.
+Biological Reviews, 81(2), 259-291
+=== p10 (OCR)
+What is simple linear regression?
+ We will use the simple linear regression
+model:
+Y = βo + β1 X + E
+i.e., fitting a straight line
+=== p11 (OCR)
+Find the line that minimises the squared y-distances to the data
+=== p12 (OCR)
+Ordinary least squares regression: regress x onto y. Used to predict x, given y.
+Find the line that minimises the squared x-distances to the data
+=== p13 (OCR)
+Orthogonal regression. Used when x and y are measured with error.
+Find the line that gives the best 1-dimensional projection of the data
+=== p14 (OCR)
+Different regression
+methods yield
+different lines
+of "best" fit
+y regressed onto x
+orthogonalregression
+x regressed onto y
+X
+Check out Making sense of principal component analysis, eigenvectors & eigenvalues

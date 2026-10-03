@@ -6,6 +6,7 @@ The datasets and working drafts for Assignment 2, which analyses Brisbane bikewa
 - [`drafts/`](drafts/) – the current answer drafts, saved verbatim. Earlier versions are in [`drafts/old/`](drafts/old/).
 - [`checks/verify_drafts.py`](checks/verify_drafts.py) – recomputes 47 figures quoted in the drafts from the CSV files and reports any mismatch.
 - [`assessment-2-template.pdf`](assessment-2-template.pdf) – the official answer template. Answers go directly into it; keep the template wording.
+- [`final/egh404-assessment2-final.pdf`](final/egh404-assessment2-final.pdf) – the near-final submission covering all five sections and the appendix (81 pages). The review is in [Review of the final version](#review-of-the-final-version).
 
 ## The task (from the template)
 
@@ -128,3 +129,117 @@ I ran [`checks/verify_drafts.py`](checks/verify_drafts.py) and reviewed the draf
    - Outliers not removed automatically.
    - Plot code sets titles, axis labels and a legend.
    - The S2 interpretation is under 400 words and covers clusters, explanations and what r implies.
+
+## Review of the final version
+
+This is a review of [`final/egh404-assessment2-final.pdf`](final/egh404-assessment2-final.pdf).
+
+The following were recomputed and match:
+- every S1 value;
+- the four S2.T1 r values;
+- all S3 coefficients, p-values, R², adjusted R², F, the train/test RMSE and the 2018 mean predictions;
+- the S5 correlations;
+- all 12 S4 min/max ranges, checked against the Mendeley file (SHA-256 matches the published file);
+- the 1,736 / 1,649 / 87 record counts;
+- the 116 source publications.
+
+The earlier S1.T2 issues (missing appendix code, "0.0–0.2 mm" wording) are fixed.
+
+Word counts:
+
+| Part | Words | Limit |
+|------|-------|-------|
+| S2.T3 | 392, including the one-line preface | 400 |
+| S3.T2 | 357 | 400 |
+| S4 justification | 236 | 150–250 |
+
+The second and third uploads of the final PDF are byte-identical to each other, and their text and images are identical to the first. None of the changes below have been made yet.
+
+The figures were checked by OCR of the embedded images, not just the code. Every `iloc` range in the appendix was mapped to its calendar dates and matches its printed label.
+
+**Needed changes:**
+1. **Figure 7 (S2.T2) has no title in the image.** S2 Box 6 contains `plt.title(...)`, but the embedded image in both the report and the appendix starts at the plot area. It was produced by an older run. Re-run Box 6 and replace both copies. S2.T2 is worth 2 points, and the Week 9 practical said a plot missing its title scores zero.
+2. **Add plot titles to Figures 13 and 14** (S5 Boxes 7 and 8). They have no `set_title` or `plt.title`.
+3. **Label the problem type on every S1.T1 row**, in the same way as S1.T2 ("Bicentennial pedestrians: outlier, 12,288"). Rows such as "spike", "counter fault" and "77 consecutive zeros" don't say whether they are an outlier, missing data or an error. The rubric asks for a "structured table detailing issue type, date, and justification".
+4. **Fix the S4 justification's "1,736 RAC mixture records".** 248 of the 1,736 rows (227 of the 1,649 unflagged) have RAR = 0. The dataset README defines this as "no recycled coarse aggregate was used", and Section 5 already excludes those mixes. Use "1,736 concrete mixture records (1,488 containing RCA)".
+5. **Fix the S1.T1 "220 flagged days" paragraph.** 18 of the days fall in the 2 Dec 2014 – 6 Feb 2015 fault and one is 21 Mar 2015. State that these are handled separately.
+6. **Check the UQ Open Day reference.** Confirm that the cited 2017 Business and Economics undergraduate guide states Open Day was on Sunday 7 August 2016, or cite the Open Day programme instead.
+7. **S5 (c) only partly compares the observed relationships with the literature.** The literature paragraph covers water absorption and the carbonation strength gains. It doesn't cover the strongest relationship (water-to-binder ratio, r = −0.582) or the surprising one: replacement ratio has r = −0.082, while studies generally report strength falling as RCA replacement rises. Add a cited sentence on each, explaining that mix-design compensation and pooling of studies probably hide the replacement effect.
+
+**Recommended (taught in Weeks 8–9 but missing from S3):**
+- **Add a residual plot for each final model** (residuals = actual − predicted against predicted, on the training data). The Week 8 practical covered residual plots, the "fan shape" of non-constant error variance, and the linearity, independence and constant-variance assumptions. Use it in S3.T2 (b) to discuss suitability.
+- **Name the problem as underfitting.** The Week 8 activity asks you to "distinguish between a well-specified model and one that is underfitting". R² of 0.023 and 0.043 is underfitting. The standard errors, and the Durbin–Watson values of 0.32 and 0.24 (the independence assumption), also support this. S3.T2 has 43 words spare.
+- **Tie the S3.T2 (c) train/test argument to the Week 8 Python tutorial.** In that tutorial, training on data whose pattern differs from the test period (2011 vs 2012) reduced test performance.
+
+**Optional:**
+- **Box plot ticks:** Figures 1 and 3 show a meaningless "1" tick under each box. Use `labels=[...]` in `boxplot` (`tick_labels=` in matplotlib 3.9+) or clear the ticks.
+- **S1.T1 3 Aug 2014 row:** label it a visual outlier inside the 1.5 × IQR bound. S1.T2's two solar "lowest value" rows need the same treatment.
+- **S3.T1 (b):** add the removed variable's scatter plot.
+- **S4:** mention that the records come from Chinese literature and that CS is a 150 mm cube strength, which limits direct comparison with cylinder-based studies.
+- **S5:** the Week 8 correlation lecture used a concrete compressive-strength example (cement positive, water negative), which matches your cement r = 0.358 and water r = −0.331.
+- **Table numbering:** Table 6 is the only numbered table.
+- **S2.T3:** replace "Week 8" with the concept name.
+
+## Review of the revised version (upload `_d54c`)
+
+The revised PDF (91 pages) was reviewed without changes. The figures were viewed directly; the numbers, `iloc` ranges, BOM pages and UQ guide were re-checked.
+
+**Fixed since the previous review:**
+- Figures 7, 13 and 14 now have titles.
+- Every S1.T1 row names its problem type.
+- The "220 flagged days" paragraph and the S4 "1,488 containing RCA" wording are corrected.
+- The UQ reference is verified: PDF p. 40 says "UQ Open Day 2016 St Lucia campus Sunday, 7 August 2016".
+- Residual plots (S3 Box 18) and plots of the removed predictors (S3 Box 19) are added.
+- Box 16 (bikeways) and Box 22 (weather) apply the table decisions. Every `iloc` position maps to the dates in the tables, and the printed non-null counts reproduce.
+
+**Word counts:**
+
+| Part | Words | Limit |
+|------|-------|-------|
+| S2.T3 | 369, including the one-line preface | 400 |
+| S3.T2 | 337 | 400 |
+| S4 justification | 215 | 150–250 |
+
+**Still needed:**
+1. Fill in the student name and number on the cover page.
+2. **North Brisbane pedestrians, 5 Jan – 14 Mar 2016, is a missed fault.**
+   - In this period the median is 1 pedestrian a day (33 zero days out of 69), while cyclists have a median of 124. Before it, the pedestrian median is 91.
+   - The 10 Jan 2016 row calls this "a suspected intermittent pedestrian-channel fault" but removes only 10 Jan. 36 zero days remain after Box 16.
+   - Fix: extend that row's handling to the whole period, and add `bikeway_cleaned.iloc[734:804, 2] = np.nan` to Box 16.
+3. **The "flag" decisions aren't implemented.** "Keep but flag" (21 Mar 2015) and "flagged as uncertain" (29 Dec 2014 – 14 Mar 2015) have no matching code. Reword them to "keep (noted as uncertain)".
+4. **The "post-wrangling CSV exports are supplied separately" sentence in the Method note.** Delete it unless the CSVs are actually submitted.
+5. **S5 (c) still has no literature comparison for water-to-binder ratio or replacement ratio.** Options:
+   - Abrams' law, for the water-to-binder ratio.
+   - Shehadah et al. (2026), already cited, whose abstract reports untreated RCA concrete about 8% weaker than natural-aggregate concrete.
+   - The Week 8 lecture concrete example ("cement contributing positively… water negatively correlated").
+
+**Recommended:**
+- **S3.T2 (a):** describe Figure 12 explicitly. Predictions sit in a narrow flat band, about 650–1,000 pedestrians and 1,000–1,500 cyclists, whatever the actual value.
+- **Residual plots:** move S3 Box 18 into the main text.
+- **"Low R² alone does not prove underfitting":** replace with a conclusion that uses the Week 8 term. Given the structured residuals and omitted predictors, the models underfit.
+- **Durbin–Watson isn't in the course materials.** Don't add it, which reverses the earlier suggestion.
+- **Data-quality caveat for S5:** source [14] has 9 mixtures with water-to-binder ratio 1.0 (180 kg cement, 180 kg water) at 30–39 MPa. These are implausible, and removing them changes r from −0.582 to −0.624.
+- **Legends covering data:** `loc='lower right'` covers the zero-count points in the lower panels of Figures 8 and 9 and Box 19. Plain `legend()` (the taught default) avoids this.
+- **Box references:** prefix them by section. "Box 16" and "Box 18" each exist in two sections.
+- **S1T2 box numbers skip 1, 2, 8, 10, 14, 17 and 20.** Renumber them or explain the gaps.
+- **"(p 0.074)":** change to "(p = 0.074)".
+- **PDF properties:** the title says "Sections 1 to 4" and the author is "Marie de Guzman". Correct both before export.
+- **S1.T2 rows for 6 Jan 2016 and solar exposure:** the 6 Jan 2016 row should say that 5 Jan was the dark day (6 Jan had 30.1 MJ/m²). Also, call the two solar rows "lowest values checked (no IQR outliers)" rather than "outliers".
+
+## Code checked against the course content
+
+Every construct in the appendix was searched for in the Week 7–9 transcripts, the slide text and the slide OCR ([`../week-7/slides/`](../week-7/slides/), [`../week-8/slides/`](../week-8/slides/), [`../week-9/slides/`](../week-9/slides/)).
+
+**Taught:**
+- Week 7 Python tutorial: `read_csv(header=0, index_col=...)`, `to_datetime(format=...)`, `info`/`head`/`tail`/`shape`/`describe`/`mean`, `iloc[rows, cols]`, boolean masks, `np.isfinite`/`np.isnan`, `~`, `.loc[mask, :]`, `df.index = pd.to_datetime(df.index)`, index date attributes, `pd.concat(axis=1)`, `plt.subplots` with `boxplot`, column `.plot()`, `plt.plot`/`scatter`/`legend`.
+- Week 8 Python correlation tutorial: `np.corrcoef(x, y)`.
+- Week 8 Python regression tutorial: a date test flag with `~`, `sm.add_constant`, `sm.OLS(...).fit()`, `.summary()`, `.predict()`, `sklearn.metrics.mean_squared_error`, and actual-vs-predicted plots.
+- Week 8 live practical: RMSE as the square root of MSE, and backward elimination.
+
+**Not shown in the Python content** (standard Python/pandas, low risk):
+- f-strings in legend labels (S3 Boxes 8 and 13; S5 Boxes 7 and 8);
+- `DataFrame.corr()` (correlation matrices were taught with MATLAB `corrcoef` and Excel);
+- `.sort_values()` (only in the Week 9 machine-learning demo);
+- holding one predictor at its mean to draw a fitted line (the rubric slide shows the MATLAB added-variable plot instead);
+- the `figsize`, `color`, `marker` and `loc` arguments;
+- the water-to-binder column arithmetic.

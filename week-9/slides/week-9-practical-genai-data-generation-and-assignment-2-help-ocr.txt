@@ -1,0 +1,684 @@
+
+=== p1 (OCR)
+QUT
+EGH404 Generative Al for Data
+Generation and Assignment 2 Help
+Session
+Faculty of Engineering
+EGH404
+=== p2 (OCR)
+Demonstration: Using GenAl for Locating
+Public Datasets
+I need help locating publicly available tabular data on the topic of
+evaluating the structural performance of recycled concrete.Can you
+provide me with some datasets, a brief description, and URLs? The
+data should strictly be tabular.Do not hallucinate and provide links
+that do not exist.
+Copilot
+Belowarepubliclyavailable,verifiabletabulardatasetsthatarerelevanttoevaluatingthe
+structural/mechanical performance of recycled concrete. I have only included datasets that clearly provide
+structured tabular data(Excel/CsV-style) and explicit download links from well-known data repositories.I
+have not inferred or fabricated any links.
+1. Mechanical Properties of Recycled Aggregate Concrete (RAC)
+Repository:MendeleyData
+Format:Excel (.xlsx)-strictly tabular
+=== p3 (OCR)
+prose, no markdown tables， no code fences).
+Demonstration:
+1） ROW COUNT:
+4
+Generate approximately 200 rows (acceptable range: 190-220).
+Generating
+5
+6
+2）SCHEMA:
+Synthetic Data
+CapacityMW, CommissionDate, OperatorID, OperatorName, AnnualGenerationMWh,
+CO2SavingsTonnes
+8
+with MS CoPilot
+9
+3） RELATIONSHIPS:
+10
+PlantID: unique
+1 1
+OperatorID → OperatorName (one-to-one)
+12
+- PlantID → PlantName, Country, Region, EnergySource, CapacityMW, CommissionDate
+(functional dependency)
+Refer to the full prompt
+13
+EnergySource E {Solar， Wind, Hydro, Biomass， Geothermal}
+1 4
+CapacityMw depends on EnergySource:
+provided in the practical
+15
+- Solar: 5-150 MW
+16
+-Wind:10-300MW
+page
+=== p4 (OCR)
+QUT
+EGH404 - Assignment 2 Help
+Session
+Faculty of Engineering
+EGH404
+=== p5 (OCR)
+Plots
+Criteria
+Ratings
+Pts
+S1. T1 (a)
+1 Pts
+0 Pts
+Full marks
+No marks
+Create a single box plot
+A single, well-formatted box plot is
+Box plot is missing, incomplete, or does
+visualisation to identify
+1 pts
+created with correct data
+notincludecorrectdata
+outliers across daily
+bikeway usage data.
+=== p6 (OCR)
+Plots
+Should have a plot title, axis titles, consistent axis labels, and a legend (if applicable).
+llinois Basin
+Wwestern Bituminous Region
+Powder River Basin
+Central Appalachia
+102030
+4口
+　50
+Value axislabels
+60
+Coal Production (in millions of tons)
+Axis title
+Category axis labels
+=== p7 (OCR)
+X-axis transformed
+120
+Should have a plot title, axis titles,
+consistent axis labels, and a legend
+100
+(if applicable).
+8
+Plots
+9
+4
+2
+0.2
+0.5
+1.0
+2.0
+5.0
+W
+=== p8 (OCR)
+SECTION1-DATA WRANGLING
+(1.1.
+C & 1.2.C)
+S1. T1. (c)
+4 Pts
+2 Pts
+0 Pts
+Full marks
+Partial Marks
+No marks
+Identify
+(i) Clearly identifies all
+Severalproblematicdata
+Onlyafewproblematicdata
+problematic data
+problematic data points
+points identifed, but
+points identifed, or plan for
+(e.g., outliers,
+across all three weather
+explanation or justification is
+handling them is vague.
+missing data,
+factors, including specific
+incomplete or lacks clarity.
+errors) and
+dates. (ii) Provides a
+4 pts
+describe how you
+structured table detailing
+issue type, date, and
+will handle them
+justification for chosen
+in your cleaned
+cleaning method based on
+dataset
+statistical or domain
+reasoning.
+=== p9 (OCR)
+SECTION 1 -DATA WRANGLING (1.1.C & 1.2.C)
+Name of the
+Specify the date with
+How do you intend to
+Justification
+column with the
+problematic data
+handle the
+problematic data,
+problematic data
+type of the
+identified?
+problem
+(outliers, missing
+data, errors) and
+Detailed Description:
+the value.
+What is the best outlier/missing
+data handling mechanism for
+this data?
+Don't just write removing
+outliers
+For missing data imputation
+explain why this was chosen.
+E.g. Why choose
+nean/median/mode to impute
+=== p10 (OCR)
+SECTION 1 -DATA WRANGLING (1.1.C & 1.2.C)
+Name of the
+Specify the date with
+How do you intend to
+Justification
+column with the
+problematic data
+handle the
+problematic data,
+problematic data
+type of the
+identified?
+problem
+(outliers, missing
+data, errors) and
+the value.
+If more than three instances. exist, report only
+Use up to 3 examples for each problem type within each bikeway.
+three. If fewer than three exist, report all that
+you can find.
+·Outliers
+Bicentennial Bikeway
+·Missing data
+North Brisbane Bikeway
+·Errors
+No Need to split between
+pedestrians and cyclists
+=== p11 (OCR)
+Interesting Cases
+· Outliers: does not always mean that you need to remove them.
+· First consider whether the behavior in the data is explainable.
+· In addition to the box plots, take a look at the line plots to see
+if there are consistent patterns.
+· Check if there are any signs of errors in measurements or
+sensors, like consistent readings over several days or days that
+don't follow the overall data trend.
+ You can also search online for any events (e.g., floods,
+bikeway closures, etc.) that might explain those
+inconsistencies.
+· Based on this, you can make an informed decision on whether
+or not to keep the data points in your analysis.
+=== p12 (OCR)
+modifier_ob
+mirror objectto mirror
+irror_mod.mirror_object
+peration
+irror_mod.use_x=True
+=="MIRRORX"：
+irror_mod.use_y=False
+irror_mod.use_z=False
+Supporting Evidence
+operation ==“MIRROR_Y"
+irror_mod.use_x=False
+oirror_mod.use_y =True
+irror_mod.use_z =False
+operation =="MIRROR Z"s
+rror_mod.use_x=False
+rror_mod.use_y=False
+rror_mod.use_z=True
+ Source code (for MATLAB or Python users),
+electionat theend-add
+ob.select=1
+Screenshots of Excel formulas, and screenshots
+er_ob.select=1
+ntext.scene.objects.actiw
+of Excel "Data Analysis" tools
+"Selected"+str(modifier
+irror_ob.select=0
+ Please include your supporting evidence in the
+bpy.context.selected_ob
+ata.objects[one.name].se]
+Appendix (copy and paste the code into the
+int("please selectexacth)
+document, or if using live scripts merge the
+OPERATORCLASSES
+document PDF with the exported live script
+PDF).
+lypes.operator):
+Xmirrortotheselecte
+ject.mirror_mirror_x"
+rorx"
+context):
+lext.active_object is not
+=== p13 (OCR)
+Supporting Evidence - MATLAB
+%ReadtheCSVfileintoatable
+bike_ped_data_table=readtable
+Warning:Column headersfromthefileweremodifiedtomakethemvalidMATLABidentifiers
+before creatingvariablenamesforthetable.Theoriginalcolumn headersaresavedinthe
+VariableDescriptionsproperty.
+Set'VariableNamingRule'to'preserve'tousetheoriginalcolumnheadersastablevariablenames.
+%Displaythefirst fewrowsofthetabletounderstanditsstructure
+disp
+Date
+A001Pedestrian
+A001Cyclist
+A002Pedestrian
+A002Cyclist
+A023Pedestr
+{'Sat，010122'}
+NaN
+NaN
+869
+38
+2581
+{'Sun，020122'}
+NaN
+NaN
+591
+156
+4426
+{Mon,030122'}
+NaN
+NaN
+614
+152
+3641
+{’Tue，040122'}
+NaN
+NaN
+514
+158
+2664
+{'Wed，050122'}
+NaN
+NaN
+454
+111
+2604
+%IsolatedataforA004andA007
+bike_columns_of_interest={'A004NPedestrian'，'A004ECyclist',
+'A007Pedestrian','A007Cyclist'};
+%Changedateformat
+%Extractdataandformtable
+bikeway_data=bike_ped_data_table(:，['Date'bike_columns_of_interest]);
+%Display theisolated data
+%disp(bikeway_data);
+=== p14 (OCR)
+Supporting Evidence - Excel
+Insert
+Draw
+Page Layout
+Formulas
+Data
+Review
+View
+Automate
+Help
+BLUEBEAM
+Shapes 
+ SmartArt
+ Screenshot 
+Icons
+nmended Table
+Pictures
+Recommended
+MapsPivotChart
+stTables
+Charts
+3D Models
+Histogram
+oles
+Illustrations
+Box and Whisker
+E
+70.2
+243
+19
+70.2
+375
+24
+More Statistical Charts...
+40 3
+1.39
+26
+=== p15 (OCR)
+Supporting Evidence - Excel
+Select Data Source
+Chart data range:
+'Q1.1a (2)!$B$2:$E$366
+Switch Row/Column
+Legend Entries (Series)
+Horizontal (Category) Axis Labels
+Add
+Remove
+P3
+Eleanor Schonell Cyclists
+Eleanor Schonell Pedestrians
+Jack Pesch Cyclists
+Jack Pesch Pedestrians
+Hidden and Empty Cells
+OK
+Cancel
+=== p16 (OCR)
+Supporting Evidence - Excel
+File
+Home
+Insert
+Draw
+Page Layout
+Formulas
+Data
+Review
+View
+Automate
+Help
+BLUEBEAM
+Conditional Formatting
+A
+A
+三
+Gcncral
+Insert
+M
+11
+Paste
+B
+A
+国
+%~$
+Highlight Cells Rules
+Greater Than...
+Clipboard
+Font
+Alignment
+Number
+应
+Iop/BottomRules
+C239
+x>×:[
+3241
+Data Bars
+Between.
+Color Scales
+Equal To...
+Icon Sets
+TextthatContains...
+221
+8/08/2022
+1301.3
+1946
+385
+New Rule....
+222
+9/08/2022
+1396.85
+2044
+443
+A Date Occurring.
+223
+10/08/2022
+960.05
+1246
+763
+Clear Rules
+224
+11/08/2022
+1418.95
+2313
+455
+Duplicate Values...
+225
+12/08/2022
+1243.45
+1757
+526
+Manage Rules...
+226
+13/08/2022
+293.15
+691
+159
+329
+More Rules...
+25/08/2022
+234
+3796
+26/08/2022
+249
+3241
+27/08/2022
+204.5
+1612
+=== p17 (OCR)
+Use the correct version of the dataset
+Youarerequiredto:
+1. Review the unit content on data wrangling, data visualisation, statistics, correlation and regression, and Generative Al for data generation. While
+completingyourAssessment 2,be mindful of itsRubric and stated criteriaformarkingofthis assessment.
+2. Download and use the brisbane bikeway_ counters.csy ↓ and brisbane weather.csy ↓ datasets for answering the questions in Section 1.
+3. Download and use the brisbane bikeway_ counters cleaned.csy ↓ and brisbane weather cleaned.csy ↓ datasets for answering the questions in
+Sections2and3.
+=== p18 (OCR)
+SECTION 2 - CORRELATION ANALYSIS USING REAL-WORLD DATA
+S2.T1: Correlation Coefficient
+Correlation value
+EleanorSchonell Cyclists and Ped
+Jack Pesch Cyclists and Ped
+Command
+Cyclists on ES and JP
+Pedestrians on ES and JP
+Correlation value
+Eleanor Schonell Cyclists and Ped
+Jack Pesch Cyclists and Ped
+Values
+Cyclists on ES and JP
+Pedestrians on ES and JP
+=== p19 (OCR)
+SECTION 2- CORRELATION ANALYSIS USING REAL-WORLD DATA
+S2.T3: Correlation Analysis Interpretation (400 words)
+General observations
+Variable
+What sort of clusters do you see in the plots?
+Reasons / explanations/ hypothesis for
+observations
+What do they imply. Seasonal variations,
+40000
+Demographics and preferences?
+Cluster
+What does the correlation coefficient
+implies?
+VariableA
+=== p20 (OCR)
+Interesting Cases
+Pearson Correlation Coefficient = -0.35
+2500
+2000
+1500
+1000
+500
+500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+DailyPedestrianUsage
+=== p21 (OCR)
+SECTION 3-MULTIPLELINEAR REGRESSION ANALYSIS
+3.1 Multiple Regression Models & Supporting Visualisations
+J_cyclist_regression =
+Linear regression model:
+Estimated Coefficients:
+Estimate
+SE
+tstat
+pValue
+(Intercept)
+rainfall
+solarexposure
+maxtemp
+Number of observations:
+Error degrees of freedom:
+Root Mean Squared Error:
+R-squared:
+Adjusted R-Squared:
+F-statistic vs. constant model
+p-value
+=== p22 (OCR)
+SECTION3-MULTIPLELINEARREGRESSIONANALYSIS
+Using your cleaned data,please answer thefollowing questions.
+To Answer Sections2 and3 pleaseuse the cleaned datasets
+(brisbane_bikeway_counters_cleaned.csv,brisbane_weather_cleaned.csv)providedin Canvas
+Assessment 2 - Details page.
+BCC wants to further investigate the relationship how daily weather factors (i.e. daily rainfall, solar
+exposure,maximumtemperature)influenceusageBicentennialBikeway,Brisbane-andwhether
+SECTION3-MULTIPLE
+thereis any differencein howweatherinfluences cyclistversuspedestrianusage of thisbikeway.To
+LINEARREGRESSION
+answer the questions in this section,please split the dataset as follows:use data fromJanuary 1st,
+2014, to December 31st, 2017 (inclusive) as the training set, and use all remaining data as the testing
+ANALYSIS
+set.
+S3.T1:MultipleRegressionModels &SupportingVisualisations
+3.1 Multiple Regression Models &
+Please conduct Multiple Regression analyses to investigate if one or more daily weather factors
+(i.e.rainfall,solar exposure,maximumtemperature)influencepedestrianusageonthe
+SupportingVisualisations
+BicentennialBikeway,Brisbane.Donotcreateseparateregressionmodelsforeachindependent
+variable.Instead,build a single regression model that includes all the identified independent
+variables.You mayneed torepeat theregression modellingprocess until allvariableshave
+statistically significant p-values.
+(a) Provide model summary table (including P-values, R2, adjusted R2, RMSE on train
+andtestsets)
+(b) Generateascatterplotillustratingtheobserveddatapointsfor theindependent
+variablesagainstthedependentvariableandoverlaythefittedregressionlineto
+demonstrate the model's representation of the relationship.
+(c)DiscussAnymodel simplification(i.e.removal ofindependentvariables from the
+model)with appropriate justification.Discuss theimpact of simplifying the model on
+performance if any.
+=== p23 (OCR)
+SECTION3-MULTIPLELINEARREGRESSIONANALYSIS
+Using your cleaned data, please answer the following questions.
+To AnswerSections2 and3 pleaseuse thecleaned datasets
+(brisbane_bikeway_counters_cleaned.csv, brisbane_weather_cleaned.csv) provided in Canvas
+Assessment 2 - Details page.
+BCC wants to further investigate the relationship how daily weather factors (i.e. daily rainfall, solar
+exposure,maximum temperature)influence usage Bicentennial Bikeway,Brisbane - and whether
+SECTION3-MULTIPLE
+thereis anydifferenceinhowweatherinfluences cyclistversuspedestrian usage of thisbikeway.To
+LINEARREGRESSION
+answer the questions in this section, please split the dataset as follows: use data from January 1st,
+2014, to December 31st, 2017 (inclusive) as the training set, and use all remaining data as the testing
+ANALYSIS
+set.
+S3.T1:MultipleRegressionModels &SupportingVisualisations
+3.1 Multiple Regression Models &
+Please conduct Multiple Regression analyses to investigate if one or more daily weather factors
+(i.e.rainfall, solar exposure, maximum temperature) influence pedestrian usage on the
+SupportingVisualisations
+Bicentennial Bikeway,Brisbane.Donot createseparateregressionmodelsforeachindependent
+variable.Instead,build a singleregression model thatincludes all the identified independent
+variables.Youmayneed torepeattheregressionmodellingprocess until allvariableshave
+Regression summary table should
+statistically significant p-values.
+be generated on the training data.
+(a) Provide model summary table (including P-values, R2, adjusted R2, RMSE on train
+RMsE should be reported on both
+andtestsets)
+train and test splits.
+variablesagainstthedependentvariableandoverlaythefittedregressionlineto
+Scatter plot → Training data
+demonstrate the model's representation of the relationship.
+(c)DiscussAny model simplification(i.e.removal of independentvariables from the
+model)with appropriate justification.Discuss theimpact of simplifying themodel on
+performance if any.
+=== p24 (OCR)
+SECTION 3-MULTIPLELINEAR REGRESSION ANALYSIS
+3.2 Multiple Regression Interpretation (400 words)
+S3.T2
+2Pts
+1 Pts
+0 Pts
+Full marks
+Half Marks
+No marks
+Interpret the results
+Provides a clear,well-
+Interpretation is present
+No interpretation provided
+from the two Multiple
+structured interpretation
+but lacks depth, clarity, or
+orinterpretation is
+Regression Models
+2 pts
+of both regression models.
+sufficientreference to
+incorrect andunsupported
+Uses appropriate
+regression outputs. May
+by regression outputs.
+regression outputs to
+not fully address both
+justify conclusions.
+models.
+Addedvariableplotforwholemodel
+Adjusted data
+What do F statistic, R2, and p-values tells you about the model?
+Fit: y=387685*x
+2.5
+95% conf. bounds
+Adjusted saleprice
+Use the plots to describe how well the model can describe the
+trends in the data
+1.5
+0.5
+Adjusted whole model
+=== p25 (OCR)
+DATA
+In This Section, Choose One Pathway (A Or B) — Do Not Complete Both
+S4.TA: Locating Real-World Dataset (Publicly Available)
+You will locate, and justify, a publicly available real-world tabular dataset that is broadly related to
+your research topic from Assessment 1. Note that you will use the same dataset during
+your Assessment 3 - Project Pitch presentation, to demonstrate preliminary evaluation.
+OR
+S4.TB: Synthetic Data Generation
+Using the synthetic data generation procedure introduced during practical session, create a synthetic
+dataset that aligns with the research question you identified in your response to Assignment 1. You
+should use the same research topic from Assessment 1 to define the variables for synthetic data
+generation and for your Assessment 3 - Project Pitch presentation.
+Ensure the dataset is relevant,
+appropriately structured, and suitablefor subsequent analysis.
+=== p26 (OCR)
+SECTION5-CORRELATIONANALYSISUSINGPRELIMINARY
+DATA
+SECTION5-CORRELATIONANALYSISUSINGPRELIMINARYDATA
+Using the dataset you used in Section 4 (i.e. real-world data you located or the synthetic dataset you
+generated) answer the following questions.
+S5.T1:Data ModellingUsingPreliminaryData
+ In your dataset Identify two or more variables that appear to be related (i.e., feature(s) and a
+target). Provide scatter plots and correlation matrix.
+b
+)Describe the nature of their relationship (e.g., linear, inverse, nonlinear, or no clear pattern).
+S s s     s   o s
+correlation coefficient, scatter plots, etc.).
+Compare the relationships you observe in your data with those reported in the relevant
+literature for your chosen topic.
+(5 pts)

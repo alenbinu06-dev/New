@@ -1,0 +1,361 @@
+
+=== p1 (OCR)
+QUT
+EGH404-RESEARCH:IN ENGINEERINGPRACTICE
+INTRODUCTION TO CORRELATION
+Dr. Tharindu Fernando
+Unit Coordinator
+Faculty of Engineering
+School of Electrical Engineering and Robotics
+=== p2 (OCR)
+Correlation - Introduction
+Used to understand the relationship between variables.
+RAIN
+RAINCOAT
+Facultyof Engineering
+QUT
+School ofElectrical EngineeringandRobotics
+=== p3 (OCR)
+Correlation - Introduction
+Rainfall VS No of Raincoats Sold
+3.5
+2.5
+Rainfall
+1.5
+0.5
+10
+12
+14
+16
+No of Raincoats Sold
+Faculty of Engineering
+QUT
+SchoolofElectrical EngineeringandRobotics
+=== p4 (OCR)
+Correlation - Properties
+· Direction: Correlation can be positive (both variables move in the
+same direction) or negative (one variable moves up while the other
+moves down).
+ Strength: The strength of the relationship is measured on a scale from
+-1 to 1. A correlation of 1 indicates a perfect positive relationship, -1
+indicates a perfect negative relationship, and 0 indicates no
+relationship.
+Faculty of Engineering
+QUT
+School of Electrical Engineering and Robotics
+=== p5 (OCR)
+Correlation Coefficient
+· The correlation coefficient quantifies the degree of correlation. It
+ranges from -1 to 1, with values closer to the extremes indicating
+stronger relationships.
+ Here we are discussing Pearson correlation coefficient: Measures
+linear correlation between two variables.
+Strong
+No
+Strong
+negative
+correlation
+positive
+-1
++1
+Faculty of Engineering
+QUT
+SchoolofElectricalEngineeringandRobotics
+=== p6 (OCR)
+Correlation Coefficient
+r = 0.8
+r = 0.3
+r = - 0.9
+r = - 0.2
+Positive
+Negative
+r = 0.0
+No relationship
+Facultyof Engineering
+QUT
+School ofElectrical EngineeringandRobotics
+=== p7 (OCR)
+Types of Relationships Among Variables
+Quadratic
+Exponential
+Polynomial
+Always use scatter plot and first plot your data to see whether the the relation ship is linear
+Facultyof Engineering
+QUT
+School ofElectrical EngineeringandRobotics
+=== p8 (OCR)
+TemperaturevsHeaters Sold
+Example in Excel
+120
+Month
+TemperatureHeatersSold
+Jan
+-5
+86
+Feb
+-7
+100
+80
+Mar
+5
+75
+Heaters Sold
+Apr
+10
+67
+May
+18
+24
+60
+Jun
+22
+15
+Jul
+28
+12
+40
+Aug
+25
+10
+Sep
+16
+40
+Oct
+10
+55
+20
+Nov
+2
+88
+Dec
+-3
+95
+-10
+10
+15
+20
+25
+30
+Temperature
+Faculty of Engineering
+QUT
+Schoolof Electrical Engineeringand Robotics
+=== p9 (OCR)
+Example in Excel
+F1
+fx
+=CORREL(Table1[[Temperature],Table1[HeatersSold])
+A
+B
+C
+D
+E
+F
+1
+Month
+▼
+Temperature
+HeatersSold
+CorrelationCoefficent
+-0.9840577
+2
+Jan
+-5
+98
+3
+Feb
+-7
+100
+4
+Mar
+5
+75
+5
+Apr
+10
+67
+6
+May
+18
+24
+7
+Jun
+22
+15
+8
+Jul
+28
+12
+9
+Aug
+25
+10
+10
+Sep
+16
+40
+11
+Oct
+10
+55
+12
+Nov
+2
+88
+13
+Dec
+-3
+95
+Faculty of Engineering
+QUT
+SchoolofElectrical EngineeringandRobotics
+=== p10 (OCR)
+Correlation Matrix
+cement
+slag
+ash
+water strength
+141.3
+212
+0
+203.5
+29.89
+168.9
+42.2
+124.3
+158.3
+23.51
+250
+0
+95.7
+187.4
+29.22
+266
+114
+0
+228
+45.85
+154.8
+183.4
+0
+193.3
+18.29
+255
+0
+0
+192
+21.86
+166.8
+250.2
+0
+203.5
+15.75
+Civil Engineering: Cement Manufacturing
+251.4
+0
+118.3
+188.5
+36.64
+Dataset
+296
+0
+0
+192
+21.65
+155
+184
+143
+194
+28.99
+151.8
+178.1
+138.7
+167.5
+36.35
+173
+116
+0
+192
+6.94
+https://www.kaggle.com/datasets/vinayakshanawad/cement-manufacturing-concrete-
+dataset
+385
+0
+0
+186
+27.92
+FacultyofEngineering
+QUT
+SchoolofElectrical EngineeringandRobotics
+=== p11 (OCR)
+cement
+slag
+ash
+water
+strength
+Correlation
+cement
+-0.2752
+-0.3975
+-0.0816
+0.4978
+slag
+-0.2752
+-0.3236
+0.10725
+0.1348
+Matrix
+ash
+-0.3975
+-0.3236
+-0.257
+-0.106
+water
+-0.0816
+0.10725
+-0.257
+-0.29
+Faculty ofEngineering
+QUT
+School of Electrical Engineering and Robotics
+=== p12 (OCR)
+Correlation Formulation
+covariance (x,y)
+r=
+standard Deviation (x) × standard Deviation
+∑(xi — xaverage
+) (yi-Yaverage)
+r=
+age)2 *∑ (yi- Yaverage)
+∑(xi- xa
+average
+Facultyof Engineering
+QUT
+School ofElectrical EngineeringandRobotics
+=== p13 (OCR)
+Correlation VS Causation
+Correlation # Causation
+FacultyofEngineering
+QUT
+School ofElectrical EngineeringandRobotics
+=== p14 (OCR)
+Correlation VS Causation
+Ice Cream Sales
+Sunburns
+FacultyofEngineering
+QUT
+School ofElectrical EngineeringandRobotics
+=== p15 (OCR)
+Correlation VS Causation
+r = 0.8
+QUT
+FacultyofEngineering
+School ofElectrical EngineeringandRobotics
+=== p16 (OCR)
+Correlation VS Causation
+Causation
+Correlation
+Causation
+FacultyofEngineering
+QUT
+School ofElectrical EngineeringandRobotics
