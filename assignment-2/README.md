@@ -164,6 +164,7 @@ The figures were checked by OCR of the embedded images, not just the code. Every
 4. **Fix the S4 justification's "1,736 RAC mixture records".** 248 of the 1,736 rows (227 of the 1,649 unflagged) have RAR = 0. The dataset README defines this as "no recycled coarse aggregate was used", and Section 5 already excludes those mixes. Use "1,736 concrete mixture records (1,488 containing RCA)".
 5. **Fix the S1.T1 "220 flagged days" paragraph.** 18 of the days fall in the 2 Dec 2014 – 6 Feb 2015 fault and one is 21 Mar 2015. State that these are handled separately.
 6. **Check the UQ Open Day reference.** Confirm that the cited 2017 Business and Economics undergraduate guide states Open Day was on Sunday 7 August 2016, or cite the Open Day programme instead.
+7. **S5 (c) only partly compares the observed relationships with the literature.** The literature paragraph covers water absorption and the carbonation strength gains. It doesn't cover the strongest relationship (water-to-binder ratio, r = −0.582) or the surprising one: replacement ratio has r = −0.082, while studies generally report strength falling as RCA replacement rises. Add a cited sentence on each, explaining that mix-design compensation and pooling of studies probably hide the replacement effect.
 
 **Recommended (taught in Weeks 8–9 but missing from S3):**
 - **Add a residual plot for each final model** (residuals = actual − predicted against predicted, on the training data). The Week 8 practical covered residual plots, the "fan shape" of non-constant error variance, and the linearity, independence and constant-variance assumptions. Use it in S3.T2 (b) to discuss suitability.
@@ -178,7 +179,6 @@ The figures were checked by OCR of the embedded images, not just the code. Every
 - **S5:** the Week 8 correlation lecture used a concrete compressive-strength example (cement positive, water negative), which matches your cement r = 0.358 and water r = −0.331.
 - **Table numbering:** Table 6 is the only numbered table.
 - **S2.T3:** replace "Week 8" with the concept name.
-- **S4 table:** consider a mean or median column.
 
 ## Code checked against the course content
 
